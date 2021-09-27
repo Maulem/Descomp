@@ -1,0 +1,24 @@
+Quartus Prime Archive log --	D:/INSPER-FILES/Facul/6S/Descomp/Quartus Projects/Aula 4/Aula4.qarlog
+
+Archive:	D:/INSPER-FILES/Facul/6S/Descomp/Quartus Projects/Aula 4/Aula4.qar
+Date:		Thu Sep 02 00:30:38 2021
+Quartus Prime		20.1.0 Build 711 06/05/2020 SJ Lite Edition
+
+	=========== Files Selected: ===========
+D:/INSPER-FILES/Facul/6S/Descomp/Quartus Projects/Aula 4/Aula4.qpf
+D:/INSPER-FILES/Facul/6S/Descomp/Quartus Projects/Aula 4/Aula4.qsf
+D:/INSPER-FILES/Facul/6S/Descomp/Quartus Projects/Aula 4/Aula4.vhd
+D:/INSPER-FILES/Facul/6S/Descomp/Quartus Projects/Aula 4/Decoder.vhd
+D:/INSPER-FILES/Facul/6S/Descomp/Quartus Projects/Aula 4/ULASomaSub.vhd
+D:/INSPER-FILES/Facul/6S/Descomp/Quartus Projects/Aula 4/Waveform.vwf
+D:/INSPER-FILES/Facul/6S/Descomp/Quartus Projects/Aula 4/bancoRegistradoresArqRegMem.vhd
+D:/INSPER-FILES/Facul/6S/Descomp/Quartus Projects/Aula 4/edgeDetector.vhd
+D:/INSPER-FILES/Facul/6S/Descomp/Quartus Projects/Aula 4/memoriaROM.vhd
+D:/INSPER-FILES/Facul/6S/Descomp/Quartus Projects/Aula 4/muxGenerico2x1.vhd
+D:/INSPER-FILES/Facul/6S/Descomp/Quartus Projects/Aula 4/registradorGenerico.vhd
+D:/INSPER-FILES/Facul/6S/Descomp/Quartus Projects/Aula 4/somaConstante.vhd
+c:/intelfpga_lite/20.1/quartus/bin64/assignment_defaults.qdf
+	======= Total: 13 files to archive =======
+
+	================ Status: ===============
+All files archived successfully.

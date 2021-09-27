@@ -1,0 +1,470 @@
+$comment
+	File created using the following command:
+		vcd file MemoriaRom.msim.vcd -direction
+$end
+$date
+	Sat Aug 21 20:46:01 2021
+$end
+$version
+	ModelSim Version 2020.1
+$end
+$timescale
+	1ps
+$end
+
+$scope module memoriarom_vhd_vec_tst $end
+$var wire 1 ! Dado [7] $end
+$var wire 1 " Dado [6] $end
+$var wire 1 # Dado [5] $end
+$var wire 1 $ Dado [4] $end
+$var wire 1 % Dado [3] $end
+$var wire 1 & Dado [2] $end
+$var wire 1 ' Dado [1] $end
+$var wire 1 ( Dado [0] $end
+$var wire 1 ) Endereco [9] $end
+$var wire 1 * Endereco [8] $end
+$var wire 1 + Endereco [7] $end
+$var wire 1 , Endereco [6] $end
+$var wire 1 - Endereco [5] $end
+$var wire 1 . Endereco [4] $end
+$var wire 1 / Endereco [3] $end
+$var wire 1 0 Endereco [2] $end
+$var wire 1 1 Endereco [1] $end
+$var wire 1 2 Endereco [0] $end
+
+$scope module i1 $end
+$var wire 1 3 gnd $end
+$var wire 1 4 vcc $end
+$var wire 1 5 unknown $end
+$var wire 1 6 devoe $end
+$var wire 1 7 devclrn $end
+$var wire 1 8 devpor $end
+$var wire 1 9 ww_devoe $end
+$var wire 1 : ww_devclrn $end
+$var wire 1 ; ww_devpor $end
+$var wire 1 < ww_Endereco [9] $end
+$var wire 1 = ww_Endereco [8] $end
+$var wire 1 > ww_Endereco [7] $end
+$var wire 1 ? ww_Endereco [6] $end
+$var wire 1 @ ww_Endereco [5] $end
+$var wire 1 A ww_Endereco [4] $end
+$var wire 1 B ww_Endereco [3] $end
+$var wire 1 C ww_Endereco [2] $end
+$var wire 1 D ww_Endereco [1] $end
+$var wire 1 E ww_Endereco [0] $end
+$var wire 1 F ww_Dado [7] $end
+$var wire 1 G ww_Dado [6] $end
+$var wire 1 H ww_Dado [5] $end
+$var wire 1 I ww_Dado [4] $end
+$var wire 1 J ww_Dado [3] $end
+$var wire 1 K ww_Dado [2] $end
+$var wire 1 L ww_Dado [1] $end
+$var wire 1 M ww_Dado [0] $end
+$var wire 1 N \Dado[0]~output_o\ $end
+$var wire 1 O \Dado[1]~output_o\ $end
+$var wire 1 P \Dado[2]~output_o\ $end
+$var wire 1 Q \Dado[3]~output_o\ $end
+$var wire 1 R \Dado[4]~output_o\ $end
+$var wire 1 S \Dado[5]~output_o\ $end
+$var wire 1 T \Dado[6]~output_o\ $end
+$var wire 1 U \Dado[7]~output_o\ $end
+$var wire 1 V \Endereco[0]~input_o\ $end
+$var wire 1 W \Endereco[1]~input_o\ $end
+$var wire 1 X \Endereco[2]~input_o\ $end
+$var wire 1 Y \Endereco[3]~input_o\ $end
+$var wire 1 Z \memROM~0_combout\ $end
+$var wire 1 [ \Endereco[8]~input_o\ $end
+$var wire 1 \ \Endereco[9]~input_o\ $end
+$var wire 1 ] \Endereco[4]~input_o\ $end
+$var wire 1 ^ \Endereco[5]~input_o\ $end
+$var wire 1 _ \Endereco[6]~input_o\ $end
+$var wire 1 ` \Endereco[7]~input_o\ $end
+$var wire 1 a \memROM~1_combout\ $end
+$var wire 1 b \memROM~2_combout\ $end
+$var wire 1 c \memROM~3_combout\ $end
+$var wire 1 d \memROM~4_combout\ $end
+$var wire 1 e \memROM~5_combout\ $end
+$var wire 1 f \memROM~6_combout\ $end
+$var wire 1 g \memROM~7_combout\ $end
+$var wire 1 h \memROM~8_combout\ $end
+$var wire 1 i \memROM~9_combout\ $end
+$var wire 1 j \memROM~10_combout\ $end
+$var wire 1 k \memROM~11_combout\ $end
+$var wire 1 l \memROM~12_combout\ $end
+$var wire 1 m \memROM~13_combout\ $end
+$var wire 1 n \memROM~14_combout\ $end
+$var wire 1 o \memROM~15_combout\ $end
+$var wire 1 p \memROM~16_combout\ $end
+$var wire 1 q \memROM~17_combout\ $end
+$var wire 1 r \ALT_INV_memROM~5_combout\ $end
+$var wire 1 s \ALT_INV_memROM~7_combout\ $end
+$var wire 1 t \ALT_INV_memROM~0_combout\ $end
+$var wire 1 u \ALT_INV_memROM~1_combout\ $end
+$var wire 1 v \ALT_INV_memROM~2_combout\ $end
+$var wire 1 w \ALT_INV_memROM~3_combout\ $end
+$var wire 1 x \ALT_INV_Endereco[7]~input_o\ $end
+$var wire 1 y \ALT_INV_Endereco[6]~input_o\ $end
+$var wire 1 z \ALT_INV_Endereco[5]~input_o\ $end
+$var wire 1 { \ALT_INV_Endereco[4]~input_o\ $end
+$var wire 1 | \ALT_INV_Endereco[9]~input_o\ $end
+$var wire 1 } \ALT_INV_Endereco[8]~input_o\ $end
+$var wire 1 ~ \ALT_INV_Endereco[3]~input_o\ $end
+$var wire 1 !! \ALT_INV_Endereco[2]~input_o\ $end
+$var wire 1 "! \ALT_INV_Endereco[1]~input_o\ $end
+$var wire 1 #! \ALT_INV_Endereco[0]~input_o\ $end
+$var wire 1 $! \ALT_INV_memROM~16_combout\ $end
+$var wire 1 %! \ALT_INV_memROM~14_combout\ $end
+$var wire 1 &! \ALT_INV_memROM~12_combout\ $end
+$var wire 1 '! \ALT_INV_memROM~11_combout\ $end
+$var wire 1 (! \ALT_INV_memROM~9_combout\ $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+03
+14
+x5
+16
+17
+18
+19
+1:
+1;
+1N
+0O
+1P
+1Q
+0R
+0S
+1T
+0U
+0V
+0W
+0X
+0Y
+1Z
+0[
+0\
+0]
+0^
+0_
+0`
+1a
+0b
+0c
+1d
+0e
+0f
+1g
+1h
+1i
+1j
+1k
+0l
+0m
+0n
+0o
+1p
+1q
+1r
+0s
+0t
+0u
+1v
+1w
+1x
+1y
+1z
+1{
+1|
+1}
+1~
+1!!
+1"!
+1#!
+0$!
+1%!
+1&!
+0'!
+0(!
+0)
+0*
+0+
+0,
+0-
+0.
+0/
+00
+01
+02
+0<
+0=
+0>
+0?
+0@
+0A
+0B
+0C
+0D
+0E
+0F
+1G
+0H
+0I
+1J
+1K
+0L
+1M
+0!
+1"
+0#
+0$
+1%
+1&
+0'
+1(
+$end
+#10000
+12
+1E
+1V
+0#!
+0g
+0i
+1n
+0%!
+1(!
+1s
+0h
+0j
+1o
+1S
+0Q
+0P
+1H
+0J
+0K
+0&
+0%
+1#
+#20000
+02
+11
+0E
+1D
+1W
+0V
+1#!
+0"!
+1g
+1l
+0&!
+0s
+1h
+1m
+1R
+1P
+1I
+1K
+1&
+1$
+#30000
+12
+1E
+1V
+0#!
+0Z
+1i
+0l
+1&!
+0(!
+1t
+0d
+1j
+0m
+0R
+1Q
+0N
+0I
+1J
+0M
+0(
+1%
+0$
+#40000
+02
+01
+10
+0E
+0D
+1C
+1X
+0W
+0V
+1#!
+1"!
+0!!
+1Z
+0i
+1(!
+0t
+1d
+0j
+0Q
+1N
+0J
+1M
+1(
+0%
+#50000
+12
+1E
+1V
+0#!
+1i
+0(!
+1j
+1Q
+1J
+1%
+#60000
+02
+11
+0E
+1D
+1W
+0V
+1#!
+0"!
+0p
+0Z
+0g
+0i
+1(!
+1s
+1t
+1$!
+0q
+0d
+0h
+0j
+0Q
+0P
+0N
+0T
+0J
+0K
+0M
+0G
+0(
+0&
+0%
+0"
+#70000
+12
+1E
+1V
+0#!
+#80000
+02
+01
+00
+1/
+0E
+0D
+0C
+1B
+1Y
+0X
+0W
+0V
+1#!
+1"!
+1!!
+0~
+0n
+1%!
+0o
+0S
+0H
+0#
+#90000
+12
+11
+10
+1)
+1*
+1+
+1,
+1-
+1.
+1E
+1D
+1C
+1A
+1@
+1?
+1>
+1=
+1<
+1\
+1[
+1`
+1_
+1^
+1]
+1X
+1W
+1V
+0#!
+0"!
+0!!
+0{
+0z
+0y
+0x
+0}
+0|
+1c
+1e
+0k
+0a
+1b
+0v
+1u
+1'!
+0r
+0w
+1d
+1f
+1h
+1j
+1m
+1o
+1q
+1T
+1S
+1R
+1Q
+1P
+1O
+1U
+1N
+1G
+1H
+1I
+1J
+1K
+1L
+1F
+1M
+1(
+1'
+1&
+1%
+1$
+1#
+1"
+1!
+#100000

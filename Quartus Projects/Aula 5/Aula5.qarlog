@@ -1,0 +1,28 @@
+Quartus Prime Archive log --	D:/INSPER-FILES/Facul/6S/Descomp/Quartus Projects/Aula 5/Aula5.qarlog
+
+Archive:	D:/INSPER-FILES/Facul/6S/Descomp/Quartus Projects/Aula 5/Aula5.qar
+Date:		Wed Sep 15 11:17:04 2021
+Quartus Prime		20.1.0 Build 711 06/05/2020 SJ Lite Edition
+
+	=========== Files Selected: ===========
+D:/INSPER-FILES/Facul/6S/Descomp/Quartus Projects/Aula 5/Aula5.qpf
+D:/INSPER-FILES/Facul/6S/Descomp/Quartus Projects/Aula 5/Aula5.qsf
+D:/INSPER-FILES/Facul/6S/Descomp/Quartus Projects/Aula 5/Aula5.vhd
+D:/INSPER-FILES/Facul/6S/Descomp/Quartus Projects/Aula 5/Decoder.vhd
+D:/INSPER-FILES/Facul/6S/Descomp/Quartus Projects/Aula 5/LogicBlock.vhd
+D:/INSPER-FILES/Facul/6S/Descomp/Quartus Projects/Aula 5/ULASomaSub.vhd
+D:/INSPER-FILES/Facul/6S/Descomp/Quartus Projects/Aula 5/Waveform.vwf
+D:/INSPER-FILES/Facul/6S/Descomp/Quartus Projects/Aula 5/bancoRegistradoresArqRegMem.vhd
+D:/INSPER-FILES/Facul/6S/Descomp/Quartus Projects/Aula 5/edgeDetector.vhd
+D:/INSPER-FILES/Facul/6S/Descomp/Quartus Projects/Aula 5/memoriaRAM.vhd
+D:/INSPER-FILES/Facul/6S/Descomp/Quartus Projects/Aula 5/memoriaROM.vhd
+D:/INSPER-FILES/Facul/6S/Descomp/Quartus Projects/Aula 5/muxGenerico2x1.vhd
+D:/INSPER-FILES/Facul/6S/Descomp/Quartus Projects/Aula 5/muxGenerico4x1.vhd
+D:/INSPER-FILES/Facul/6S/Descomp/Quartus Projects/Aula 5/registrador1bit.vhd
+D:/INSPER-FILES/Facul/6S/Descomp/Quartus Projects/Aula 5/registradorGenerico.vhd
+D:/INSPER-FILES/Facul/6S/Descomp/Quartus Projects/Aula 5/somaConstante.vhd
+c:/intelfpga_lite/20.1/quartus/bin64/assignment_defaults.qdf
+	======= Total: 17 files to archive =======
+
+	================ Status: ===============
+All files archived successfully.

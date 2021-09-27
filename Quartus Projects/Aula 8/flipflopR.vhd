@@ -1,0 +1,26 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+
+entity flipflopR is
+
+    port (
+      entrada		:  in std_logic;
+      RST			:  in std_logic_vector(8 downto 0);
+      saida			:  out std_logic;
+		CLK			:  in std_logic
+    );
+end entity;
+
+architecture comportamento of flipflopR is
+begin
+   process(RST, CLK)
+	begin
+      if (rising_edge(CLK)) then
+         saida <= entrada;
+      end if;
+		if(RST = "111111111") then -- 511 zera
+			saida <= '0';
+		end if;
+	end process;
+end architecture;
