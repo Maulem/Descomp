@@ -1,7 +1,7 @@
 Quartus Prime Archive log --	D:/INSPER-FILES/Facul/6S/Descomp/Quartus Projects/Aula 8/Aula8.qarlog
 
 Archive:	D:/INSPER-FILES/Facul/6S/Descomp/Quartus Projects/Aula 8/Aula8.qar
-Date:		Mon Sep 20 21:37:32 2021
+Date:		Tue Sep 28 23:46:44 2021
 Quartus Prime		20.1.0 Build 711 06/05/2020 SJ Lite Edition
 
 	=========== Files Selected: ===========
@@ -17,7 +17,6 @@ D:/INSPER-FILES/Facul/6S/Descomp/Quartus Projects/Aula 8/butBuffer8x.vhd
 D:/INSPER-FILES/Facul/6S/Descomp/Quartus Projects/Aula 8/conversorHex7Seg.vhd
 D:/INSPER-FILES/Facul/6S/Descomp/Quartus Projects/Aula 8/decoder3x8.vhd
 D:/INSPER-FILES/Facul/6S/Descomp/Quartus Projects/Aula 8/edgeDetector.vhd
-D:/INSPER-FILES/Facul/6S/Descomp/Quartus Projects/Aula 8/flipflopR.vhd
 D:/INSPER-FILES/Facul/6S/Descomp/Quartus Projects/Aula 8/logic7.vhd
 D:/INSPER-FILES/Facul/6S/Descomp/Quartus Projects/Aula 8/memoriaRAM.vhd
 D:/INSPER-FILES/Facul/6S/Descomp/Quartus Projects/Aula 8/memoriaROM.vhd
@@ -28,7 +27,7 @@ D:/INSPER-FILES/Facul/6S/Descomp/Quartus Projects/Aula 8/registrador1bit.vhd
 D:/INSPER-FILES/Facul/6S/Descomp/Quartus Projects/Aula 8/registradorGenerico.vhd
 D:/INSPER-FILES/Facul/6S/Descomp/Quartus Projects/Aula 8/somaConstante.vhd
 c:/intelfpga_lite/20.1/quartus/bin64/assignment_defaults.qdf
-	======= Total: 23 files to archive =======
+	======= Total: 22 files to archive =======
 
 	================ Status: ===============
 All files archived successfully.

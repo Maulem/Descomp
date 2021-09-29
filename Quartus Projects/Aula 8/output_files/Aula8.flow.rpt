@@ -1,5 +1,5 @@
 Flow report for Aula8
-Wed Sep 22 17:52:26 2021
+Wed Sep 29 00:35:33 2021
 Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 
 
@@ -41,15 +41,15 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------+
 ; Flow Summary                                                                  ;
 +---------------------------------+---------------------------------------------+
-; Flow Status                     ; Successful - Wed Sep 22 17:52:20 2021       ;
+; Flow Status                     ; Successful - Wed Sep 29 00:35:27 2021       ;
 ; Quartus Prime Version           ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
 ; Revision Name                   ; Aula8                                       ;
 ; Top-level Entity Name           ; Aula8                                       ;
 ; Family                          ; Cyclone V                                   ;
 ; Device                          ; 5CEBA4F23C7                                 ;
 ; Timing Models                   ; Final                                       ;
-; Logic utilization (in ALMs)     ; 382 / 18,480 ( 2 % )                        ;
-; Total registers                 ; 589                                         ;
+; Logic utilization (in ALMs)     ; 348 / 18,480 ( 2 % )                        ;
+; Total registers                 ; 585                                         ;
 ; Total pins                      ; 68 / 224 ( 30 % )                           ;
 ; Total virtual pins              ; 0                                           ;
 ; Total block memory bits         ; 0 / 3,153,920 ( 0 % )                       ;
@@ -68,7 +68,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 09/22/2021 17:50:54 ;
+; Start date & time ; 09/29/2021 00:34:03 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; Aula8               ;
 +-------------------+---------------------+
@@ -79,13 +79,15 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------+----------------------------------------+---------------+-------------+------------+
 ; Assignment Name                     ; Value                                  ; Default Value ; Entity Name ; Section Id ;
 +-------------------------------------+----------------------------------------+---------------+-------------+------------+
-; COMPILER_SIGNATURE_ID               ; 10995770589186.163234385415504         ; --            ; --          ; --         ;
+; COMPILER_SIGNATURE_ID               ; 10995770589186.163288644315096         ; --            ; --          ; --         ;
 ; MAX_CORE_JUNCTION_TEMP              ; 85                                     ; --            ; --          ; --         ;
 ; MIN_CORE_JUNCTION_TEMP              ; 0                                      ; --            ; --          ; --         ;
 ; NUM_PARALLEL_PROCESSORS             ; All                                    ; --            ; --          ; --         ;
 ; PARTITION_COLOR                     ; -- (Not supported for targeted family) ; --            ; --          ; Top        ;
 ; PARTITION_FITTER_PRESERVATION_LEVEL ; -- (Not supported for targeted family) ; --            ; --          ; Top        ;
 ; PARTITION_NETLIST_TYPE              ; -- (Not supported for targeted family) ; --            ; --          ; Top        ;
+; POWER_BOARD_THERMAL_MODEL           ; None (CONSERVATIVE)                    ; --            ; --          ; --         ;
+; POWER_PRESET_COOLING_SOLUTION       ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW  ; --            ; --          ; --         ;
 ; PROJECT_OUTPUT_DIRECTORY            ; output_files                           ; --            ; --          ; --         ;
 ; VHDL_INPUT_VERSION                  ; VHDL_2008                              ; VHDL_1993     ; --          ; --         ;
 ; VHDL_SHOW_LMF_MAPPING_MESSAGES      ; Off                                    ; --            ; --          ; --         ;
@@ -97,11 +99,11 @@ https://fpgasoftware.intel.com/eula.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:09     ; 1.0                     ; 4863 MB             ; 00:00:18                           ;
-; Fitter               ; 00:01:13     ; 1.0                     ; 6468 MB             ; 00:03:51                           ;
-; Assembler            ; 00:00:03     ; 1.0                     ; 4827 MB             ; 00:00:03                           ;
-; Timing Analyzer      ; 00:00:05     ; 1.6                     ; 5110 MB             ; 00:00:07                           ;
-; Total                ; 00:01:30     ; --                      ; --                  ; 00:04:19                           ;
+; Analysis & Synthesis ; 00:00:08     ; 1.0                     ; 4871 MB             ; 00:00:17                           ;
+; Fitter               ; 00:01:11     ; 1.0                     ; 6474 MB             ; 00:03:53                           ;
+; Assembler            ; 00:00:03     ; 1.0                     ; 4829 MB             ; 00:00:03                           ;
+; Timing Analyzer      ; 00:00:05     ; 1.5                     ; 5109 MB             ; 00:00:07                           ;
+; Total                ; 00:01:27     ; --                      ; --                  ; 00:04:20                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

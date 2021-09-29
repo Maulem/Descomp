@@ -6,7 +6,7 @@ entity flipflopR is
 
     port (
       entrada		:  in std_logic;
-      RST			:  in std_logic_vector(8 downto 0);
+      RST			:  in std_logic;
       saida			:  out std_logic;
 		CLK			:  in std_logic
     );
@@ -19,7 +19,7 @@ begin
       if (rising_edge(CLK)) then
          saida <= entrada;
       end if;
-		if(RST = "111111111") then -- 511 zera
+		if(RST = '1') then
 			saida <= '0';
 		end if;
 	end process;

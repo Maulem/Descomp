@@ -1,0 +1,33 @@
+Quartus Prime Archive log --	D:/INSPER-FILES/Facul/6S/Descomp/Quartus Projects/Aula 9/Aula9.qarlog
+
+Archive:	D:/INSPER-FILES/Facul/6S/Descomp/Quartus Projects/Aula 9/Aula9.qar
+Date:		Wed Sep 29 11:02:31 2021
+Quartus Prime		20.1.0 Build 711 06/05/2020 SJ Lite Edition
+
+	=========== Files Selected: ===========
+D:/INSPER-FILES/Facul/6S/Descomp/Quartus Projects/Aula 9/Aula9.qpf
+D:/INSPER-FILES/Facul/6S/Descomp/Quartus Projects/Aula 9/Aula9.qsf
+D:/INSPER-FILES/Facul/6S/Descomp/Quartus Projects/Aula 9/Aula9.vhd
+D:/INSPER-FILES/Facul/6S/Descomp/Quartus Projects/Aula 9/Decoder.vhd
+D:/INSPER-FILES/Facul/6S/Descomp/Quartus Projects/Aula 9/LogicBlock.vhd
+D:/INSPER-FILES/Facul/6S/Descomp/Quartus Projects/Aula 9/ULASomaSub.vhd
+D:/INSPER-FILES/Facul/6S/Descomp/Quartus Projects/Aula 9/Waveform.vwf
+D:/INSPER-FILES/Facul/6S/Descomp/Quartus Projects/Aula 9/assignment_defaults.qdf
+D:/INSPER-FILES/Facul/6S/Descomp/Quartus Projects/Aula 9/butBuffer.vhd
+D:/INSPER-FILES/Facul/6S/Descomp/Quartus Projects/Aula 9/butBuffer8x.vhd
+D:/INSPER-FILES/Facul/6S/Descomp/Quartus Projects/Aula 9/conversorHex7Seg.vhd
+D:/INSPER-FILES/Facul/6S/Descomp/Quartus Projects/Aula 9/decoder3x8.vhd
+D:/INSPER-FILES/Facul/6S/Descomp/Quartus Projects/Aula 9/edgeDetector.vhd
+D:/INSPER-FILES/Facul/6S/Descomp/Quartus Projects/Aula 9/logic7.vhd
+D:/INSPER-FILES/Facul/6S/Descomp/Quartus Projects/Aula 9/memoriaRAM.vhd
+D:/INSPER-FILES/Facul/6S/Descomp/Quartus Projects/Aula 9/memoriaROM.vhd
+D:/INSPER-FILES/Facul/6S/Descomp/Quartus Projects/Aula 9/muxGenerico2x1.vhd
+D:/INSPER-FILES/Facul/6S/Descomp/Quartus Projects/Aula 9/muxGenerico4x1.vhd
+D:/INSPER-FILES/Facul/6S/Descomp/Quartus Projects/Aula 9/processor.vhd
+D:/INSPER-FILES/Facul/6S/Descomp/Quartus Projects/Aula 9/registrador1bit.vhd
+D:/INSPER-FILES/Facul/6S/Descomp/Quartus Projects/Aula 9/registradorGenerico.vhd
+D:/INSPER-FILES/Facul/6S/Descomp/Quartus Projects/Aula 9/somaConstante.vhd
+	======= Total: 22 files to archive =======
+
+	================ Status: ===============
+All files archived successfully.
