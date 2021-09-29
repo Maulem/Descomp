@@ -31,7 +31,7 @@ architecture arquitetura of Toplevel is
   signal ACU_ULA_A 		: std_logic_vector (larguraDados-1 downto 0);
   signal PERI_signals	: std_logic_vector (larguraDados-1 downto 0);
   signal LEDs_signals	: std_logic_vector (larguraDados-1 downto 0);
-  signal ROM_DEC 			: std_logic_vector (12 downto 0);
+  signal ROM_DEC 			: std_logic_vector (14 downto 0);
   signal DEC_signals 	: std_logic_vector (10 downto 0);
   signal RAM_ADDRESS		: std_logic_vector (larguraAddress-1 downto 0);
   signal PC_ROMandSOM	: std_logic_vector (larguraAddress-1 downto 0);
@@ -71,7 +71,7 @@ end generate;
 
 
 -- O port map completo da ROM:
-ROM : entity work.memoriaROM   			generic map (dataWidth => 13, addrWidth => 9)
+ROM : entity work.memoriaROM   			generic map (dataWidth => 15, addrWidth => 9)
          port map(	Endereco 		=> PC_ROMandSOM,
 							Dado 				=> ROM_DEC
 						);

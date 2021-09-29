@@ -11,7 +11,7 @@ entity processor is
   port   (
     -- Input ports
     Data_In  			:  in  std_logic_vector(larguraDados-1 downto 0);
-	 Instruction_In  	:  in  std_logic_vector(14 downto 0);
+	 Instruction_In  	:  in  std_logic_vector(12 downto 0);
     reset	  			: 	in  std_logic;
     CLK     			: 	in  std_logic;
     
@@ -33,7 +33,7 @@ architecture arquitetura of processor is
   signal MEM_MUX_A 		: std_logic_vector (larguraDados-1 downto 0);
   signal ACU_ULA_A 		: std_logic_vector (larguraDados-1 downto 0);
   signal Saida_ULA 		: std_logic_vector (larguraDados-1 downto 0);
-  signal ROM_DEC 			: std_logic_vector (14 downto 0);
+  signal ROM_DEC 			: std_logic_vector (12 downto 0);
   signal DEC_signals 	: std_logic_vector (10 downto 0);
   signal LOG_MUX4		 	: std_logic_vector (1 downto 0);
   signal PC_ROMandSOM	: std_logic_vector (larguraAddress-1 downto 0);
@@ -54,21 +54,12 @@ MUX :	entity work.muxGenerico2x1  generic map (larguraDados => larguraDados)
 						);
 		
 -- O port map completo do Acumulador:
---ACU : entity work.registradorGenerico   generic map (larguraDados => larguraDados)
---			port map(	DIN 				=> Saida_ULA,
---							DOUT 				=> ACU_ULA_A,
---							ENABLE 			=> DEC_signals(2),
---							CLK 				=> CLK,
---							RST 				=> '0'
---						);
-
--- O port map completo do Registrador Memoria:
-R2M  : entity work.bancoRegistradoresArqRegMem   generic map (larguraDados => larguraDados, larguraEndBancoRegs => 2)
-         port map(	dadoEscrita 	=> Saida_ULA,
-							saida 			=> ACU_ULA_A,
-							endereco			=> ROM_DEC(10 downto 9),
-							habilita			=> DEC_signals(2),
-							clk 				=> CLK
+ACU : entity work.registradorGenerico   generic map (larguraDados => larguraDados)
+			port map(	DIN 				=> Saida_ULA,
+							DOUT 				=> ACU_ULA_A,
+							ENABLE 			=> DEC_signals(2),
+							CLK 				=> CLK,
+							RST 				=> '0'
 						);
 
 -- O port map completo do Program Counter:
@@ -91,7 +82,7 @@ ULA : entity work.ULASomaSub  generic map(larguraDados => larguraDados)
 						
 -- O port map completo do Decoder:
 DEC : entity work.Decoder   generic map (dadosEntrada => 4, dadosSaida => 11)
-         port map(	entradaDecoder => ROM_DEC(14 downto 11),
+         port map(	entradaDecoder => ROM_DEC(12 downto 9),
 							saidaDecoder 	=> DEC_signals
 						);
 			 

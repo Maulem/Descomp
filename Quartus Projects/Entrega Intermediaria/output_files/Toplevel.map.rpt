@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Toplevel
-Wed Sep 29 11:02:10 2021
+Wed Sep 29 17:11:37 2021
 Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 
 
@@ -20,7 +20,7 @@ Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
  12. Parameter Settings for User Entity Instance: memoriaRAM:RAM
  13. Parameter Settings for User Entity Instance: processor:CPU
  14. Parameter Settings for User Entity Instance: processor:CPU|muxGenerico2x1:MUX
- 15. Parameter Settings for User Entity Instance: processor:CPU|registradorGenerico:ACU
+ 15. Parameter Settings for User Entity Instance: processor:CPU|bancoRegistradoresArqRegMem:R2M
  16. Parameter Settings for User Entity Instance: processor:CPU|registradorGenerico:PC
  17. Parameter Settings for User Entity Instance: processor:CPU|ULASomaSub:ULA
  18. Parameter Settings for User Entity Instance: processor:CPU|Decoder:DEC
@@ -56,11 +56,10 @@ Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
  48. Port Connectivity Checks: "processor:CPU|registrador1bit:FREG"
  49. Port Connectivity Checks: "processor:CPU|muxGenerico4x1:MUX4"
  50. Port Connectivity Checks: "processor:CPU|registradorGenerico:PC"
- 51. Port Connectivity Checks: "processor:CPU|registradorGenerico:ACU"
- 52. Port Connectivity Checks: "processor:CPU"
- 53. Post-Synthesis Netlist Statistics for Top Partition
- 54. Elapsed Time Per Partition
- 55. Analysis & Synthesis Messages
+ 51. Port Connectivity Checks: "processor:CPU"
+ 52. Post-Synthesis Netlist Statistics for Top Partition
+ 53. Elapsed Time Per Partition
+ 54. Analysis & Synthesis Messages
 
 
 
@@ -87,13 +86,13 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Wed Sep 29 11:02:10 2021       ;
+; Analysis & Synthesis Status     ; Successful - Wed Sep 29 17:11:37 2021       ;
 ; Quartus Prime Version           ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
 ; Revision Name                   ; Toplevel                                    ;
 ; Top-level Entity Name           ; Toplevel                                    ;
 ; Family                          ; Cyclone V                                   ;
 ; Logic utilization (in ALMs)     ; N/A                                         ;
-; Total registers                 ; 577                                         ;
+; Total registers                 ; 601                                         ;
 ; Total pins                      ; 68                                          ;
 ; Total virtual pins              ; 0                                           ;
 ; Total block memory bits         ; 0                                           ;
@@ -217,30 +216,31 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                           ;
-+----------------------------------+-----------------+-----------------+-------------------------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                                                    ; Library ;
-+----------------------------------+-----------------+-----------------+-------------------------------------------------------------------------------------------------+---------+
-; ULASomaSub.vhd                   ; yes             ; User VHDL File  ; D:/INSPER-FILES/Facul/6S/Descomp/Quartus Projects/Entrega Intermediaria/ULASomaSub.vhd          ;         ;
-; somaConstante.vhd                ; yes             ; User VHDL File  ; D:/INSPER-FILES/Facul/6S/Descomp/Quartus Projects/Entrega Intermediaria/somaConstante.vhd       ;         ;
-; registradorGenerico.vhd          ; yes             ; User VHDL File  ; D:/INSPER-FILES/Facul/6S/Descomp/Quartus Projects/Entrega Intermediaria/registradorGenerico.vhd ;         ;
-; registrador1bit.vhd              ; yes             ; User VHDL File  ; D:/INSPER-FILES/Facul/6S/Descomp/Quartus Projects/Entrega Intermediaria/registrador1bit.vhd     ;         ;
-; processor.vhd                    ; yes             ; User VHDL File  ; D:/INSPER-FILES/Facul/6S/Descomp/Quartus Projects/Entrega Intermediaria/processor.vhd           ;         ;
-; muxGenerico4x1.vhd               ; yes             ; User VHDL File  ; D:/INSPER-FILES/Facul/6S/Descomp/Quartus Projects/Entrega Intermediaria/muxGenerico4x1.vhd      ;         ;
-; muxGenerico2x1.vhd               ; yes             ; User VHDL File  ; D:/INSPER-FILES/Facul/6S/Descomp/Quartus Projects/Entrega Intermediaria/muxGenerico2x1.vhd      ;         ;
-; memoriaROM.vhd                   ; yes             ; User VHDL File  ; D:/INSPER-FILES/Facul/6S/Descomp/Quartus Projects/Entrega Intermediaria/memoriaROM.vhd          ;         ;
-; memoriaRAM.vhd                   ; yes             ; User VHDL File  ; D:/INSPER-FILES/Facul/6S/Descomp/Quartus Projects/Entrega Intermediaria/memoriaRAM.vhd          ;         ;
-; LogicBlock.vhd                   ; yes             ; User VHDL File  ; D:/INSPER-FILES/Facul/6S/Descomp/Quartus Projects/Entrega Intermediaria/LogicBlock.vhd          ;         ;
-; logic7.vhd                       ; yes             ; User VHDL File  ; D:/INSPER-FILES/Facul/6S/Descomp/Quartus Projects/Entrega Intermediaria/logic7.vhd              ;         ;
-; edgeDetector.vhd                 ; yes             ; User VHDL File  ; D:/INSPER-FILES/Facul/6S/Descomp/Quartus Projects/Entrega Intermediaria/edgeDetector.vhd        ;         ;
-; decoder3x8.vhd                   ; yes             ; User VHDL File  ; D:/INSPER-FILES/Facul/6S/Descomp/Quartus Projects/Entrega Intermediaria/decoder3x8.vhd          ;         ;
-; Decoder.vhd                      ; yes             ; User VHDL File  ; D:/INSPER-FILES/Facul/6S/Descomp/Quartus Projects/Entrega Intermediaria/Decoder.vhd             ;         ;
-; conversorHex7Seg.vhd             ; yes             ; User VHDL File  ; D:/INSPER-FILES/Facul/6S/Descomp/Quartus Projects/Entrega Intermediaria/conversorHex7Seg.vhd    ;         ;
-; butBuffer8x.vhd                  ; yes             ; User VHDL File  ; D:/INSPER-FILES/Facul/6S/Descomp/Quartus Projects/Entrega Intermediaria/butBuffer8x.vhd         ;         ;
-; butBuffer.vhd                    ; yes             ; User VHDL File  ; D:/INSPER-FILES/Facul/6S/Descomp/Quartus Projects/Entrega Intermediaria/butBuffer.vhd           ;         ;
-; Toplevel.vhd                     ; yes             ; User VHDL File  ; D:/INSPER-FILES/Facul/6S/Descomp/Quartus Projects/Entrega Intermediaria/Toplevel.vhd            ;         ;
-+----------------------------------+-----------------+-----------------+-------------------------------------------------------------------------------------------------+---------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                   ;
++----------------------------------+-----------------+-----------------+---------------------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                                                            ; Library ;
++----------------------------------+-----------------+-----------------+---------------------------------------------------------------------------------------------------------+---------+
+; ULASomaSub.vhd                   ; yes             ; User VHDL File  ; D:/INSPER-FILES/Facul/6S/Descomp/Quartus Projects/Entrega Intermediaria/ULASomaSub.vhd                  ;         ;
+; somaConstante.vhd                ; yes             ; User VHDL File  ; D:/INSPER-FILES/Facul/6S/Descomp/Quartus Projects/Entrega Intermediaria/somaConstante.vhd               ;         ;
+; registradorGenerico.vhd          ; yes             ; User VHDL File  ; D:/INSPER-FILES/Facul/6S/Descomp/Quartus Projects/Entrega Intermediaria/registradorGenerico.vhd         ;         ;
+; registrador1bit.vhd              ; yes             ; User VHDL File  ; D:/INSPER-FILES/Facul/6S/Descomp/Quartus Projects/Entrega Intermediaria/registrador1bit.vhd             ;         ;
+; processor.vhd                    ; yes             ; User VHDL File  ; D:/INSPER-FILES/Facul/6S/Descomp/Quartus Projects/Entrega Intermediaria/processor.vhd                   ;         ;
+; muxGenerico4x1.vhd               ; yes             ; User VHDL File  ; D:/INSPER-FILES/Facul/6S/Descomp/Quartus Projects/Entrega Intermediaria/muxGenerico4x1.vhd              ;         ;
+; muxGenerico2x1.vhd               ; yes             ; User VHDL File  ; D:/INSPER-FILES/Facul/6S/Descomp/Quartus Projects/Entrega Intermediaria/muxGenerico2x1.vhd              ;         ;
+; memoriaROM.vhd                   ; yes             ; User VHDL File  ; D:/INSPER-FILES/Facul/6S/Descomp/Quartus Projects/Entrega Intermediaria/memoriaROM.vhd                  ;         ;
+; memoriaRAM.vhd                   ; yes             ; User VHDL File  ; D:/INSPER-FILES/Facul/6S/Descomp/Quartus Projects/Entrega Intermediaria/memoriaRAM.vhd                  ;         ;
+; LogicBlock.vhd                   ; yes             ; User VHDL File  ; D:/INSPER-FILES/Facul/6S/Descomp/Quartus Projects/Entrega Intermediaria/LogicBlock.vhd                  ;         ;
+; logic7.vhd                       ; yes             ; User VHDL File  ; D:/INSPER-FILES/Facul/6S/Descomp/Quartus Projects/Entrega Intermediaria/logic7.vhd                      ;         ;
+; edgeDetector.vhd                 ; yes             ; User VHDL File  ; D:/INSPER-FILES/Facul/6S/Descomp/Quartus Projects/Entrega Intermediaria/edgeDetector.vhd                ;         ;
+; decoder3x8.vhd                   ; yes             ; User VHDL File  ; D:/INSPER-FILES/Facul/6S/Descomp/Quartus Projects/Entrega Intermediaria/decoder3x8.vhd                  ;         ;
+; Decoder.vhd                      ; yes             ; User VHDL File  ; D:/INSPER-FILES/Facul/6S/Descomp/Quartus Projects/Entrega Intermediaria/Decoder.vhd                     ;         ;
+; conversorHex7Seg.vhd             ; yes             ; User VHDL File  ; D:/INSPER-FILES/Facul/6S/Descomp/Quartus Projects/Entrega Intermediaria/conversorHex7Seg.vhd            ;         ;
+; butBuffer8x.vhd                  ; yes             ; User VHDL File  ; D:/INSPER-FILES/Facul/6S/Descomp/Quartus Projects/Entrega Intermediaria/butBuffer8x.vhd                 ;         ;
+; butBuffer.vhd                    ; yes             ; User VHDL File  ; D:/INSPER-FILES/Facul/6S/Descomp/Quartus Projects/Entrega Intermediaria/butBuffer.vhd                   ;         ;
+; Toplevel.vhd                     ; yes             ; User VHDL File  ; D:/INSPER-FILES/Facul/6S/Descomp/Quartus Projects/Entrega Intermediaria/Toplevel.vhd                    ;         ;
+; bancoRegistradoresArqRegMem.vhd  ; yes             ; User VHDL File  ; D:/INSPER-FILES/Facul/6S/Descomp/Quartus Projects/Entrega Intermediaria/bancoRegistradoresArqRegMem.vhd ;         ;
++----------------------------------+-----------------+-----------------+---------------------------------------------------------------------------------------------------------+---------+
 
 
 +--------------------------------------------------------------+
@@ -248,74 +248,74 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------+----------------+
 ; Resource                                    ; Usage          ;
 +---------------------------------------------+----------------+
-; Estimate of Logic utilization (ALMs needed) ; 497            ;
+; Estimate of Logic utilization (ALMs needed) ; 514            ;
 ;                                             ;                ;
-; Combinational ALUT usage for logic          ; 553            ;
+; Combinational ALUT usage for logic          ; 580            ;
 ;     -- 7 input functions                    ; 0              ;
-;     -- 6 input functions                    ; 330            ;
-;     -- 5 input functions                    ; 49             ;
-;     -- 4 input functions                    ; 67             ;
-;     -- <=3 input functions                  ; 107            ;
+;     -- 6 input functions                    ; 334            ;
+;     -- 5 input functions                    ; 59             ;
+;     -- 4 input functions                    ; 82             ;
+;     -- <=3 input functions                  ; 105            ;
 ;                                             ;                ;
-; Dedicated logic registers                   ; 577            ;
+; Dedicated logic registers                   ; 601            ;
 ;                                             ;                ;
 ; I/O pins                                    ; 68             ;
 ;                                             ;                ;
 ; Total DSP Blocks                            ; 0              ;
 ;                                             ;                ;
 ; Maximum fan-out node                        ; CLOCK_50~input ;
-; Maximum fan-out                             ; 575            ;
-; Total fan-out                               ; 4590           ;
-; Average fan-out                             ; 3.63           ;
+; Maximum fan-out                             ; 599            ;
+; Total fan-out                               ; 4832           ;
+; Average fan-out                             ; 3.67           ;
 +---------------------------------------------+----------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                     ;
-+----------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+--------------------------------------------------+---------------------+--------------+
-; Compilation Hierarchy Node             ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                              ; Entity Name         ; Library Name ;
-+----------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+--------------------------------------------------+---------------------+--------------+
-; |Toplevel                              ; 553 (23)            ; 577 (0)                   ; 0                 ; 0          ; 68   ; 0            ; |Toplevel                                        ; Toplevel            ; work         ;
-;    |decoder3x8:DEM|                    ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Toplevel|decoder3x8:DEM                         ; decoder3x8          ; work         ;
-;    |edgeDetector:\gravar:detectorSub0| ; 2 (2)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |Toplevel|edgeDetector:\gravar:detectorSub0      ; edgeDetector        ; work         ;
-;    |edgeDetector:\gravar:detectorSub1| ; 2 (2)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |Toplevel|edgeDetector:\gravar:detectorSub1      ; edgeDetector        ; work         ;
-;    |logic7:L7Ga|                       ; 7 (0)               ; 4 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Toplevel|logic7:L7Ga                            ; logic7              ; work         ;
-;       |conversorHex7Seg:CON|           ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Toplevel|logic7:L7Ga|conversorHex7Seg:CON       ; conversorHex7Seg    ; work         ;
-;       |registradorGenerico:REGD|       ; 0 (0)               ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |Toplevel|logic7:L7Ga|registradorGenerico:REGD   ; registradorGenerico ; work         ;
-;    |logic7:L7Gb|                       ; 7 (0)               ; 4 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Toplevel|logic7:L7Gb                            ; logic7              ; work         ;
-;       |conversorHex7Seg:CON|           ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Toplevel|logic7:L7Gb|conversorHex7Seg:CON       ; conversorHex7Seg    ; work         ;
-;       |registradorGenerico:REGD|       ; 0 (0)               ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |Toplevel|logic7:L7Gb|registradorGenerico:REGD   ; registradorGenerico ; work         ;
-;    |logic7:L7Gc|                       ; 7 (0)               ; 4 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Toplevel|logic7:L7Gc                            ; logic7              ; work         ;
-;       |conversorHex7Seg:CON|           ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Toplevel|logic7:L7Gc|conversorHex7Seg:CON       ; conversorHex7Seg    ; work         ;
-;       |registradorGenerico:REGD|       ; 0 (0)               ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |Toplevel|logic7:L7Gc|registradorGenerico:REGD   ; registradorGenerico ; work         ;
-;    |logic7:L7Gd|                       ; 7 (0)               ; 4 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Toplevel|logic7:L7Gd                            ; logic7              ; work         ;
-;       |conversorHex7Seg:CON|           ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Toplevel|logic7:L7Gd|conversorHex7Seg:CON       ; conversorHex7Seg    ; work         ;
-;       |registradorGenerico:REGD|       ; 0 (0)               ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |Toplevel|logic7:L7Gd|registradorGenerico:REGD   ; registradorGenerico ; work         ;
-;    |logic7:L7Ge|                       ; 7 (0)               ; 4 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Toplevel|logic7:L7Ge                            ; logic7              ; work         ;
-;       |conversorHex7Seg:CON|           ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Toplevel|logic7:L7Ge|conversorHex7Seg:CON       ; conversorHex7Seg    ; work         ;
-;       |registradorGenerico:REGD|       ; 0 (0)               ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |Toplevel|logic7:L7Ge|registradorGenerico:REGD   ; registradorGenerico ; work         ;
-;    |logic7:L7Gf|                       ; 7 (0)               ; 4 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Toplevel|logic7:L7Gf                            ; logic7              ; work         ;
-;       |conversorHex7Seg:CON|           ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Toplevel|logic7:L7Gf|conversorHex7Seg:CON       ; conversorHex7Seg    ; work         ;
-;       |registradorGenerico:REGD|       ; 0 (0)               ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |Toplevel|logic7:L7Gf|registradorGenerico:REGD   ; registradorGenerico ; work         ;
-;    |memoriaRAM:RAM|                    ; 297 (297)           ; 512 (512)                 ; 0                 ; 0          ; 0    ; 0            ; |Toplevel|memoriaRAM:RAM                         ; memoriaRAM          ; work         ;
-;    |memoriaROM:ROM|                    ; 119 (119)           ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Toplevel|memoriaROM:ROM                         ; memoriaROM          ; work         ;
-;    |processor:CPU|                     ; 65 (0)              ; 27 (0)                    ; 0                 ; 0          ; 0    ; 0            ; |Toplevel|processor:CPU                          ; processor           ; work         ;
-;       |Decoder:DEC|                    ; 8 (8)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Toplevel|processor:CPU|Decoder:DEC              ; Decoder             ; work         ;
-;       |LogicBlock:LOG|                 ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Toplevel|processor:CPU|LogicBlock:LOG           ; LogicBlock          ; work         ;
-;       |ULASomaSub:ULA|                 ; 27 (27)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Toplevel|processor:CPU|ULASomaSub:ULA           ; ULASomaSub          ; work         ;
-;       |muxGenerico2x1:MUX|             ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Toplevel|processor:CPU|muxGenerico2x1:MUX       ; muxGenerico2x1      ; work         ;
-;       |muxGenerico4x1:MUX4|            ; 10 (10)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Toplevel|processor:CPU|muxGenerico4x1:MUX4      ; muxGenerico4x1      ; work         ;
-;       |registrador1bit:FREG|           ; 3 (3)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |Toplevel|processor:CPU|registrador1bit:FREG     ; registrador1bit     ; work         ;
-;       |registradorGenerico:ACU|        ; 0 (0)               ; 8 (8)                     ; 0                 ; 0          ; 0    ; 0            ; |Toplevel|processor:CPU|registradorGenerico:ACU  ; registradorGenerico ; work         ;
-;       |registradorGenerico:PC|         ; 0 (0)               ; 9 (9)                     ; 0                 ; 0          ; 0    ; 0            ; |Toplevel|processor:CPU|registradorGenerico:PC   ; registradorGenerico ; work         ;
-;       |registradorGenerico:RREG|       ; 0 (0)               ; 9 (9)                     ; 0                 ; 0          ; 0    ; 0            ; |Toplevel|processor:CPU|registradorGenerico:RREG ; registradorGenerico ; work         ;
-;       |somaConstante:SOM|              ; 9 (9)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Toplevel|processor:CPU|somaConstante:SOM        ; somaConstante       ; work         ;
-;    |registrador1bit:FFK0|              ; 0 (0)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |Toplevel|registrador1bit:FFK0                   ; registrador1bit     ; work         ;
-;    |registrador1bit:FFK1|              ; 0 (0)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |Toplevel|registrador1bit:FFK1                   ; registrador1bit     ; work         ;
-;    |registrador1bit:REG8|              ; 1 (1)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |Toplevel|registrador1bit:REG8                   ; registrador1bit     ; work         ;
-;    |registrador1bit:REG9|              ; 1 (1)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |Toplevel|registrador1bit:REG9                   ; registrador1bit     ; work         ;
-;    |registradorGenerico:REG7|          ; 0 (0)               ; 8 (8)                     ; 0                 ; 0          ; 0    ; 0            ; |Toplevel|registradorGenerico:REG7               ; registradorGenerico ; work         ;
-+----------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+--------------------------------------------------+---------------------+--------------+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                     ;
++-----------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------------------------------------------+-----------------------------+--------------+
+; Compilation Hierarchy Node              ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                     ; Entity Name                 ; Library Name ;
++-----------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------------------------------------------+-----------------------------+--------------+
+; |Toplevel                               ; 580 (22)            ; 601 (0)                   ; 0                 ; 0          ; 68   ; 0            ; |Toplevel                                               ; Toplevel                    ; work         ;
+;    |decoder3x8:DEM|                     ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Toplevel|decoder3x8:DEM                                ; decoder3x8                  ; work         ;
+;    |edgeDetector:\gravar:detectorSub0|  ; 2 (2)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |Toplevel|edgeDetector:\gravar:detectorSub0             ; edgeDetector                ; work         ;
+;    |edgeDetector:\gravar:detectorSub1|  ; 2 (2)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |Toplevel|edgeDetector:\gravar:detectorSub1             ; edgeDetector                ; work         ;
+;    |logic7:L7Ga|                        ; 7 (0)               ; 4 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Toplevel|logic7:L7Ga                                   ; logic7                      ; work         ;
+;       |conversorHex7Seg:CON|            ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Toplevel|logic7:L7Ga|conversorHex7Seg:CON              ; conversorHex7Seg            ; work         ;
+;       |registradorGenerico:REGD|        ; 0 (0)               ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |Toplevel|logic7:L7Ga|registradorGenerico:REGD          ; registradorGenerico         ; work         ;
+;    |logic7:L7Gb|                        ; 7 (0)               ; 4 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Toplevel|logic7:L7Gb                                   ; logic7                      ; work         ;
+;       |conversorHex7Seg:CON|            ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Toplevel|logic7:L7Gb|conversorHex7Seg:CON              ; conversorHex7Seg            ; work         ;
+;       |registradorGenerico:REGD|        ; 0 (0)               ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |Toplevel|logic7:L7Gb|registradorGenerico:REGD          ; registradorGenerico         ; work         ;
+;    |logic7:L7Gc|                        ; 7 (0)               ; 4 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Toplevel|logic7:L7Gc                                   ; logic7                      ; work         ;
+;       |conversorHex7Seg:CON|            ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Toplevel|logic7:L7Gc|conversorHex7Seg:CON              ; conversorHex7Seg            ; work         ;
+;       |registradorGenerico:REGD|        ; 0 (0)               ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |Toplevel|logic7:L7Gc|registradorGenerico:REGD          ; registradorGenerico         ; work         ;
+;    |logic7:L7Gd|                        ; 7 (0)               ; 4 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Toplevel|logic7:L7Gd                                   ; logic7                      ; work         ;
+;       |conversorHex7Seg:CON|            ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Toplevel|logic7:L7Gd|conversorHex7Seg:CON              ; conversorHex7Seg            ; work         ;
+;       |registradorGenerico:REGD|        ; 0 (0)               ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |Toplevel|logic7:L7Gd|registradorGenerico:REGD          ; registradorGenerico         ; work         ;
+;    |logic7:L7Ge|                        ; 7 (0)               ; 4 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Toplevel|logic7:L7Ge                                   ; logic7                      ; work         ;
+;       |conversorHex7Seg:CON|            ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Toplevel|logic7:L7Ge|conversorHex7Seg:CON              ; conversorHex7Seg            ; work         ;
+;       |registradorGenerico:REGD|        ; 0 (0)               ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |Toplevel|logic7:L7Ge|registradorGenerico:REGD          ; registradorGenerico         ; work         ;
+;    |logic7:L7Gf|                        ; 7 (0)               ; 4 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Toplevel|logic7:L7Gf                                   ; logic7                      ; work         ;
+;       |conversorHex7Seg:CON|            ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Toplevel|logic7:L7Gf|conversorHex7Seg:CON              ; conversorHex7Seg            ; work         ;
+;       |registradorGenerico:REGD|        ; 0 (0)               ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |Toplevel|logic7:L7Gf|registradorGenerico:REGD          ; registradorGenerico         ; work         ;
+;    |memoriaRAM:RAM|                     ; 298 (298)           ; 512 (512)                 ; 0                 ; 0          ; 0    ; 0            ; |Toplevel|memoriaRAM:RAM                                ; memoriaRAM                  ; work         ;
+;    |memoriaROM:ROM|                     ; 134 (134)           ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Toplevel|memoriaROM:ROM                                ; memoriaROM                  ; work         ;
+;    |processor:CPU|                      ; 77 (0)              ; 51 (0)                    ; 0                 ; 0          ; 0    ; 0            ; |Toplevel|processor:CPU                                 ; processor                   ; work         ;
+;       |Decoder:DEC|                     ; 6 (6)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Toplevel|processor:CPU|Decoder:DEC                     ; Decoder                     ; work         ;
+;       |LogicBlock:LOG|                  ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Toplevel|processor:CPU|LogicBlock:LOG                  ; LogicBlock                  ; work         ;
+;       |ULASomaSub:ULA|                  ; 27 (27)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Toplevel|processor:CPU|ULASomaSub:ULA                  ; ULASomaSub                  ; work         ;
+;       |bancoRegistradoresArqRegMem:R2M| ; 14 (14)             ; 32 (32)                   ; 0                 ; 0          ; 0    ; 0            ; |Toplevel|processor:CPU|bancoRegistradoresArqRegMem:R2M ; bancoRegistradoresArqRegMem ; work         ;
+;       |muxGenerico2x1:MUX|              ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Toplevel|processor:CPU|muxGenerico2x1:MUX              ; muxGenerico2x1              ; work         ;
+;       |muxGenerico4x1:MUX4|             ; 10 (10)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Toplevel|processor:CPU|muxGenerico4x1:MUX4             ; muxGenerico4x1              ; work         ;
+;       |registrador1bit:FREG|            ; 3 (3)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |Toplevel|processor:CPU|registrador1bit:FREG            ; registrador1bit             ; work         ;
+;       |registradorGenerico:PC|          ; 0 (0)               ; 9 (9)                     ; 0                 ; 0          ; 0    ; 0            ; |Toplevel|processor:CPU|registradorGenerico:PC          ; registradorGenerico         ; work         ;
+;       |registradorGenerico:RREG|        ; 0 (0)               ; 9 (9)                     ; 0                 ; 0          ; 0    ; 0            ; |Toplevel|processor:CPU|registradorGenerico:RREG        ; registradorGenerico         ; work         ;
+;       |somaConstante:SOM|               ; 9 (9)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Toplevel|processor:CPU|somaConstante:SOM               ; somaConstante               ; work         ;
+;    |registrador1bit:FFK0|               ; 0 (0)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |Toplevel|registrador1bit:FFK0                          ; registrador1bit             ; work         ;
+;    |registrador1bit:FFK1|               ; 0 (0)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |Toplevel|registrador1bit:FFK1                          ; registrador1bit             ; work         ;
+;    |registrador1bit:REG8|               ; 1 (1)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |Toplevel|registrador1bit:REG8                          ; registrador1bit             ; work         ;
+;    |registrador1bit:REG9|               ; 1 (1)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |Toplevel|registrador1bit:REG9                          ; registrador1bit             ; work         ;
+;    |registradorGenerico:REG7|           ; 0 (0)               ; 8 (8)                     ; 0                 ; 0          ; 0    ; 0            ; |Toplevel|registradorGenerico:REG7                      ; registradorGenerico         ; work         ;
++-----------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------------------------------------------+-----------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
@@ -324,12 +324,12 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 577   ;
+; Total registers                              ; 601   ;
 ; Number of registers using Synchronous Clear  ; 0     ;
-; Number of registers using Synchronous Load   ; 8     ;
+; Number of registers using Synchronous Load   ; 32    ;
 ; Number of registers using Asynchronous Clear ; 2     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 561   ;
+; Number of registers using Clock Enable       ; 585   ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -339,10 +339,10 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                              ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------------------+
-; 3:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; Yes        ; |Toplevel|processor:CPU|registradorGenerico:ACU|DOUT[1] ;
-; 4:1                ; 9 bits    ; 18 LEs        ; 18 LEs               ; 0 LEs                  ; Yes        ; |Toplevel|processor:CPU|registradorGenerico:PC|DOUT[2]  ;
-; 3:1                ; 7 bits    ; 14 LEs        ; 14 LEs               ; 0 LEs                  ; No         ; |Toplevel|processor:CPU|muxGenerico2x1:MUX|saida_MUX[2] ;
-; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |Toplevel|processor:CPU|Decoder:DEC|saidaDecoder[1]     ;
+; 4:1                ; 9 bits    ; 18 LEs        ; 18 LEs               ; 0 LEs                  ; Yes        ; |Toplevel|processor:CPU|registradorGenerico:PC|DOUT[8]  ;
+; 3:1                ; 7 bits    ; 14 LEs        ; 14 LEs               ; 0 LEs                  ; No         ; |Toplevel|processor:CPU|muxGenerico2x1:MUX|saida_MUX[1] ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |Toplevel|processor:CPU|ULASomaSub:ULA|saida[7]         ;
+; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |Toplevel|processor:CPU|Decoder:DEC|saidaDecoder[0]     ;
 ; 5:1                ; 3 bits    ; 9 LEs         ; 9 LEs                ; 0 LEs                  ; No         ; |Toplevel|processor:CPU|Decoder:DEC|saidaDecoder[5]     ;
 ; 7:1                ; 2 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |Toplevel|processor:CPU|Decoder:DEC|saidaDecoder[4]     ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------------------+
@@ -365,7 +365,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+-------+------------------------------------+
 ; Parameter Name ; Value ; Type                               ;
 +----------------+-------+------------------------------------+
-; datawidth      ; 13    ; Signed Integer                     ;
+; datawidth      ; 15    ; Signed Integer                     ;
 ; addrwidth      ; 9     ; Signed Integer                     ;
 +----------------+-------+------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
@@ -403,13 +403,14 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: processor:CPU|registradorGenerico:ACU ;
-+----------------+-------+-----------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                      ;
-+----------------+-------+-----------------------------------------------------------+
-; larguradados   ; 8     ; Signed Integer                                            ;
-+----------------+-------+-----------------------------------------------------------+
++--------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: processor:CPU|bancoRegistradoresArqRegMem:R2M ;
++---------------------+-------+--------------------------------------------------------------+
+; Parameter Name      ; Value ; Type                                                         ;
++---------------------+-------+--------------------------------------------------------------+
+; larguradados        ; 8     ; Signed Integer                                               ;
+; larguraendbancoregs ; 2     ; Signed Integer                                               ;
++---------------------+-------+--------------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
@@ -767,15 +768,6 @@ Note: In order to hide this table in the UI and the text report file, please set
 +--------+-------+----------+--------------------------------------+
 
 
-+-------------------------------------------------------------------+
-; Port Connectivity Checks: "processor:CPU|registradorGenerico:ACU" ;
-+------+-------+----------+-----------------------------------------+
-; Port ; Type  ; Severity ; Details                                 ;
-+------+-------+----------+-----------------------------------------+
-; rst  ; Input ; Info     ; Stuck at GND                            ;
-+------+-------+----------+-----------------------------------------+
-
-
 +-------------------------------------------+
 ; Port Connectivity Checks: "processor:CPU" ;
 +-------+-------+----------+----------------+
@@ -790,28 +782,28 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; arriav_ff             ; 577                         ;
+; arriav_ff             ; 601                         ;
 ;     CLR               ; 2                           ;
 ;     ENA               ; 553                         ;
-;     ENA SLD           ; 8                           ;
+;     ENA SLD           ; 32                          ;
 ;     plain             ; 14                          ;
-; arriav_lcell_comb     ; 553                         ;
+; arriav_lcell_comb     ; 580                         ;
 ;     arith             ; 26                          ;
 ;         0 data inputs ; 1                           ;
 ;         1 data inputs ; 9                           ;
 ;         2 data inputs ; 6                           ;
 ;         5 data inputs ; 10                          ;
-;     normal            ; 527                         ;
+;     normal            ; 554                         ;
 ;         1 data inputs ; 2                           ;
-;         2 data inputs ; 67                          ;
-;         3 data inputs ; 22                          ;
-;         4 data inputs ; 67                          ;
-;         5 data inputs ; 39                          ;
-;         6 data inputs ; 330                         ;
+;         2 data inputs ; 73                          ;
+;         3 data inputs ; 14                          ;
+;         4 data inputs ; 82                          ;
+;         5 data inputs ; 49                          ;
+;         6 data inputs ; 334                         ;
 ; boundary_port         ; 68                          ;
 ;                       ;                             ;
-; Max LUT depth         ; 11.20                       ;
-; Average LUT depth     ; 6.95                        ;
+; Max LUT depth         ; 10.30                       ;
+; Average LUT depth     ; 6.76                        ;
 +-----------------------+-----------------------------+
 
 
@@ -820,7 +812,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:01     ;
+; Top            ; 00:00:02     ;
 +----------------+--------------+
 
 
@@ -830,7 +822,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
-    Info: Processing started: Wed Sep 29 11:02:00 2021
+    Info: Processing started: Wed Sep 29 17:11:27 2021
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Toplevel -c Toplevel
 Info (20030): Parallel compilation is enabled and will use 6 of the 6 processors detected
 Info (12021): Found 2 design units, including 1 entities, in source file ulasomasub.vhd
@@ -888,27 +880,32 @@ Info (12021): Found 2 design units, including 1 entities, in source file butbuff
 Info (12021): Found 2 design units, including 1 entities, in source file toplevel.vhd
     Info (12022): Found design unit 1: Toplevel-arquitetura File: D:/INSPER-FILES/Facul/6S/Descomp/Quartus Projects/Entrega Intermediaria/Toplevel.vhd Line: 27
     Info (12023): Found entity 1: Toplevel File: D:/INSPER-FILES/Facul/6S/Descomp/Quartus Projects/Entrega Intermediaria/Toplevel.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file bancoregistradoresarqregmem.vhd
+    Info (12022): Found design unit 1: bancoRegistradoresArqRegMem-comportamento File: D:/INSPER-FILES/Facul/6S/Descomp/Quartus Projects/Entrega Intermediaria/bancoRegistradoresArqRegMem.vhd Line: 23
+    Info (12023): Found entity 1: bancoRegistradoresArqRegMem File: D:/INSPER-FILES/Facul/6S/Descomp/Quartus Projects/Entrega Intermediaria/bancoRegistradoresArqRegMem.vhd Line: 5
 Info (12127): Elaborating entity "Toplevel" for the top level hierarchy
 Info (12129): Elaborating entity "edgeDetector" using architecture "A:bordasubida" for hierarchy "edgeDetector:\gravar:detectorSub0" File: D:/INSPER-FILES/Facul/6S/Descomp/Quartus Projects/Entrega Intermediaria/Toplevel.vhd Line: 58
 Info (12128): Elaborating entity "memoriaROM" for hierarchy "memoriaROM:ROM" File: D:/INSPER-FILES/Facul/6S/Descomp/Quartus Projects/Entrega Intermediaria/Toplevel.vhd Line: 74
 Info (12128): Elaborating entity "memoriaRAM" for hierarchy "memoriaRAM:RAM" File: D:/INSPER-FILES/Facul/6S/Descomp/Quartus Projects/Entrega Intermediaria/Toplevel.vhd Line: 80
 Info (12128): Elaborating entity "processor" for hierarchy "processor:CPU" File: D:/INSPER-FILES/Facul/6S/Descomp/Quartus Projects/Entrega Intermediaria/Toplevel.vhd Line: 91
 Info (12128): Elaborating entity "muxGenerico2x1" for hierarchy "processor:CPU|muxGenerico2x1:MUX" File: D:/INSPER-FILES/Facul/6S/Descomp/Quartus Projects/Entrega Intermediaria/processor.vhd Line: 49
-Info (12128): Elaborating entity "registradorGenerico" for hierarchy "processor:CPU|registradorGenerico:ACU" File: D:/INSPER-FILES/Facul/6S/Descomp/Quartus Projects/Entrega Intermediaria/processor.vhd Line: 57
-Info (12128): Elaborating entity "registradorGenerico" for hierarchy "processor:CPU|registradorGenerico:PC" File: D:/INSPER-FILES/Facul/6S/Descomp/Quartus Projects/Entrega Intermediaria/processor.vhd Line: 66
-Info (12128): Elaborating entity "ULASomaSub" for hierarchy "processor:CPU|ULASomaSub:ULA" File: D:/INSPER-FILES/Facul/6S/Descomp/Quartus Projects/Entrega Intermediaria/processor.vhd Line: 75
-Info (12128): Elaborating entity "Decoder" for hierarchy "processor:CPU|Decoder:DEC" File: D:/INSPER-FILES/Facul/6S/Descomp/Quartus Projects/Entrega Intermediaria/processor.vhd Line: 84
-Info (12128): Elaborating entity "somaConstante" for hierarchy "processor:CPU|somaConstante:SOM" File: D:/INSPER-FILES/Facul/6S/Descomp/Quartus Projects/Entrega Intermediaria/processor.vhd Line: 90
-Info (12128): Elaborating entity "muxGenerico4x1" for hierarchy "processor:CPU|muxGenerico4x1:MUX4" File: D:/INSPER-FILES/Facul/6S/Descomp/Quartus Projects/Entrega Intermediaria/processor.vhd Line: 95
-Info (12128): Elaborating entity "LogicBlock" for hierarchy "processor:CPU|LogicBlock:LOG" File: D:/INSPER-FILES/Facul/6S/Descomp/Quartus Projects/Entrega Intermediaria/processor.vhd Line: 105
-Info (12128): Elaborating entity "registrador1bit" for hierarchy "processor:CPU|registrador1bit:FREG" File: D:/INSPER-FILES/Facul/6S/Descomp/Quartus Projects/Entrega Intermediaria/processor.vhd Line: 115
+Info (12128): Elaborating entity "bancoRegistradoresArqRegMem" for hierarchy "processor:CPU|bancoRegistradoresArqRegMem:R2M" File: D:/INSPER-FILES/Facul/6S/Descomp/Quartus Projects/Entrega Intermediaria/processor.vhd Line: 66
+Info (12128): Elaborating entity "registradorGenerico" for hierarchy "processor:CPU|registradorGenerico:PC" File: D:/INSPER-FILES/Facul/6S/Descomp/Quartus Projects/Entrega Intermediaria/processor.vhd Line: 75
+Info (12128): Elaborating entity "ULASomaSub" for hierarchy "processor:CPU|ULASomaSub:ULA" File: D:/INSPER-FILES/Facul/6S/Descomp/Quartus Projects/Entrega Intermediaria/processor.vhd Line: 84
+Info (12128): Elaborating entity "Decoder" for hierarchy "processor:CPU|Decoder:DEC" File: D:/INSPER-FILES/Facul/6S/Descomp/Quartus Projects/Entrega Intermediaria/processor.vhd Line: 93
+Info (12128): Elaborating entity "somaConstante" for hierarchy "processor:CPU|somaConstante:SOM" File: D:/INSPER-FILES/Facul/6S/Descomp/Quartus Projects/Entrega Intermediaria/processor.vhd Line: 99
+Info (12128): Elaborating entity "muxGenerico4x1" for hierarchy "processor:CPU|muxGenerico4x1:MUX4" File: D:/INSPER-FILES/Facul/6S/Descomp/Quartus Projects/Entrega Intermediaria/processor.vhd Line: 104
+Info (12128): Elaborating entity "LogicBlock" for hierarchy "processor:CPU|LogicBlock:LOG" File: D:/INSPER-FILES/Facul/6S/Descomp/Quartus Projects/Entrega Intermediaria/processor.vhd Line: 114
+Info (12128): Elaborating entity "registrador1bit" for hierarchy "processor:CPU|registrador1bit:FREG" File: D:/INSPER-FILES/Facul/6S/Descomp/Quartus Projects/Entrega Intermediaria/processor.vhd Line: 124
 Info (12128): Elaborating entity "decoder3x8" for hierarchy "decoder3x8:DEM" File: D:/INSPER-FILES/Facul/6S/Descomp/Quartus Projects/Entrega Intermediaria/Toplevel.vhd Line: 104
+Info (12128): Elaborating entity "registradorGenerico" for hierarchy "registradorGenerico:REG7" File: D:/INSPER-FILES/Facul/6S/Descomp/Quartus Projects/Entrega Intermediaria/Toplevel.vhd Line: 116
 Info (12128): Elaborating entity "logic7" for hierarchy "logic7:L7Ga" File: D:/INSPER-FILES/Facul/6S/Descomp/Quartus Projects/Entrega Intermediaria/Toplevel.vhd Line: 142
 Info (12128): Elaborating entity "registradorGenerico" for hierarchy "logic7:L7Ga|registradorGenerico:REGD" File: D:/INSPER-FILES/Facul/6S/Descomp/Quartus Projects/Entrega Intermediaria/logic7.vhd Line: 35
 Info (12128): Elaborating entity "conversorHex7Seg" for hierarchy "logic7:L7Ga|conversorHex7Seg:CON" File: D:/INSPER-FILES/Facul/6S/Descomp/Quartus Projects/Entrega Intermediaria/logic7.vhd Line: 44
 Info (12128): Elaborating entity "butBuffer8x" for hierarchy "butBuffer8x:BUF7" File: D:/INSPER-FILES/Facul/6S/Descomp/Quartus Projects/Entrega Intermediaria/Toplevel.vhd Line: 190
 Info (12128): Elaborating entity "butBuffer" for hierarchy "butBuffer:BUF8" File: D:/INSPER-FILES/Facul/6S/Descomp/Quartus Projects/Entrega Intermediaria/Toplevel.vhd Line: 197
-Info (276014): Found 1 instances of uninferred RAM logic
+Info (276014): Found 2 instances of uninferred RAM logic
+    Info (276004): RAM logic "processor:CPU|bancoRegistradoresArqRegMem:R2M|registrador" is uninferred due to inappropriate RAM size File: D:/INSPER-FILES/Facul/6S/Descomp/Quartus Projects/Entrega Intermediaria/bancoRegistradoresArqRegMem.vhd Line: 29
     Info (276007): RAM logic "memoriaRAM:RAM|ram" is uninferred due to asynchronous read logic File: D:/INSPER-FILES/Facul/6S/Descomp/Quartus Projects/Entrega Intermediaria/memoriaRAM.vhd Line: 27
 Warning (13046): Tri-state node(s) do not directly drive top-level pin(s)
     Warning (13048): Converted tri-state node "MEM_MUX_A[7]" into a selector File: D:/INSPER-FILES/Facul/6S/Descomp/Quartus Projects/Entrega Intermediaria/muxGenerico2x1.vhd Line: 10
@@ -922,14 +919,14 @@ Warning (13046): Tri-state node(s) do not directly drive top-level pin(s)
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 1176 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 1235 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 16 input pins
     Info (21059): Implemented 52 output pins
-    Info (21061): Implemented 1108 logic cells
+    Info (21061): Implemented 1167 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 9 warnings
-    Info: Peak virtual memory: 4885 megabytes
-    Info: Processing ended: Wed Sep 29 11:02:10 2021
+    Info: Peak virtual memory: 4873 megabytes
+    Info: Processing ended: Wed Sep 29 17:11:37 2021
     Info: Elapsed time: 00:00:10
-    Info: Total CPU time (on all processors): 00:00:18
+    Info: Total CPU time (on all processors): 00:00:20
 
 

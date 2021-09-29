@@ -32,279 +32,301 @@ architecture assincrona of memoriaROM is
   constant JSR: 	std_logic_vector (3 DOWNTO 0)	:= "1001";
   constant RET: 	std_logic_vector (3 DOWNTO 0)	:= "1010";
   
-  begin
+  constant R0: 	std_logic_vector (1 DOWNTO 0)	:= "00";
+  constant R1: 	std_logic_vector (1 DOWNTO 0)	:= "01";
+  constant R2: 	std_logic_vector (1 DOWNTO 0)	:= "10";
+  constant R3: 	std_logic_vector (1 DOWNTO 0)	:= "11";
+  constant X : 	boolean 								:= TRUE;
+  
+  
+begin
 
-								-- 256 + 0x## se for endereco
-			tmp(0)  	:= LDI & '0' & x"00"; -- Carrega o acumulador com o valor 0
+gravar:	if X then
+			-- CARREGA OS IMEDIATOS
+										--256 + 0x## se for endereco
+			tmp(0)  	:= LDI & R0 & '0' & x"00"; -- Carrega o R0 com o valor 0
+			tmp(1)  	:= LDI & R1 & '0' & x"01"; -- Carrega o R1 com o valor 1
+			tmp(2)  	:= LDI & R2 & '0' & x"09"; -- Carrega o R2 com o valor 9
+			tmp(3)  	:= LDI & R3 & '0' & x"0a"; -- Carrega o R3 com o valor 10
 			
 			
 			-- INICIALIZA A PLACA
 			
-			tmp(1)  	:= STA & '0' & x"00"; -- Armazena o valor do acumulador em MEM[0] (unidade)
-			tmp(2)  	:= STA & '0' & x"01"; -- Armazena o valor do acumulador em MEM[1] (dezena)
-			tmp(3)  	:= STA & '0' & x"02"; -- Armazena o valor do acumulador em MEM[2] (centena)
-			tmp(4)  	:= STA & '0' & x"07"; -- Armazena o valor do acumulador em MEM[7] (milhar)
-			tmp(5)  	:= STA & '0' & x"08"; -- Armazena o valor do acumulador em MEM[8] (dezmilhar)
-			tmp(6)  	:= STA & '0' & x"09"; -- Armazena o valor do acumulador em MEM[9] (centenamilhar)
-			tmp(7)  	:= STA & '0' & x"06"; -- Armazena o valor do acumulador em MEM[6] (flag de inibir)
-			tmp(8)  	:= STA & '0' & x"03"; -- Armazena o valor do acumulador em MEM[3] (constante 0)
-			tmp(9)  	:= STA & '1' & x"00"; -- Armazena o valor do acumulador em MEM[256] (LED07)
-			tmp(10)  := STA & '1' & x"01"; -- Armazena o valor do acumulador em MEM[257] (LED8)
-			tmp(11)  := STA & '1' & x"02"; -- Armazena o valor do acumulador em MEM[258] (LED9)
-			tmp(12)  := STA & '1' & x"20"; -- Armazena o valor do acumulador em MEM[288] (HEX0)
-			tmp(13)  := STA & '1' & x"21"; -- Armazena o valor do acumulador em MEM[289] (HEX1)
-			tmp(14)  := STA & '1' & x"22"; -- Armazena o valor do acumulador em MEM[290] (HEX2)
-			tmp(15)  := STA & '1' & x"23"; -- Armazena o valor do acumulador em MEM[291] (HEX3)
-			tmp(16)  := STA & '1' & x"24"; -- Armazena o valor do acumulador em MEM[292] (HEX4)
-			tmp(17)  := STA & '1' & x"25"; -- Armazena o valor do acumulador em MEM[293] (HEX5)
-			tmp(18)  := LDI & '0' & x"01"; -- Carrega o acumulador com o valor 1
-			tmp(19)  := STA & '0' & x"04"; -- Armazena o valor do acumulador em MEM[4] (constante 1)
-			tmp(20)  := LDI & '0' & x"0a"; -- Carrega o acumulador com o valor 10
-			tmp(21)  := STA & '0' & x"05"; -- Armazena o valor do acumulador em MEM[5] (constante 10)
-			tmp(22)  := LDI & '0' & x"09"; -- Carrega o acumulador com o valor 9
-			tmp(23) 	:= STA & '0' & x"0a"; -- Armazena o valor do acumulador em MEM[10] (unidade   limite)
-			tmp(24) 	:= STA & '0' & x"0b"; -- Armazena o valor do acumulador em MEM[11] (dezena    limite)
-			tmp(25) 	:= STA & '0' & x"0c"; -- Armazena o valor do acumulador em MEM[12] (centena   limite)
-			tmp(26) 	:= STA & '0' & x"0d"; -- Armazena o valor do acumulador em MEM[13] (milhar    limite)
-			tmp(27) 	:= STA & '0' & x"0e"; -- Armazena o valor do acumulador em MEM[14] (dezmilhar limite)
-			tmp(28) 	:= STA & '0' & x"0f"; -- Armazena o valor do acumulador em MEM[15] (cemmilhar limite)
+			tmp(4)  	:= STA & R0 & '0' & x"00"; -- Armazena o valor do R0 em MEM[0] (unidade)
+			tmp(5)  	:= STA & R0 & '0' & x"01"; -- Armazena o valor do R0 em MEM[1] (dezena)
+			tmp(6)  	:= STA & R0 & '0' & x"02"; -- Armazena o valor do R0 em MEM[2] (centena)
+			tmp(7)  	:= STA & R0 & '0' & x"07"; -- Armazena o valor do R0 em MEM[7] (milhar)
+			tmp(8)  	:= STA & R0 & '0' & x"08"; -- Armazena o valor do R0 em MEM[8] (dezmilhar)
+			tmp(9)  	:= STA & R0 & '0' & x"09"; -- Armazena o valor do R0 em MEM[9] (centenamilhar)
+			tmp(10)  := STA & R0 & '0' & x"06"; -- Armazena o valor do R0 em MEM[6] (flag de inibir)
+			tmp(11)  := STA & R0 & '0' & x"03"; -- Armazena o valor do R0 em MEM[3] (constante 0)
+			tmp(12)  := STA & R0 & '1' & x"00"; -- Armazena o valor do R0 em MEM[256] (LED07)
+			tmp(13)  := STA & R0 & '1' & x"01"; -- Armazena o valor do R0 em MEM[257] (LED8)
+			tmp(14)  := STA & R0 & '1' & x"02"; -- Armazena o valor do R0 em MEM[258] (LED9)
+			tmp(15)  := STA & R0 & '1' & x"20"; -- Armazena o valor do R0 em MEM[288] (HEX0)
+			tmp(16)  := STA & R0 & '1' & x"21"; -- Armazena o valor do R0 em MEM[289] (HEX1)
+			tmp(17)  := STA & R0 & '1' & x"22"; -- Armazena o valor do R0 em MEM[290] (HEX2)
+			tmp(18)  := STA & R0 & '1' & x"23"; -- Armazena o valor do R0 em MEM[291] (HEX3)
+			tmp(19)  := STA & R0 & '1' & x"24"; -- Armazena o valor do R0 em MEM[292] (HEX4)
+			tmp(20)  := STA & R0 & '1' & x"25"; -- Armazena o valor do R0 em MEM[293] (HEX5)
+			tmp(21)  := STA & R1 & '0' & x"04"; -- Armazena o valor do R1 em MEM[4] (constante 1)
+			tmp(22)  := STA & R3 & '0' & x"05"; -- Armazena o valor do R3 em MEM[5] (constante 10)
+			tmp(23) 	:= STA & R2 & '0' & x"0a"; -- Armazena o valor do R2 em MEM[10] (unidade   limite)
+			tmp(24) 	:= STA & R2 & '0' & x"0b"; -- Armazena o valor do R2 em MEM[11] (dezena    limite)
+			tmp(25) 	:= STA & R2 & '0' & x"0c"; -- Armazena o valor do R2 em MEM[12] (centena   limite)
+			tmp(26) 	:= STA & R2 & '0' & x"0d"; -- Armazena o valor do R2 em MEM[13] (milhar    limite)
+			tmp(27) 	:= STA & R2 & '0' & x"0e"; -- Armazena o valor do R2 em MEM[14] (dezmilhar limite)
+			tmp(28) 	:= STA & R2 & '0' & x"0f"; -- Armazena o valor do R2 em MEM[15] (cemmilhar limite)
 			
 			
 			-- DEBUG, DESATIVAR PARA ENTREGA FINAL
-			tmp(29)  := JSR & '1' & x"90"; -- Ativa a sub rotina de DEBUG 
+			tmp(29)  := JSR & R0 & '1' & x"90"; -- Ativa a sub rotina de DEBUG 
 			
-			tmp(400) := NOP & '0' & x"00"; -- Inicia DEBUG
-			tmp(401) := LDI & '0' & x"09"; -- Carrega o acumulador com o valor 9
-			tmp(402) := STA & '0' & x"01"; -- Armazena o valor do acumulador em MEM[1] (dezena   )
-			tmp(403) := STA & '0' & x"02"; -- Armazena o valor do acumulador em MEM[2] (centena  )
-			tmp(404) := STA & '0' & x"07"; -- Armazena o valor do acumulador em MEM[7] (milhar   )
-			tmp(405) := STA & '0' & x"08"; -- Armazena o valor do acumulador em MEM[8] (dezmilhar)
-			tmp(406) := STA & '0' & x"09"; -- Armazena o valor do acumulador em MEM[9] (cemmilhar)
-			tmp(407) := RET & '0' & x"00"; -- Retorna do DEBUG
+			tmp(400) := NOP & R0 & '0' & x"00"; -- Inicia DEBUG
+			tmp(401) := LDI & R0 & '0' & x"09"; -- Carrega o R0 com o valor 9
+			tmp(402) := STA & R0 & '0' & x"01"; -- Armazena o valor do R0 em MEM[1] (dezena   )
+			tmp(403) := STA & R0 & '0' & x"02"; -- Armazena o valor do R0 em MEM[2] (centena  )
+			tmp(404) := STA & R0 & '0' & x"07"; -- Armazena o valor do R0 em MEM[7] (milhar   )
+			tmp(405) := STA & R0 & '0' & x"08"; -- Armazena o valor do R0 em MEM[8] (dezmilhar)
+			tmp(406) := STA & R0 & '0' & x"09"; -- Armazena o valor do R0 em MEM[9] (cemmilhar)
+			tmp(407) := RET & R0 & '0' & x"00"; -- Retorna do DEBUG
 			
 			
 			-- LOOP PRINCIPAL
 			
-			tmp(30)  := NOP & '0' & x"00";
-			tmp(31)  := LDA & '0' & x"06"; -- Carrega o acumulador com a leitura da flag de inibir
-			tmp(32)  := CEQ & '0' & x"04"; -- Compara com o valor de MEM[4] (constante 1)
-			tmp(33)  := JEQ & '0' & x"27"; -- Desvia se igual a 0 (flag inativa)
+			tmp(30)  := NOP & R0 & '0' & x"00";
+			tmp(31)  := LDA & R0 & '0' & x"06"; -- Carrega o R0 com a leitura da flag de inibir
+			tmp(32)  := CEQ & R0 & '0' & x"04"; -- Compara com o valor de MEM[4] (constante 1)
+			tmp(33)  := JEQ & R0 & '0' & x"27"; -- Desvia se igual a 0 (flag inativa)
 			
-			tmp(34)  := LDA & '1' & x"60"; -- Carrega o acumulador com a leitura do botão KEY0 (352)
-			tmp(35)  := CEQ & '0' & x"03"; -- Compara com o valor de MEM[3] (constante 0)
-			tmp(36)  := JEQ & '0' & x"27"; -- Desvia se igual a 0 (botão não foi pressionado)
-			tmp(37)  := JSR & '0' & x"3c"; -- O botão foi pressionado, chama a sub-rotina de incremento
-			tmp(38) 	:= NOP & '0' & x"00"; -- Retorno da sub-rotina de incremento
+			tmp(34)  := LDA & R0 & '1' & x"60"; -- Carrega o R0 com a leitura do botão KEY0 (352)
+			tmp(35)  := CEQ & R0 & '0' & x"03"; -- Compara com o valor de MEM[3] (constante 0)
+			tmp(36)  := JEQ & R0 & '0' & x"27"; -- Desvia se igual a 0 (botão não foi pressionado)
+			tmp(37)  := JSR & R0 & '0' & x"3c"; -- O botão foi pressionado, chama a sub-rotina de incremento
+			tmp(38) 	:= NOP & R0 & '0' & x"00"; -- Retorno da sub-rotina de incremento
 			
-			tmp(39)  := LDA & '1' & x"61"; -- Carrega o acumulador com a leitura do botão KEY1 (353)
-			tmp(40)  := CEQ & '0' & x"03"; -- Compara com o valor de MEM[3] (constante 0)
-			tmp(41)  := JEQ & '0' & x"2c"; -- Desvia se igual a 0 (botão não foi pressionado)
-			tmp(42)  := JSR & '0' & x"e6"; -- O botão foi pressionado, chama a sub-rotina de incremento
-			tmp(43)  := NOP & '0' & x"00"; -- Retorno da sub-rotina de incremento
+			tmp(39)  := LDA & R1 & '1' & x"61"; -- Carrega o R1 com a leitura do botão KEY1 (353)
+			tmp(40)  := CEQ & R1 & '0' & x"03"; -- Compara com o valor de MEM[3] (constante 0)
+			tmp(41)  := JEQ & R1 & '0' & x"2c"; -- Desvia se igual a 0 (botão não foi pressionado)
+			tmp(42)  := JSR & R1 & '0' & x"e6"; -- O botão foi pressionado, chama a sub-rotina de incremento
+			tmp(43)  := NOP & R1 & '0' & x"00"; -- Retorno da sub-rotina de incremento
 			
-			tmp(44)  := JSR & '0' & x"be"; -- Chama a sub rotina para verificar o limite
+			tmp(44)  := JSR & R0 & '0' & x"be"; -- Chama a sub rotina para verificar o limite
 			
-			tmp(45)  := LDA & '1' & x"64"; -- Carrega o acumulador com a leitura do botão FPGA_RESEY (356)
-			tmp(46)  := CEQ & '0' & x"04"; -- Compara com o valor de MEM[4] (constante 1)
-			tmp(47)  := JEQ & '0' & x"31"; -- Desvia se igual a 0 (botão não foi pressionado)
-			tmp(48)  := JSR & '0' & x"a0"; -- O botão foi pressionado, chama a sub-rotina de zerar
+			tmp(45)  := LDA & R3 & '1' & x"64"; -- Carrega o R3 com a leitura do botão FPGA_RESEY (356)
+			tmp(46)  := CEQ & R3 & '0' & x"04"; -- Compara com o valor de MEM[4] (constante 1)
+			tmp(47)  := JEQ & R3 & '0' & x"31"; -- Desvia se igual a 0 (botão não foi pressionado)
+			tmp(48)  := JSR & R3 & '0' & x"a0"; -- O botão foi pressionado, chama a sub-rotina de zerar
 			
-			tmp(49)  := JSR & '0' & x"7f"; -- Chama a sub rotina para atualizar as telas
+			tmp(49)  := JSR & R0 & '0' & x"7f"; -- Chama a sub rotina para atualizar as telas
 			
-			tmp(50) 	:= JMP & '0' & x"1e"; -- Fecha o laço principal, volta pra ler os botões de novo
+			tmp(50) 	:= JMP & R0 & '0' & x"1e"; -- Fecha o laço principal, volta pra ler os botões de novo
 			
 			
 			-- SUB ROTINA PARA INCREMENTAR
 			
-			tmp(60) 	:= STA & '1' & x"ff"; -- Limpa a leitura do botão (511)
+			tmp(60) 	:= STA & R0 & '1' & x"ff"; -- Limpa a leitura do botão (511)
 			
-			tmp(61) 	:= LDA & '0' & x"00"; -- Carrega o valor de MEM[0] (unidades)
-			tmp(62) 	:= SOM & '0' & x"04"; -- Soma com a constante em MEM[4] (constante 1)
-			tmp(63) 	:= STA & '0' & x"00"; -- Salva o incremento em MEM[0] (unidades)
-			tmp(64)  := CEQ & '0' & x"05"; -- Compara com o valor de MEM[5] (constante 10)
-			tmp(65)  := JEQ & '0' & x"43"; -- Desvia se igual a 0 (chegou a 10)
-			tmp(66)  := JMP & '0' & x"75";
-			tmp(67)  := LDA & '0' & x"03"; -- Carrega o valor de MEM[3] (constante 0)
-			tmp(68) 	:= STA & '0' & x"00"; -- Armazena o valor no MEM[0] (unidades)
-			tmp(69) 	:= LDA & '0' & x"01"; -- Carrega o valor de MEM[1] (dezenas)
-			tmp(70) 	:= SOM & '0' & x"04"; -- Soma com a constante em MEM[4] (constante 1)
-			tmp(71) 	:= STA & '0' & x"01"; -- Armazena o valor no MEM[1] (dezenas)
-			tmp(72)  := CEQ & '0' & x"05"; -- Compara com o valor de MEM[5] (constante 10)
-			tmp(73)  := JEQ & '0' & x"4b"; -- Desvia se igual a 0 (chegou a 10)
-			tmp(74)  := JMP & '0' & x"75";
-			tmp(75)  := LDA & '0' & x"03"; -- Carrega o valor de MEM[3] (constante 0)
-			tmp(76) 	:= STA & '0' & x"01"; -- Armazena o valor no MEM[1] (dezenas)
-			tmp(77) 	:= LDA & '0' & x"02"; -- Carrega o valor de MEM[2] (centenas)
-			tmp(78) 	:= SOM & '0' & x"04"; -- Soma com a constante em MEM[4] (constante 1)
-			tmp(79) 	:= STA & '0' & x"02"; -- Armazena o valor no MEM[2] (centenas)
-			tmp(80)  := CEQ & '0' & x"05"; -- Compara com o valor de MEM[5] (constante 10)
-			tmp(81)  := JEQ & '0' & x"53"; -- Desvia se igual a 0 (chegou a 10)
-			tmp(82)  := JMP & '0' & x"75";
-			tmp(83)  := LDA & '0' & x"03"; -- Carrega o valor de MEM[3] (constante 0)
-			tmp(84) 	:= STA & '0' & x"02"; -- Armazena o valor no MEM[2] (centenas)
-			tmp(85) 	:= LDA & '0' & x"07"; -- Carrega o valor de MEM[7] (milhares)
-			tmp(86) 	:= SOM & '0' & x"04"; -- Soma com a constante em MEM[4] (constante 1)
-			tmp(87) 	:= STA & '0' & x"07"; -- Armazena o valor no MEM[7] (milhares)
-			tmp(88)  := CEQ & '0' & x"05"; -- Compara com o valor de MEM[5] (constante 10)
-			tmp(89)  := JEQ & '0' & x"5b"; -- Desvia se igual a 0 (chegou a 10)
-			tmp(90)  := JMP & '0' & x"75";
-			tmp(91)  := LDA & '0' & x"03"; -- Carrega o valor de MEM[3] (constante 0)
-			tmp(92) 	:= STA & '0' & x"07"; -- Armazena o valor no MEM[7] (milhares)
-			tmp(93) 	:= LDA & '0' & x"08"; -- Carrega o valor de MEM[8] (dezmilhares)
-			tmp(94) 	:= SOM & '0' & x"04"; -- Soma com a constante em MEM[4] (constante 1)
-			tmp(95) 	:= STA & '0' & x"08"; -- Armazena o valor no MEM[7] (milhares)
-			tmp(96)  := CEQ & '0' & x"05"; -- Compara com o valor de MEM[5] (constante 10)
-			tmp(97)  := JEQ & '0' & x"63"; -- Desvia se igual a 0 (chegou a 10)
-			tmp(98)  := JMP & '0' & x"75";
-			tmp(99)  := LDA & '0' & x"03"; -- Carrega o valor de MEM[3] (constante 0)
-			tmp(100) := STA & '0' & x"08"; -- Armazena o valor no MEM[8] (dezmilhares)
-			tmp(101) := LDA & '0' & x"09"; -- Carrega o valor de MEM[9] (cemmilhares)
-			tmp(102) := SOM & '0' & x"04"; -- Soma com a constante em MEM[4] (constante 1)
-			tmp(103) := STA & '0' & x"09"; -- Armazena o valor no MEM[9] (cemmilhares)
-			tmp(104) := CEQ & '0' & x"05"; -- Compara com o valor de MEM[5] (constante 10)
-			tmp(105) := JEQ & '0' & x"6b"; -- Desvia se igual a 0 (chegou a 10)
-			tmp(106) := JMP & '0' & x"75";
-			tmp(107) := LDA & '0' & x"04"; -- Carrega o valor de MEM[4] (constante 1)
-			tmp(108) := STA & '0' & x"06"; -- Armazena o valor no MEM[6] (ativa flag)
-			tmp(109) := STA & '1' & x"02"; -- Armazena o valor no LED9 (limite atingido)
-			tmp(110) := LDI & '0' & x"09"; -- Insere o imediato 9 pra reverter um estado no contador
-			tmp(111) := STA & '0' & x"00"; -- Armazena o valor do acumulador em MEM[0] (unidade)
-			tmp(112) := STA & '0' & x"01"; -- Armazena o valor do acumulador em MEM[1] (dezena)
-			tmp(113) := STA & '0' & x"02"; -- Armazena o valor do acumulador em MEM[2] (centena)
-			tmp(114) := STA & '0' & x"07"; -- Armazena o valor do acumulador em MEM[7] (milhar)
-			tmp(115) := STA & '0' & x"08"; -- Armazena o valor do acumulador em MEM[8] (dezmilhar)
-			tmp(116) := STA & '0' & x"09"; -- Armazena o valor do acumulador em MEM[9] (centenamilhar)
+			tmp(61) 	:= LDA & R0 & '0' & x"00"; -- Carrega o valor de MEM[0] (unidades)
+			tmp(62) 	:= SOM & R0 & '0' & x"04"; -- Soma com a constante em MEM[4] (constante 1)
+			tmp(63) 	:= STA & R0 & '0' & x"00"; -- Salva o incremento em MEM[0] (unidades)
+			tmp(64)  := CEQ & R0 & '0' & x"05"; -- Compara com o valor de MEM[5] (constante 10)
+			tmp(65)  := JEQ & R0 & '0' & x"43"; -- Desvia se igual a 0 (chegou a 10)
+			tmp(66)  := JMP & R0 & '0' & x"75";
+			tmp(67)  := LDA & R0 & '0' & x"03"; -- Carrega o valor de MEM[3] (constante 0)
+			tmp(68) 	:= STA & R0 & '0' & x"00"; -- Armazena o valor no MEM[0] (unidades)
+			tmp(69) 	:= LDA & R0 & '0' & x"01"; -- Carrega o valor de MEM[1] (dezenas)
+			tmp(70) 	:= SOM & R0 & '0' & x"04"; -- Soma com a constante em MEM[4] (constante 1)
+			tmp(71) 	:= STA & R0 & '0' & x"01"; -- Armazena o valor no MEM[1] (dezenas)
+			tmp(72)  := CEQ & R0 & '0' & x"05"; -- Compara com o valor de MEM[5] (constante 10)
+			tmp(73)  := JEQ & R0 & '0' & x"4b"; -- Desvia se igual a 0 (chegou a 10)
+			tmp(74)  := JMP & R0 & '0' & x"75";
+			tmp(75)  := LDA & R0 & '0' & x"03"; -- Carrega o valor de MEM[3] (constante 0)
+			tmp(76) 	:= STA & R0 & '0' & x"01"; -- Armazena o valor no MEM[1] (dezenas)
+			tmp(77) 	:= LDA & R0 & '0' & x"02"; -- Carrega o valor de MEM[2] (centenas)
+			tmp(78) 	:= SOM & R0 & '0' & x"04"; -- Soma com a constante em MEM[4] (constante 1)
+			tmp(79) 	:= STA & R0 & '0' & x"02"; -- Armazena o valor no MEM[2] (centenas)
+			tmp(80)  := CEQ & R0 & '0' & x"05"; -- Compara com o valor de MEM[5] (constante 10)
+			tmp(81)  := JEQ & R0 & '0' & x"53"; -- Desvia se igual a 0 (chegou a 10)
+			tmp(82)  := JMP & R0 & '0' & x"75";
+			tmp(83)  := LDA & R0 & '0' & x"03"; -- Carrega o valor de MEM[3] (constante 0)
+			tmp(84) 	:= STA & R0 & '0' & x"02"; -- Armazena o valor no MEM[2] (centenas)
+			tmp(85) 	:= LDA & R0 & '0' & x"07"; -- Carrega o valor de MEM[7] (milhares)
+			tmp(86) 	:= SOM & R0 & '0' & x"04"; -- Soma com a constante em MEM[4] (constante 1)
+			tmp(87) 	:= STA & R0 & '0' & x"07"; -- Armazena o valor no MEM[7] (milhares)
+			tmp(88)  := CEQ & R0 & '0' & x"05"; -- Compara com o valor de MEM[5] (constante 10)
+			tmp(89)  := JEQ & R0 & '0' & x"5b"; -- Desvia se igual a 0 (chegou a 10)
+			tmp(90)  := JMP & R0 & '0' & x"75";
+			tmp(91)  := LDA & R0 & '0' & x"03"; -- Carrega o valor de MEM[3] (constante 0)
+			tmp(92) 	:= STA & R0 & '0' & x"07"; -- Armazena o valor no MEM[7] (milhares)
+			tmp(93) 	:= LDA & R0 & '0' & x"08"; -- Carrega o valor de MEM[8] (dezmilhares)
+			tmp(94) 	:= SOM & R0 & '0' & x"04"; -- Soma com a constante em MEM[4] (constante 1)
+			tmp(95) 	:= STA & R0 & '0' & x"08"; -- Armazena o valor no MEM[7] (milhares)
+			tmp(96)  := CEQ & R0 & '0' & x"05"; -- Compara com o valor de MEM[5] (constante 10)
+			tmp(97)  := JEQ & R0 & '0' & x"63"; -- Desvia se igual a 0 (chegou a 10)
+			tmp(98)  := JMP & R0 & '0' & x"75";
+			tmp(99)  := LDA & R0 & '0' & x"03"; -- Carrega o valor de MEM[3] (constante 0)
+			tmp(100) := STA & R0 & '0' & x"08"; -- Armazena o valor no MEM[8] (dezmilhares)
+			tmp(101) := LDA & R0 & '0' & x"09"; -- Carrega o valor de MEM[9] (cemmilhares)
+			tmp(102) := SOM & R0 & '0' & x"04"; -- Soma com a constante em MEM[4] (constante 1)
+			tmp(103) := STA & R0 & '0' & x"09"; -- Armazena o valor no MEM[9] (cemmilhares)
+			tmp(104) := CEQ & R0 & '0' & x"05"; -- Compara com o valor de MEM[5] (constante 10)
+			tmp(105) := JEQ & R0 & '0' & x"6b"; -- Desvia se igual a 0 (chegou a 10)
+			tmp(106) := JMP & R0 & '0' & x"75";
+			tmp(107) := LDA & R2 & '0' & x"04"; -- Carrega o valor de MEM[4] em R2 (constante 1)
+			tmp(108) := LDI & R3 & '0' & x"09"; -- Insere o imediato 9 em R3 para reverter um estado no contador
+			tmp(109) := STA & R2 & '0' & x"06"; -- Armazena o valor no MEM[6] (ativa flag)
+			tmp(110) := STA & R2 & '1' & x"02"; -- Armazena o valor no LED9 (limite atingido)
+			tmp(111) := STA & R3 & '0' & x"00"; -- Armazena o valor do acumulador em MEM[0] (unidade)
+			tmp(112) := STA & R3 & '0' & x"01"; -- Armazena o valor do acumulador em MEM[1] (dezena)
+			tmp(113) := STA & R3 & '0' & x"02"; -- Armazena o valor do acumulador em MEM[2] (centena)
+			tmp(114) := STA & R3 & '0' & x"07"; -- Armazena o valor do acumulador em MEM[7] (milhar)
+			tmp(115) := STA & R3 & '0' & x"08"; -- Armazena o valor do acumulador em MEM[8] (dezmilhar)
+			tmp(116) := STA & R3 & '0' & x"09"; -- Armazena o valor do acumulador em MEM[9] (centenamilhar)
 			
-			tmp(117)	:= RET & '0' & x"00"; -- Retorna da sub-rotina
+			tmp(117)	:= RET & R0 & '0' & x"00"; -- Retorna da sub-rotina
 			
 			
 			-- SUB ROTINA ATUALIZA AS TELAS HEXADECIMAIS
 			
-			tmp(127) := LDA & '0' & x"00"; -- Carrega o valor de MEM[0] (unidade)
-			tmp(128) := STA & '1' & x"20"; -- Armazena o valor no HEX0 (288)
-			tmp(129) := LDA & '0' & x"01"; -- Carrega o valor de MEM[1] (dezenas)
-			tmp(130) := STA & '1' & x"21"; -- Armazena o valor no HEX1 (289)
-			tmp(131) := LDA & '0' & x"02"; -- Carrega o valor de MEM[2] (centenas)
-			tmp(132) := STA & '1' & x"22"; -- Armazena o valor no HEX2 (290)
-			tmp(133) := LDA & '0' & x"07"; -- Carrega o valor de MEM[7] (milhares)
-			tmp(134) := STA & '1' & x"23"; -- Armazena o valor no HEX3 (291)
-			tmp(135) := LDA & '0' & x"08"; -- Carrega o valor de MEM[8] (dezmilhares)
-			tmp(136) := STA & '1' & x"24"; -- Armazena o valor no HEX3 (292)
-			tmp(137) := LDA & '0' & x"09"; -- Carrega o valor de MEM[9] (cemmilhares)
-			tmp(138) := STA & '1' & x"25"; -- Armazena o valor no HEX3 (293)
-
-			tmp(139)	:= RET & '0' & x"00"; -- Retorna da sub-rotina
+			tmp(127) := LDA & R0 & '0' & x"00"; -- Carrega o valor de MEM[0] (unidade)
+			tmp(128) := LDA & R1 & '0' & x"01"; -- Carrega o valor de MEM[1] (dezenas)
+			tmp(129) := LDA & R2 & '0' & x"02"; -- Carrega o valor de MEM[2] (centenas)
+			tmp(130) := STA & R0 & '1' & x"20"; -- Armazena o valor no HEX0 (288)
+			tmp(131) := STA & R1 & '1' & x"21"; -- Armazena o valor no HEX1 (289)
+			tmp(132) := STA & R2 & '1' & x"22"; -- Armazena o valor no HEX2 (290)
+			tmp(133) := LDA & R0 & '0' & x"07"; -- Carrega o valor de MEM[7] (milhares)
+			tmp(134) := LDA & R1 & '0' & x"08"; -- Carrega o valor de MEM[8] (dezmilhares)
+			tmp(135) := LDA & R2 & '0' & x"09"; -- Carrega o valor de MEM[9] (cemmilhares)
+			tmp(136) := STA & R0 & '1' & x"23"; -- Armazena o valor no HEX3 (291)
+			tmp(137) := STA & R1 & '1' & x"24"; -- Armazena o valor no HEX4 (292)
+			tmp(138) := STA & R2 & '1' & x"25"; -- Armazena o valor no HEX5 (293)
+			tmp(139)	:= RET & R0 & '0' & x"00"; -- Retorna da sub-rotina
 			
 			
 			-- SUB ROTINA DE ZERAR A PLACA
 			
-			tmp(160)	:= LDA & '0' & x"03"; -- Carrega o valor de MEM[3] (constante 0)
-			tmp(161)	:= STA & '0' & x"00"; -- Armazena o valor do acumulador em MEM[0] (unidade)
-			tmp(162)	:= STA & '0' & x"01"; -- Armazena o valor do acumulador em MEM[1] (dezena)
-			tmp(163)	:= STA & '0' & x"02"; -- Armazena o valor do acumulador em MEM[2] (centena)
-			tmp(164)	:= STA & '0' & x"07"; -- Armazena o valor do acumulador em MEM[7] (milhar)
-			tmp(165)	:= STA & '0' & x"08"; -- Armazena o valor do acumulador em MEM[8] (dezmilhar)
-			tmp(166)	:= STA & '0' & x"09"; -- Armazena o valor do acumulador em MEM[9] (centenamilhar)
-			tmp(167)	:= STA & '0' & x"06"; -- Armazena o valor do acumulador em MEM[6] (flag de inibir)
-			tmp(168)	:= STA & '1' & x"01"; -- Armazena o valor do acumulador em MEM[257] (LED8)
-			tmp(169)	:= STA & '1' & x"02"; -- Armazena o valor do acumulador em MEM[258] (LED9)
-			tmp(170)	:= RET & '0' & x"00"; -- Retorna da sub-rotina
+			tmp(160)	:= LDA & R0 & '0' & x"03"; -- Carrega o valor de MEM[3] (constante 0)
+			tmp(161)	:= STA & R0 & '0' & x"00"; -- Armazena o valor do R0 em MEM[0] (unidade)
+			tmp(162)	:= STA & R0 & '0' & x"01"; -- Armazena o valor do R0 em MEM[1] (dezena)
+			tmp(163)	:= STA & R0 & '0' & x"02"; -- Armazena o valor do R0 em MEM[2] (centena)
+			tmp(164)	:= STA & R0 & '0' & x"07"; -- Armazena o valor do R0 em MEM[7] (milhar)
+			tmp(165)	:= STA & R0 & '0' & x"08"; -- Armazena o valor do R0 em MEM[8] (dezmilhar)
+			tmp(166)	:= STA & R0 & '0' & x"09"; -- Armazena o valor do R0 em MEM[9] (centenamilhar)
+			tmp(167)	:= STA & R0 & '0' & x"06"; -- Armazena o valor do R0 em MEM[6] (flag de inibir)
+			tmp(168)	:= STA & R0 & '1' & x"01"; -- Armazena o valor do R0 em MEM[257] (LED8)
+			tmp(169)	:= STA & R0 & '1' & x"02"; -- Armazena o valor do R0 em MEM[258] (LED9)
+			tmp(170)	:= RET & R0 & '0' & x"00"; -- Retorna da sub-rotina
 			
 			-- SUB ROTINA CHECA O LIMITE
 			
-			tmp(190)	:= LDA & '0' & x"0a"; -- Carrega o valor de MEM[10] (unidade limite)
-			tmp(191)	:= CEQ & '0' & x"00"; -- Compara com MEM[0] (unidade)
-			tmp(192)	:= JEQ & '0' & x"c2"; -- Desvia se igual a 0 (chegou no limite)
-			tmp(193)	:= JMP & '0' & x"d9";
-			tmp(194)	:= LDA & '0' & x"0b"; -- Carrega o valor de MEM[11] (dezena limite)
-			tmp(195)	:= CEQ & '0' & x"01"; -- Compara com MEM[1] (dezena)
-			tmp(196)	:= JEQ & '0' & x"c6"; -- Desvia se igual a 0 (chegou no limite)
-			tmp(197)	:= JMP & '0' & x"d9";
-			tmp(198)	:= LDA & '0' & x"0c"; -- Carrega o valor de MEM[12] (centena limite)
-			tmp(199)	:= CEQ & '0' & x"02"; -- Compara com MEM[2] (centena)
-			tmp(200)	:= JEQ & '0' & x"ca"; -- Desvia se igual a 0 (chegou no limite)
-			tmp(201)	:= JMP & '0' & x"d9";
-			tmp(202)	:= LDA & '0' & x"0d"; -- Carrega o valor de MEM[13] (milhar limite)
-			tmp(203)	:= CEQ & '0' & x"07"; -- Compara com MEM[7] (milhar)
-			tmp(204)	:= JEQ & '0' & x"ce"; -- Desvia se igual a 0 (chegou no limite)
-			tmp(205)	:= JMP & '0' & x"d9";
-			tmp(206)	:= LDA & '0' & x"0e"; -- Carrega o valor de MEM[14] (dezmilhar limite)
-			tmp(207)	:= CEQ & '0' & x"08"; -- Compara com MEM[8] (dezmilhar)
-			tmp(208)	:= JEQ & '0' & x"d2"; -- Desvia se igual a 0 (chegou no limite)
-			tmp(209)	:= JMP & '0' & x"d9";
-			tmp(210)	:= LDA & '0' & x"0f"; -- Carrega o valor de MEM[15] (centenamilhar limite)
-			tmp(211)	:= CEQ & '0' & x"09"; -- Compara com MEM[9] (centenamilhar)
-			tmp(212)	:= JEQ & '0' & x"d6"; -- Desvia se igual a 0 (chegou no limite)
-			tmp(213)	:= JMP & '0' & x"d9";
+			tmp(190)	:= LDA & R0 & '0' & x"0a"; -- Carrega o valor de MEM[10] (unidade limite)
+			tmp(191)	:= CEQ & R0 & '0' & x"00"; -- Compara com MEM[0] (unidade)
+			tmp(192)	:= JEQ & R0 & '0' & x"c2"; -- Desvia se igual a 0 (chegou no limite)
+			tmp(193)	:= JMP & R0 & '0' & x"d9";
+			tmp(194)	:= LDA & R1 & '0' & x"0b"; -- Carrega o valor de MEM[11] (dezena limite)
+			tmp(195)	:= CEQ & R1 & '0' & x"01"; -- Compara com MEM[1] (dezena)
+			tmp(196)	:= JEQ & R1 & '0' & x"c6"; -- Desvia se igual a 0 (chegou no limite)
+			tmp(197)	:= JMP & R0 & '0' & x"d9";
+			tmp(198)	:= LDA & R2 & '0' & x"0c"; -- Carrega o valor de MEM[12] (centena limite)
+			tmp(199)	:= CEQ & R2 & '0' & x"02"; -- Compara com MEM[2] (centena)
+			tmp(200)	:= JEQ & R2 & '0' & x"ca"; -- Desvia se igual a 0 (chegou no limite)
+			tmp(201)	:= JMP & R0 & '0' & x"d9";
+			tmp(202)	:= LDA & R3 & '0' & x"0d"; -- Carrega o valor de MEM[13] (milhar limite)
+			tmp(203)	:= CEQ & R3 & '0' & x"07"; -- Compara com MEM[7] (milhar)
+			tmp(204)	:= JEQ & R3 & '0' & x"ce"; -- Desvia se igual a 0 (chegou no limite)
+			tmp(205)	:= JMP & R0 & '0' & x"d9";
+			tmp(206)	:= LDA & R0 & '0' & x"0e"; -- Carrega o valor de MEM[14] (dezmilhar limite)
+			tmp(207)	:= CEQ & R0 & '0' & x"08"; -- Compara com MEM[8] (dezmilhar)
+			tmp(208)	:= JEQ & R0 & '0' & x"d2"; -- Desvia se igual a 0 (chegou no limite)
+			tmp(209)	:= JMP & R0 & '0' & x"d9";
+			tmp(210)	:= LDA & R1 & '0' & x"0f"; -- Carrega o valor de MEM[15] (centenamilhar limite)
+			tmp(211)	:= CEQ & R1 & '0' & x"09"; -- Compara com MEM[9] (centenamilhar)
+			tmp(212)	:= JEQ & R1 & '0' & x"d6"; -- Desvia se igual a 0 (chegou no limite)
+			tmp(213)	:= JMP & R0 & '0' & x"d9";
 			
-			tmp(214)	:= LDA & '0' & x"04"; -- Carrega o valor de MEM[4] (constante 1)
-			tmp(215)	:= STA & '0' & x"06"; -- Armazena o valor no MEM[6] (ativa flag)
-			tmp(216)	:= STA & '1' & x"01"; -- Armazena o valor no LED8 (limite atingido)
+			tmp(214)	:= LDA & R2 & '0' & x"04"; -- Carrega o valor de MEM[4] (constante 1)
+			tmp(215)	:= STA & R2 & '0' & x"06"; -- Armazena o valor no MEM[6] (ativa flag)
+			tmp(216)	:= STA & R2 & '1' & x"01"; -- Armazena o valor no LED8 (limite atingido)
 			
-			tmp(217)	:= RET & '0' & x"00"; -- Retorna da sub-rotina
+			tmp(217)	:= RET & R0 & '0' & x"00"; -- Retorna da sub-rotina
 			
 			
 			-- SUB ROTINA BOTÃO 1
 			
-			tmp(230)	:= STA & '1' & x"fe"; -- Limpa a leitura do botão B1 (510)
-			tmp(231) := LDA & '0' & x"04"; -- Carrega o valor da constante em MEM[4] (constante 1)
-			tmp(232)	:= STA & '1' & x"00"; -- Armazena o valor do acumulador em MEM[256] (LED7)
-			tmp(233) := LDA & '1' & x"61"; -- Carrega o acumulador com a leitura do botão KEY1 (353)
-			tmp(234) := CEQ & '0' & x"03"; -- Compara com o valor de MEM[3] (constante 0)
-			tmp(235)	:= LDA & '1' & x"40"; -- Carrega o valor de MEM[320] (SW07)
-			tmp(236) := JEQ & '0' & x"e7"; -- Desvia se igual a 0 (botão não foi pressionado) (231)
-			tmp(237)	:= STA & '0' & x"0a"; -- Salva o valor em MEM[10] (unidade limite)
+			tmp(230)	:= STA & R0 & '1' & x"fe"; -- Limpa a leitura do botão B1 (510)
+			tmp(231) := LDA & R1 & '0' & x"04"; -- Carrega o valor da constante em MEM[4] (constante 1)
+			tmp(232)	:= STA & R1 & '1' & x"00"; -- Armazena o valor do acumulador em MEM[256] (LED7)
+			tmp(233) := LDA & R0 & '1' & x"61"; -- Carrega o acumulador com a leitura do botão KEY1 (353)
+			tmp(234) := CEQ & R0 & '0' & x"03"; -- Compara com o valor de MEM[3] (constante 0)
+			tmp(235)	:= LDA & R2 & '1' & x"40"; -- Carrega o valor de MEM[320] (SW07)
+			tmp(236) := JEQ & R0 & '0' & x"e9"; -- Desvia se igual a 0 (botão não foi pressionado) (233)
+			tmp(237)	:= STA & R2 & '0' & x"0a"; -- Salva o valor em MEM[10] (unidade limite)
 			
-			tmp(238)	:= STA & '1' & x"fe"; -- Limpa a leitura do botão B1 (510)
-			tmp(239) := LDI & '0' & x"02"; -- Carrega o valor imediato 2 (00000010)
-			tmp(240)	:= STA & '1' & x"00"; -- Armazena o valor do acumulador em MEM[256] (LED7)
-			tmp(241) := LDA & '1' & x"61"; -- Carrega o acumulador com a leitura do botão KEY1 (353)
-			tmp(242) := CEQ & '0' & x"03"; -- Compara com o valor de MEM[3] (constante 0)
-			tmp(243)	:= LDA & '1' & x"40"; -- Carrega o valor de MEM[320] (SW07)
-			tmp(244) := JEQ & '0' & x"ef"; -- Desvia se igual a 0 (botão não foi pressionado) (239)
-			tmp(245)	:= STA & '0' & x"0b"; -- Salva o valor em MEM[11] (dezena limite)
+			tmp(238)	:= STA & R0 & '1' & x"fe"; -- Limpa a leitura do botão B1 (510)
+			tmp(239) := LDI & R1 & '0' & x"02"; -- Carrega o valor imediato 2 (00000010)
+			tmp(240)	:= STA & R1 & '1' & x"00"; -- Armazena o valor do acumulador em MEM[256] (LED7)
+			tmp(241) := LDA & R0 & '1' & x"61"; -- Carrega o acumulador com a leitura do botão KEY1 (353)
+			tmp(242) := CEQ & R0 & '0' & x"03"; -- Compara com o valor de MEM[3] (constante 0)
+			tmp(243)	:= LDA & R2 & '1' & x"40"; -- Carrega o valor de MEM[320] (SW07)
+			tmp(244) := JEQ & R0 & '0' & x"f1"; -- Desvia se igual a 0 (botão não foi pressionado) (241)
+			tmp(245)	:= STA & R2 & '0' & x"0b"; -- Salva o valor em MEM[11] (dezena limite)
 			
-			tmp(246)	:= STA & '1' & x"fe"; -- Limpa a leitura do botão B1 (510)
-			tmp(247) := LDI & '0' & x"04"; -- Carrega o valor imediato 4 (00000100)
-			tmp(248)	:= STA & '1' & x"00"; -- Armazena o valor do acumulador em MEM[256] (LED7)
-			tmp(249) := LDA & '1' & x"61"; -- Carrega o acumulador com a leitura do botão KEY1 (353)
-			tmp(250) := CEQ & '0' & x"03"; -- Compara com o valor de MEM[3] (constante 0)
-			tmp(251)	:= LDA & '1' & x"40"; -- Carrega o valor de MEM[320] (SW07)
-			tmp(252) := JEQ & '0' & x"f7"; -- Desvia se igual a 0 (botão não foi pressionado) (247)
-			tmp(253)	:= STA & '0' & x"0c"; -- Salva o valor em MEM[12] (centena limite)
+			tmp(246)	:= STA & R0 & '1' & x"fe"; -- Limpa a leitura do botão B1 (510)
+			tmp(247) := LDI & R1 & '0' & x"04"; -- Carrega o valor imediato 4 (00000100)
+			tmp(248)	:= STA & R1 & '1' & x"00"; -- Armazena o valor do acumulador em MEM[256] (LED7)
+			tmp(249) := LDA & R0 & '1' & x"61"; -- Carrega o acumulador com a leitura do botão KEY1 (353)
+			tmp(250) := CEQ & R0 & '0' & x"03"; -- Compara com o valor de MEM[3] (constante 0)
+			tmp(251)	:= LDA & R2 & '1' & x"40"; -- Carrega o valor de MEM[320] (SW07)
+			tmp(252) := JEQ & R0 & '0' & x"f9"; -- Desvia se igual a 0 (botão não foi pressionado) (249)
+			tmp(253)	:= STA & R2 & '0' & x"0c"; -- Salva o valor em MEM[12] (centena limite)
 			
-			tmp(254)	:= STA & '1' & x"fe"; -- Limpa a leitura do botão B1 (510)
-			tmp(255) := LDI & '0' & x"08"; -- Carrega o valor imediato 8 (00001000)
-			tmp(256)	:= STA & '1' & x"00"; -- Armazena o valor do acumulador em MEM[256] (LED7)
-			tmp(257) := LDA & '1' & x"61"; -- Carrega o acumulador com a leitura do botão KEY1 (353)
-			tmp(258) := CEQ & '0' & x"03"; -- Compara com o valor de MEM[3] (constante 0)
-			tmp(259)	:= LDA & '1' & x"40"; -- Carrega o valor de MEM[320] (SW07)
-			tmp(260) := JEQ & '0' & x"ff"; -- Desvia se igual a 0 (botão não foi pressionado) (255)
-			tmp(261)	:= STA & '0' & x"0d"; -- Salva o valor em MEM[13] (milhar limite)
+			tmp(254)	:= STA & R0 & '1' & x"fe"; -- Limpa a leitura do botão B1 (510)
+			tmp(255) := LDI & R1 & '0' & x"08"; -- Carrega o valor imediato 8 (00001000)
+			tmp(256)	:= STA & R1 & '1' & x"00"; -- Armazena o valor do acumulador em MEM[256] (LED7)
+			tmp(257) := LDA & R0 & '1' & x"61"; -- Carrega o acumulador com a leitura do botão KEY1 (353)
+			tmp(258) := CEQ & R0 & '0' & x"03"; -- Compara com o valor de MEM[3] (constante 0)
+			tmp(259)	:= LDA & R2 & '1' & x"40"; -- Carrega o valor de MEM[320] (SW07)
+			tmp(260) := JEQ & R0 & '1' & x"01"; -- Desvia se igual a 0 (botão não foi pressionado) (257)
+			tmp(261)	:= STA & R2 & '0' & x"0d"; -- Salva o valor em MEM[13] (milhar limite)
 			
-			tmp(262)	:= STA & '1' & x"fe"; -- Limpa a leitura do botão B1 (510)
-			tmp(263) := LDI & '0' & x"10"; -- Carrega o valor imediato 16 (00010000)
-			tmp(264)	:= STA & '1' & x"00"; -- Armazena o valor do acumulador em MEM[256] (LED7)
-			tmp(265) := LDA & '1' & x"61"; -- Carrega o acumulador com a leitura do botão KEY1 (353)
-			tmp(266) := CEQ & '0' & x"03"; -- Compara com o valor de MEM[3] (constante 0)
-			tmp(267)	:= LDA & '1' & x"40"; -- Carrega o valor de MEM[320] (SW07)
-			tmp(268) := JEQ & '1' & x"07"; -- Desvia se igual a 0 (botão não foi pressionado) (263)
-			tmp(269)	:= STA & '0' & x"0e"; -- Salva o valor em MEM[14] (dezmilhar limite)
+			tmp(262)	:= STA & R0 & '1' & x"fe"; -- Limpa a leitura do botão B1 (510)
+			tmp(263) := LDI & R1 & '0' & x"10"; -- Carrega o valor imediato 16 (00010000)
+			tmp(264)	:= STA & R1 & '1' & x"00"; -- Armazena o valor do acumulador em MEM[256] (LED7)
+			tmp(265) := LDA & R0 & '1' & x"61"; -- Carrega o acumulador com a leitura do botão KEY1 (353)
+			tmp(266) := CEQ & R0 & '0' & x"03"; -- Compara com o valor de MEM[3] (constante 0)
+			tmp(267)	:= LDA & R2 & '1' & x"40"; -- Carrega o valor de MEM[320] (SW07)
+			tmp(268) := JEQ & R0 & '1' & x"09"; -- Desvia se igual a 0 (botão não foi pressionado) (265)
+			tmp(269)	:= STA & R2 & '0' & x"0e"; -- Salva o valor em MEM[14] (dezmilhar limite)
 			
-			tmp(270)	:= STA & '1' & x"fe"; -- Limpa a leitura do botão B1 (510)
-			tmp(271) := LDI & '0' & x"20"; -- Carrega o valor imediato 32 (00100000)
-			tmp(272)	:= STA & '1' & x"00"; -- Armazena o valor do acumulador em MEM[256] (LED7)
-			tmp(273) := LDA & '1' & x"61"; -- Carrega o acumulador com a leitura do botão KEY1 (353)
-			tmp(274) := CEQ & '0' & x"03"; -- Compara com o valor de MEM[3] (constante 0)
-			tmp(275)	:= LDA & '1' & x"40"; -- Carrega o valor de MEM[320] (SW07)
-			tmp(276) := JEQ & '1' & x"0f"; -- Desvia se igual a 0 (botão não foi pressionado) (271)
-			tmp(277)	:= STA & '0' & x"0f"; -- Salva o valor em MEM[15] (centenamilhar limite)
+			tmp(270)	:= STA & R0 & '1' & x"fe"; -- Limpa a leitura do botão B1 (510)
+			tmp(271) := LDI & R1 & '0' & x"20"; -- Carrega o valor imediato 32 (00100000)
+			tmp(272)	:= STA & R1 & '1' & x"00"; -- Armazena o valor do acumulador em MEM[256] (LED7)
+			tmp(273) := LDA & R0 & '1' & x"61"; -- Carrega o acumulador com a leitura do botão KEY1 (353)
+			tmp(274) := CEQ & R0 & '0' & x"03"; -- Compara com o valor de MEM[3] (constante 0)
+			tmp(275)	:= LDA & R2 & '1' & x"40"; -- Carrega o valor de MEM[320] (SW07)
+			tmp(276) := JEQ & R0 & '1' & x"11"; -- Desvia se igual a 0 (botão não foi pressionado) (273)
+			tmp(277)	:= STA & R2 & '0' & x"0f"; -- Salva o valor em MEM[15] (centenamilhar limite)
 			
-			tmp(287)	:= STA & '1' & x"fe"; -- Limpa a leitura do botão B1 (510)
-			tmp(288) := LDA & '0' & x"03"; -- Carrega o valor de MEM[3] (constante 0)
-			tmp(289)	:= STA & '1' & x"00"; -- Armazena o valor do acumulador em MEM[256] (LED7)
-			tmp(290)	:= RET & '0' & x"00"; -- Retorna da sub-rotina
+			tmp(287)	:= STA & R0 & '1' & x"fe"; -- Limpa a leitura do botão B1 (510)
+			tmp(288) := LDA & R3 & '0' & x"03"; -- Carrega o valor de MEM[3] (constante 0)
+			tmp(289)	:= STA & R3 & '1' & x"00"; -- Armazena o valor do acumulador em MEM[256] (LED7)
+			tmp(290)	:= RET & R0 & '0' & x"00"; -- Retorna da sub-rotina
 			
+			else
+			
+			tmp(0) := LDI & R0 & '0' & x"05";
+			tmp(1) := LDI & R1 & '0' & x"06";
+			tmp(2) := LDI & R2 & '0' & x"07";
+			tmp(3) := LDI & R3 & '0' & x"08";
+			
+			tmp(4) := STA & R0 & '1' & x"20";
+			tmp(5) := STA & R1 & '1' & x"21";
+			tmp(6) := STA & R2 & '1' & x"22";
+			tmp(7) := STA & R3 & '1' & x"23";
+			
+			
+end if;
 			
 			
         return tmp;
