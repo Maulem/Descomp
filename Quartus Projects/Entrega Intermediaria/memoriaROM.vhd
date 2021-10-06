@@ -44,7 +44,7 @@ begin
 gravar:	if X then
 			-- CARREGA OS IMEDIATOS
 										--256 + 0x## se for endereco
-			tmp(0)  	:= LDI & R0 & '0' & x"00"; -- Carrega o R0 com o valor 0
+			tmp(0)   := LDI & R0 & '0' & x"00"; -- Carrega o R0 com o valor 0
 			tmp(1)   := LDI & R1 & '0' & x"01"; -- Carrega o R1 com o valor 1
 			tmp(2)   := LDI & R2 & '0' & x"09"; -- Carrega o R2 com o valor 9
 			tmp(3)   := LDI & R3 & '0' & x"0a"; -- Carrega o R3 com o valor 10
@@ -154,7 +154,7 @@ gravar:	if X then
 			tmp(74)  := JMP & R0 & '0' & x"75";
 			tmp(75)  := LDA & R0 & '0' & x"03"; -- Carrega o valor de MEM[3] (constante 0)
 			tmp(76)  := STA & R0 & '0' & x"01"; -- Armazena o valor no MEM[1] (dezenas)
-			tmp(77) 	:= LDA & R0 & '0' & x"02"; -- Carrega o valor de MEM[2] (centenas)
+			tmp(77)  := LDA & R0 & '0' & x"02"; -- Carrega o valor de MEM[2] (centenas)
 			tmp(78)  := SOM & R0 & '0' & x"04"; -- Soma com a constante em MEM[4] (constante 1)
 			tmp(79)  := STA & R0 & '0' & x"02"; -- Armazena o valor no MEM[2] (centenas)
 			tmp(80)  := CEQ & R0 & '0' & x"05"; -- Compara com o valor de MEM[5] (constante 10)
