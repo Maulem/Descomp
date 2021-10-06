@@ -38,10 +38,16 @@ architecture arquitetura of Toplevel is
   signal CLK 				: std_logic;
   signal FFP_BUFF0		: std_logic;
   signal FFP_BUFF1		: std_logic;
+  signal FFP_BUFF2		: std_logic;
+  signal FFP_BUFF3		: std_logic;
   signal RST_B0			: std_logic;
   signal RST_B1			: std_logic;
+  signal RST_B2			: std_logic;
+  signal RST_B3			: std_logic;
   signal KEY0_treated	: std_logic;
   signal KEY1_treated	: std_logic;
+  signal KEY2_treated	: std_logic;
+  signal KEY3_treated	: std_logic;
 
 begin
 
@@ -52,6 +58,8 @@ gravar:  if simulacao generate
 				CLK 				<= CLOCK_50;
 				KEY0_treated 	<= KEY(0);
 				KEY1_treated 	<= KEY(1);
+				KEY2_treated 	<= KEY(2);
+				KEY3_treated 	<= KEY(3);
 			else generate
 				CLK 				<= CLOCK_50;
 				
@@ -65,6 +73,18 @@ gravar:  if simulacao generate
 					port map(	clk 		=> CLOCK_50,
 									entrada 	=> (not KEY(1)),
 									saida 	=> KEY1_treated
+								);
+								
+				detectorSub2: work.edgeDetector(bordaSubida)
+					port map(	clk 		=> CLOCK_50,
+									entrada 	=> (not KEY(2)),
+									saida 	=> KEY2_treated
+								);
+								
+				detectorSub3: work.edgeDetector(bordaSubida)
+					port map(	clk 		=> CLOCK_50,
+									entrada 	=> (not KEY(3)),
+									saida 	=> KEY3_treated
 								);
 end generate;
 
@@ -223,14 +243,14 @@ BKY1:	 entity work.butBuffer
 						
 -- O port map completo do Buffer Key2:
 BKY2:	 entity work.butBuffer
-         port map(	data_in 			=> KEY(2),
+         port map(	data_in 			=> FFP_BUFF2,
 							data_out 		=> MEM_MUX_A(0),
 							habilita 		=> PERI_signals(5) and LEDs_signals(2) and DEC_signals(10) and RAM_ADDRESS(5)
 						);
 						
 -- O port map completo do Buffer Key3:
 BKY3:	 entity work.butBuffer
-         port map(	data_in 			=> KEY(3),
+         port map(	data_in 			=> FFP_BUFF3,
 							data_out 		=> MEM_MUX_A(0),
 							habilita 		=> PERI_signals(5) and LEDs_signals(3) and DEC_signals(10) and RAM_ADDRESS(5)
 						);
@@ -259,10 +279,29 @@ FFK1:  entity work.registrador1bit
 							CLK 				=> KEY1_treated,
 							ENABLE			=> '1'
 						);
+						
+-- O port map completo do Flipflop do KEY2:						
+FFK2:  entity work.registrador1bit
+         port map(	DIN	 			=> '1',
+							DOUT	 			=> FFP_BUFF2,
+							RST 				=> RST_B2,
+							CLK 				=> KEY2_treated,
+							ENABLE			=> '1'
+						);
+						
+-- O port map completo do Flipflop do KEY3:						
+FFK3:  entity work.registrador1bit
+         port map(	DIN	 			=> '1',
+							DOUT	 			=> FFP_BUFF3,
+							RST 				=> RST_B3,
+							CLK 				=> KEY3_treated,
+							ENABLE			=> '1'
+						);
 
 RST_B0		<=	RAM_ADDRESS(8) and RAM_ADDRESS(7) and RAM_ADDRESS(6) and RAM_ADDRESS(5) and RAM_ADDRESS(4) and RAM_ADDRESS(3) and RAM_ADDRESS(2) and RAM_ADDRESS(1) and RAM_ADDRESS(0);
 RST_B1		<=	RAM_ADDRESS(8) and RAM_ADDRESS(7) and RAM_ADDRESS(6) and RAM_ADDRESS(5) and RAM_ADDRESS(4) and RAM_ADDRESS(3) and RAM_ADDRESS(2) and RAM_ADDRESS(1) and not(RAM_ADDRESS(0));
-
+RST_B2		<=	RAM_ADDRESS(8) and RAM_ADDRESS(7) and RAM_ADDRESS(6) and RAM_ADDRESS(5) and RAM_ADDRESS(4) and RAM_ADDRESS(3) and RAM_ADDRESS(2) and not(RAM_ADDRESS(1)) and RAM_ADDRESS(0);
+RST_B3		<=	RAM_ADDRESS(8) and RAM_ADDRESS(7) and RAM_ADDRESS(6) and RAM_ADDRESS(5) and RAM_ADDRESS(4) and RAM_ADDRESS(3) and RAM_ADDRESS(2) and not(RAM_ADDRESS(1)) and not(RAM_ADDRESS(0));
 --DEBUG(0) <= FFP_BUFF0;
 --DEBUG(1) <= PERI_signals(5) and LEDs_signals(0) and DEC_signals(10) and (RAM_ADDRESS(5));
 --DEBUG(2) <= MEM_MUX_A(0);

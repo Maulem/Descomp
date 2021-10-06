@@ -1,6 +1,8 @@
 |Toplevel
 CLOCK_50 => edgedetector:gravar:detectorSub0.clk
 CLOCK_50 => edgedetector:gravar:detectorSub1.clk
+CLOCK_50 => edgedetector:gravar:detectorSub2.clk
+CLOCK_50 => edgedetector:gravar:detectorSub3.clk
 CLOCK_50 => memoriaram:RAM.clk
 CLOCK_50 => processor:CPU.CLK
 CLOCK_50 => registradorgenerico:REG7.CLK
@@ -15,8 +17,8 @@ CLOCK_50 => logic7:L7Gf.clk
 FPGA_RESET_N => butbuffer:BKYR.data_in
 KEY[0] => edgedetector:gravar:detectorSub0.entrada
 KEY[1] => edgedetector:gravar:detectorSub1.entrada
-KEY[2] => butbuffer:BKY2.data_in
-KEY[3] => butbuffer:BKY3.data_in
+KEY[2] => edgedetector:gravar:detectorSub2.entrada
+KEY[3] => edgedetector:gravar:detectorSub3.entrada
 SW[0] => butbuffer8x:BUF7.data_in[0]
 SW[1] => butbuffer8x:BUF7.data_in[1]
 SW[2] => butbuffer8x:BUF7.data_in[2]
@@ -89,6 +91,20 @@ saida <= saida.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |Toplevel|edgeDetector:\gravar:detectorSub1
+clk => saidaQ.CLK
+entrada => saida.IN1
+entrada => saidaQ.DATAIN
+saida <= saida.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Toplevel|edgeDetector:\gravar:detectorSub2
+clk => saidaQ.CLK
+entrada => saida.IN1
+entrada => saidaQ.DATAIN
+saida <= saida.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Toplevel|edgeDetector:\gravar:detectorSub3
 clk => saidaQ.CLK
 entrada => saida.IN1
 entrada => saidaQ.DATAIN
@@ -1599,6 +1615,22 @@ RST => DOUT~reg0.ACLR
 
 
 |Toplevel|registrador1bit:FFK1
+DIN => DOUT~reg0.DATAIN
+DOUT <= DOUT~reg0.DB_MAX_OUTPUT_PORT_TYPE
+ENABLE => DOUT~reg0.ENA
+CLK => DOUT~reg0.CLK
+RST => DOUT~reg0.ACLR
+
+
+|Toplevel|registrador1bit:FFK2
+DIN => DOUT~reg0.DATAIN
+DOUT <= DOUT~reg0.DB_MAX_OUTPUT_PORT_TYPE
+ENABLE => DOUT~reg0.ENA
+CLK => DOUT~reg0.CLK
+RST => DOUT~reg0.ACLR
+
+
+|Toplevel|registrador1bit:FFK3
 DIN => DOUT~reg0.DATAIN
 DOUT <= DOUT~reg0.DB_MAX_OUTPUT_PORT_TYPE
 ENABLE => DOUT~reg0.ENA
