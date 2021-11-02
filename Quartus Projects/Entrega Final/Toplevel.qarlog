@@ -1,0 +1,35 @@
+Quartus Prime Archive log --	D:/INSPER-FILES/Facul/6S/Descomp/Quartus Projects/Entrega Final/Toplevel.qarlog
+
+Archive:	D:/INSPER-FILES/Facul/6S/Descomp/Quartus Projects/Entrega Final/Toplevel.qar
+Date:		Tue Oct 19 14:24:13 2021
+Quartus Prime		20.1.0 Build 711 06/05/2020 SJ Lite Edition
+
+	=========== Files Selected: ===========
+D:/INSPER-FILES/Facul/6S/Descomp/Quartus Projects/Entrega Final/Decoder.vhd
+D:/INSPER-FILES/Facul/6S/Descomp/Quartus Projects/Entrega Final/LogicBlock.vhd
+D:/INSPER-FILES/Facul/6S/Descomp/Quartus Projects/Entrega Final/Toplevel.qpf
+D:/INSPER-FILES/Facul/6S/Descomp/Quartus Projects/Entrega Final/Toplevel.qsf
+D:/INSPER-FILES/Facul/6S/Descomp/Quartus Projects/Entrega Final/Toplevel.vhd
+D:/INSPER-FILES/Facul/6S/Descomp/Quartus Projects/Entrega Final/ULASomaSub.vhd
+D:/INSPER-FILES/Facul/6S/Descomp/Quartus Projects/Entrega Final/bancoRegistradoresArqRegMem.vhd
+D:/INSPER-FILES/Facul/6S/Descomp/Quartus Projects/Entrega Final/butBuffer.vhd
+D:/INSPER-FILES/Facul/6S/Descomp/Quartus Projects/Entrega Final/butBuffer8x.vhd
+D:/INSPER-FILES/Facul/6S/Descomp/Quartus Projects/Entrega Final/conversorHex7Seg.vhd
+D:/INSPER-FILES/Facul/6S/Descomp/Quartus Projects/Entrega Final/decoder3x8.vhd
+D:/INSPER-FILES/Facul/6S/Descomp/Quartus Projects/Entrega Final/edgeDetector.vhd
+D:/INSPER-FILES/Facul/6S/Descomp/Quartus Projects/Entrega Final/logic7.vhd
+D:/INSPER-FILES/Facul/6S/Descomp/Quartus Projects/Entrega Final/memoriaRAM.vhd
+D:/INSPER-FILES/Facul/6S/Descomp/Quartus Projects/Entrega Final/memoriaROM.vhd
+D:/INSPER-FILES/Facul/6S/Descomp/Quartus Projects/Entrega Final/muxGenerico2x1.vhd
+D:/INSPER-FILES/Facul/6S/Descomp/Quartus Projects/Entrega Final/muxGenerico2x1bit.vhd
+D:/INSPER-FILES/Facul/6S/Descomp/Quartus Projects/Entrega Final/muxGenerico4x1.vhd
+D:/INSPER-FILES/Facul/6S/Descomp/Quartus Projects/Entrega Final/output_files/divisorGenerico.vhd
+D:/INSPER-FILES/Facul/6S/Descomp/Quartus Projects/Entrega Final/processor.vhd
+D:/INSPER-FILES/Facul/6S/Descomp/Quartus Projects/Entrega Final/registrador1bit.vhd
+D:/INSPER-FILES/Facul/6S/Descomp/Quartus Projects/Entrega Final/registradorGenerico.vhd
+D:/INSPER-FILES/Facul/6S/Descomp/Quartus Projects/Entrega Final/somaConstante.vhd
+c:/intelfpga_lite/20.1/quartus/bin64/assignment_defaults.qdf
+	======= Total: 24 files to archive =======
+
+	================ Status: ===============
+All files archived successfully.
