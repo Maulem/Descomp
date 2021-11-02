@@ -1,0 +1,85 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+
+entity Aula13 is
+  generic   (
+    larguraDados     : natural :=  32;
+    larguraAddress   : natural :=  32
+  );
+  port   (
+    -- Input ports
+	 clk        :  in   std_logic;
+    rd_wr      :  in   std_logic;
+    ula_op     :  in   std_logic_vector(2 downto 0);
+	 
+
+    -- Output ports
+    opcode_out :  out  std_logic_vector(5 downto 0);
+    funct_out  :  out  std_logic_vector(5 downto 0)
+  );
+end entity;
+
+
+architecture mips of Aula13 is
+
+
+  signal pc_som  : std_logic_vector(larguraAddress-1 downto 0);
+  signal som_pc  : std_logic_vector(larguraAddress-1 downto 0);
+  signal inst    : std_logic_vector(larguraAddress-1 downto 0);
+  signal reg_ulaA: std_logic_vector(larguraDados-1 downto 0);
+  signal reg_ulaB: std_logic_vector(larguraDados-1 downto 0);
+  signal ula_reg : std_logic_vector(larguraDados-1 downto 0);
+  
+  signal RsAddr  : std_logic_vector(25 downto 21);
+  signal RtAddr  : std_logic_vector(20 downto 16);
+  signal RdAddr  : std_logic_vector(15 downto 11);
+  signal flagZero: std_logic; -- Inutilizado
+  
+begin
+
+-- O port map completo do Somador:
+SOM: entity work.somadorGenerico       generic map (larguraDados => larguraDados)
+        port map (   entradaA    => pc_som,
+		               entradaB    => x"00000004",
+							saida       => som_pc
+						);
+						
+-- O port map completo do Program Counter:
+PC:  entity work.registradorGenerico   generic map (larguraDados => larguraDados)
+        port map (   DIN         => som_pc,
+		               DOUT        => pc_som,
+							ENABLE      => '1',
+							CLK         => clk,
+							RST         => '0'
+						);
+						
+-- O port map completo do Banco de Registradores:	
+BRG: entity work.bancoRegistradores    generic map (larguraDados => larguraDados)
+        port map (   clk         => clk,
+		               enderecoA   => RsAddr,
+							enderecoB   => RtAddr,
+							enderecoC   => RdAddr,
+							dadoEscritaC=> ula_reg,
+							escreveC    => rd_wr,
+							saidaA      => reg_ulaA,
+							saidaB      => reg_ulaB
+						);	
+
+-- O port map completo da ULA:		
+ULA: entity work.ULA                   generic map (larguraDados => larguraDados)
+        port map (   entradaA    => reg_ulaA,
+		               entradaB    => reg_ulaB,
+							saida       => ula_reg,
+							seletor     => ula_op,
+							flagZero    => flagZero
+						);	
+						
+
+	
+
+
+UCopcode <= inst(31 downto 26);
+UCfunct  <= inst(5 downto 0);
+										 
+end architecture;
