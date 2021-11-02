@@ -18,11 +18,11 @@ entity Aula13 is
     -- Output ports
     opcode_out :  out  std_logic_vector(5 downto 0);
     funct_out  :  out  std_logic_vector(5 downto 0);
-	 debug      :  out  std_logic_vector(larguraDados-1 downto 0);
-	 debug2     :  out  std_logic_vector(larguraDados-1 downto 0);
-	 debug3     :  out  std_logic_vector(4 downto 0);
-	 debug4     :  out  std_logic_vector(4 downto 0);
-	 ULA_out    :  out  std_logic_vector(larguraDados-1 downto 0)
+    debug      :  out  std_logic_vector(larguraDados-1 downto 0);
+    debug2     :  out  std_logic_vector(larguraDados-1 downto 0);
+    debug3     :  out  std_logic_vector(4 downto 0);
+    debug4     :  out  std_logic_vector(4 downto 0);
+    ULA_out    :  out  std_logic_vector(larguraDados-1 downto 0)
   );
 end entity;
 
