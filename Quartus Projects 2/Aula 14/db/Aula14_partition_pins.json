@@ -1,0 +1,297 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "opcode_out[0]",
+					"strict" : false
+				},
+				{
+					"name" : "opcode_out[1]",
+					"strict" : false
+				},
+				{
+					"name" : "opcode_out[3]",
+					"strict" : false
+				},
+				{
+					"name" : "opcode_out[5]",
+					"strict" : false
+				},
+				{
+					"name" : "debug[0]",
+					"strict" : false
+				},
+				{
+					"name" : "debug[1]",
+					"strict" : false
+				},
+				{
+					"name" : "debug[2]",
+					"strict" : false
+				},
+				{
+					"name" : "debug[3]",
+					"strict" : false
+				},
+				{
+					"name" : "debug[4]",
+					"strict" : false
+				},
+				{
+					"name" : "debug[5]",
+					"strict" : false
+				},
+				{
+					"name" : "debug[6]",
+					"strict" : false
+				},
+				{
+					"name" : "debug[7]",
+					"strict" : false
+				},
+				{
+					"name" : "debug[8]",
+					"strict" : false
+				},
+				{
+					"name" : "debug[9]",
+					"strict" : false
+				},
+				{
+					"name" : "debug[10]",
+					"strict" : false
+				},
+				{
+					"name" : "debug[11]",
+					"strict" : false
+				},
+				{
+					"name" : "debug[12]",
+					"strict" : false
+				},
+				{
+					"name" : "debug[13]",
+					"strict" : false
+				},
+				{
+					"name" : "debug[14]",
+					"strict" : false
+				},
+				{
+					"name" : "debug[15]",
+					"strict" : false
+				},
+				{
+					"name" : "debug[16]",
+					"strict" : false
+				},
+				{
+					"name" : "debug[17]",
+					"strict" : false
+				},
+				{
+					"name" : "debug[18]",
+					"strict" : false
+				},
+				{
+					"name" : "debug[19]",
+					"strict" : false
+				},
+				{
+					"name" : "debug[20]",
+					"strict" : false
+				},
+				{
+					"name" : "debug[21]",
+					"strict" : false
+				},
+				{
+					"name" : "debug[22]",
+					"strict" : false
+				},
+				{
+					"name" : "debug[23]",
+					"strict" : false
+				},
+				{
+					"name" : "debug[24]",
+					"strict" : false
+				},
+				{
+					"name" : "debug[25]",
+					"strict" : false
+				},
+				{
+					"name" : "debug[26]",
+					"strict" : false
+				},
+				{
+					"name" : "debug[27]",
+					"strict" : false
+				},
+				{
+					"name" : "debug[28]",
+					"strict" : false
+				},
+				{
+					"name" : "debug[29]",
+					"strict" : false
+				},
+				{
+					"name" : "debug[30]",
+					"strict" : false
+				},
+				{
+					"name" : "debug[31]",
+					"strict" : false
+				},
+				{
+					"name" : "debug2[0]",
+					"strict" : false
+				},
+				{
+					"name" : "debug3[0]",
+					"strict" : false
+				},
+				{
+					"name" : "debug3[1]",
+					"strict" : false
+				},
+				{
+					"name" : "debug3[2]",
+					"strict" : false
+				},
+				{
+					"name" : "debug3[3]",
+					"strict" : false
+				},
+				{
+					"name" : "debug3[4]",
+					"strict" : false
+				},
+				{
+					"name" : "debug3[5]",
+					"strict" : false
+				},
+				{
+					"name" : "debug3[6]",
+					"strict" : false
+				},
+				{
+					"name" : "debug3[7]",
+					"strict" : false
+				},
+				{
+					"name" : "debug3[8]",
+					"strict" : false
+				},
+				{
+					"name" : "debug3[9]",
+					"strict" : false
+				},
+				{
+					"name" : "debug3[10]",
+					"strict" : false
+				},
+				{
+					"name" : "debug3[11]",
+					"strict" : false
+				},
+				{
+					"name" : "debug3[12]",
+					"strict" : false
+				},
+				{
+					"name" : "debug3[13]",
+					"strict" : false
+				},
+				{
+					"name" : "debug3[14]",
+					"strict" : false
+				},
+				{
+					"name" : "debug3[15]",
+					"strict" : false
+				},
+				{
+					"name" : "debug3[16]",
+					"strict" : false
+				},
+				{
+					"name" : "debug3[17]",
+					"strict" : false
+				},
+				{
+					"name" : "debug3[18]",
+					"strict" : false
+				},
+				{
+					"name" : "debug3[19]",
+					"strict" : false
+				},
+				{
+					"name" : "debug3[20]",
+					"strict" : false
+				},
+				{
+					"name" : "debug3[21]",
+					"strict" : false
+				},
+				{
+					"name" : "debug3[22]",
+					"strict" : false
+				},
+				{
+					"name" : "debug3[23]",
+					"strict" : false
+				},
+				{
+					"name" : "debug3[24]",
+					"strict" : false
+				},
+				{
+					"name" : "debug3[25]",
+					"strict" : false
+				},
+				{
+					"name" : "debug3[26]",
+					"strict" : false
+				},
+				{
+					"name" : "debug3[27]",
+					"strict" : false
+				},
+				{
+					"name" : "debug3[28]",
+					"strict" : false
+				},
+				{
+					"name" : "debug3[29]",
+					"strict" : false
+				},
+				{
+					"name" : "debug3[30]",
+					"strict" : false
+				},
+				{
+					"name" : "debug3[31]",
+					"strict" : false
+				},
+				{
+					"name" : "debug4[3]",
+					"strict" : false
+				},
+				{
+					"name" : "ULA_out[1]",
+					"strict" : false
+				},
+				{
+					"name" : "CLOCK_50",
+					"strict" : false
+				}
+			]
+		}
+	]
+}
