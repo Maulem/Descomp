@@ -16,9 +16,34 @@ end entity;
 architecture assincrona OF ROM IS
   type blocoMemoria IS ARRAY(0 TO 2**memoryAddrWidth - 1) OF std_logic_vector(dataWidth-1 DOWNTO 0);
   
+  --OPCODE
   constant LW    : std_logic_vector(5 downto 0) := "100011";
   constant SW    : std_logic_vector(5 downto 0) := "101011";
   constant BEQ   : std_logic_vector(5 downto 0) := "000100";
+  constant RIN   : std_logic_vector(5 downto 0) := "000000";
+  
+  --FUNCT
+  constant SOM   : std_logic_vector(5 downto 0) := "100000";
+  constant SUB   : std_logic_vector(5 downto 0) := "100010";
+  constant ANDD  : std_logic_vector(5 downto 0) := "100100";
+  constant ORR   : std_logic_vector(5 downto 0) := "100101";
+  constant SLT   : std_logic_vector(5 downto 0) := "101010";
+  
+  --REG
+  constant Z0    : std_logic_vector(4 downto 0) := "00000";
+  constant T0    : std_logic_vector(4 downto 0) := "01000";
+  constant T1    : std_logic_vector(4 downto 0) := "01001";
+  constant T2    : std_logic_vector(4 downto 0) := "01010";
+  constant T3    : std_logic_vector(4 downto 0) := "01011";
+  constant T4    : std_logic_vector(4 downto 0) := "01100";
+  constant T5    : std_logic_vector(4 downto 0) := "01101";
+  constant T6    : std_logic_vector(4 downto 0) := "01110";
+  
+  --CONST
+  constant SHAMT : std_logic_vector(4 downto 0) := "00000";
+  constant IM1   : std_logic_vector(15 downto 0) := "0000000000000001";
+  constant IM9   : std_logic_vector(15 downto 0) := "0000000000000010";
+
   
   function initMemory
         return blocoMemoria is variable tmp : blocoMemoria := (others => (others => '0'));
@@ -26,12 +51,15 @@ architecture assincrona OF ROM IS
 		  -- opcode Rs    Rt    Rd    shamt funct
 		  -- 000000 01001 01000 01010 00000 100000
         -- 6 bit  5 bit 5 bit 5 bit 5 bit 6 bit
-        tmp(0) := SW & "01000" & "01001" & "00000" & "00000" & "000000";
-        tmp(1) := "000000" & "00000" & "00000" & "00000" & "00000" & "000000";
-        tmp(2) := LW & "01000" & "01010" & "00000" & "00000" & "000000";
-        tmp(3) := 32x"00";
-        tmp(4) := 32x"00";
-        tmp(5) := 32x"00";
+		  
+		  tmp(0) := RIN & T1 & T1 & T0 & SHAMT & SOM;
+		  tmp(1) := RIN & T0 & T2 & T0 & SHAMT & SUB;
+		  tmp(2) := SW  & T3 & T0 & IM1;
+		  tmp(3) := BEQ & T1 & T1 & IM1;
+		  tmp(4) := 32x"00";
+        tmp(5) := LW  & T3 & T0 & IM1;
+		  
+       
         tmp(6) := 32x"00";
         tmp(7) := 32x"00";
         return tmp;

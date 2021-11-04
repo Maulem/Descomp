@@ -19,7 +19,7 @@
 -- the top level entity of the current Quartus project .The user can use this   
 -- testbench to simulate his design using a third-party simulation tool .       
 -- *****************************************************************************
--- Generated on "11/03/2021 02:32:28"
+-- Generated on "11/04/2021 02:25:55"
                                                              
 -- Vhdl Test Bench(with test vectors) for design  :          Aula14
 -- 
@@ -35,22 +35,24 @@ ARCHITECTURE Aula14_arch OF Aula14_vhd_vec_tst IS
 -- constants                                                 
 -- signals                                                   
 SIGNAL CLOCK_50 : STD_LOGIC;
-SIGNAL debug : STD_LOGIC_VECTOR(31 DOWNTO 0);
-SIGNAL debug2 : STD_LOGIC_VECTOR(31 DOWNTO 0);
-SIGNAL debug3 : STD_LOGIC_VECTOR(31 DOWNTO 0);
-SIGNAL debug4 : STD_LOGIC_VECTOR(4 DOWNTO 0);
+SIGNAL entradaBGRW : STD_LOGIC_VECTOR(31 DOWNTO 0);
 SIGNAL funct_out : STD_LOGIC_VECTOR(5 DOWNTO 0);
 SIGNAL opcode_out : STD_LOGIC_VECTOR(5 DOWNTO 0);
+SIGNAL PC_OUT : STD_LOGIC_VECTOR(31 DOWNTO 0);
+SIGNAL saida2BGR : STD_LOGIC_VECTOR(31 DOWNTO 0);
+SIGNAL ULA_A : STD_LOGIC_VECTOR(31 DOWNTO 0);
+SIGNAL ULA_B : STD_LOGIC_VECTOR(31 DOWNTO 0);
 SIGNAL ULA_out : STD_LOGIC_VECTOR(31 DOWNTO 0);
 COMPONENT Aula14
 	PORT (
 	CLOCK_50 : IN STD_LOGIC;
-	debug : OUT STD_LOGIC_VECTOR(31 DOWNTO 0);
-	debug2 : OUT STD_LOGIC_VECTOR(31 DOWNTO 0);
-	debug3 : OUT STD_LOGIC_VECTOR(31 DOWNTO 0);
-	debug4 : OUT STD_LOGIC_VECTOR(4 DOWNTO 0);
+	entradaBGRW : OUT STD_LOGIC_VECTOR(31 DOWNTO 0);
 	funct_out : OUT STD_LOGIC_VECTOR(5 DOWNTO 0);
 	opcode_out : OUT STD_LOGIC_VECTOR(5 DOWNTO 0);
+	PC_OUT : OUT STD_LOGIC_VECTOR(31 DOWNTO 0);
+	saida2BGR : OUT STD_LOGIC_VECTOR(31 DOWNTO 0);
+	ULA_A : OUT STD_LOGIC_VECTOR(31 DOWNTO 0);
+	ULA_B : OUT STD_LOGIC_VECTOR(31 DOWNTO 0);
 	ULA_out : OUT STD_LOGIC_VECTOR(31 DOWNTO 0)
 	);
 END COMPONENT;
@@ -59,12 +61,13 @@ BEGIN
 	PORT MAP (
 -- list connections between master ports and signals
 	CLOCK_50 => CLOCK_50,
-	debug => debug,
-	debug2 => debug2,
-	debug3 => debug3,
-	debug4 => debug4,
+	entradaBGRW => entradaBGRW,
 	funct_out => funct_out,
 	opcode_out => opcode_out,
+	PC_OUT => PC_OUT,
+	saida2BGR => saida2BGR,
+	ULA_A => ULA_A,
+	ULA_B => ULA_B,
 	ULA_out => ULA_out
 	);
 
