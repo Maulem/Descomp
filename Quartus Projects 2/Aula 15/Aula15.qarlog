@@ -1,0 +1,26 @@
+Quartus Prime Archive log --	D:/INSPER-FILES/Facul/6S/Descomp/Quartus Projects 2/Aula 15/Aula15.qarlog
+
+Archive:	D:/INSPER-FILES/Facul/6S/Descomp/Quartus Projects 2/Aula 15/Aula15.qar
+Date:		Fri Nov 05 02:39:15 2021
+Quartus Prime		20.1.0 Build 711 06/05/2020 SJ Lite Edition
+
+	=========== Files Selected: ===========
+D:/INSPER-FILES/Facul/6S/Descomp/Quartus Projects 2/Aula 15/Aula15.qpf
+D:/INSPER-FILES/Facul/6S/Descomp/Quartus Projects 2/Aula 15/Aula15.qsf
+D:/INSPER-FILES/Facul/6S/Descomp/Quartus Projects 2/Aula 15/Aula15.vhd
+D:/INSPER-FILES/Facul/6S/Descomp/Quartus Projects 2/Aula 15/Decoder.vhd
+D:/INSPER-FILES/Facul/6S/Descomp/Quartus Projects 2/Aula 15/RAMMIPS.vhd
+D:/INSPER-FILES/Facul/6S/Descomp/Quartus Projects 2/Aula 15/ROM.vhd
+D:/INSPER-FILES/Facul/6S/Descomp/Quartus Projects 2/Aula 15/ULA.vhd
+D:/INSPER-FILES/Facul/6S/Descomp/Quartus Projects 2/Aula 15/Waveform.vwf
+D:/INSPER-FILES/Facul/6S/Descomp/Quartus Projects 2/Aula 15/bancoRegistradores.vhd
+D:/INSPER-FILES/Facul/6S/Descomp/Quartus Projects 2/Aula 15/deslocadorSinalGenerico.vhd
+D:/INSPER-FILES/Facul/6S/Descomp/Quartus Projects 2/Aula 15/estensorSinalGenerico.vhd
+D:/INSPER-FILES/Facul/6S/Descomp/Quartus Projects 2/Aula 15/muxGenerico2x1.vhd
+D:/INSPER-FILES/Facul/6S/Descomp/Quartus Projects 2/Aula 15/registradorGenerico.vhd
+D:/INSPER-FILES/Facul/6S/Descomp/Quartus Projects 2/Aula 15/somadorGenerico.vhd
+c:/intelfpga_lite/20.1/quartus/bin64/assignment_defaults.qdf
+	======= Total: 15 files to archive =======
+
+	================ Status: ===============
+All files archived successfully.

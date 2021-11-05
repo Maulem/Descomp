@@ -10,7 +10,7 @@ z2
 cModel Technology
 Z0 dD:/INSPER-FILES/Facul/6S/Descomp/Quartus Projects 2/Aula 15/simulation/qsim
 Eaula15
-Z1 w1636057448
+Z1 w1636090688
 Z2 DPx8 cyclonev 18 cyclonev_atom_pack 0 22 ^K2eeK[IVbX]]MLcdOEI91
 Z3 DPx8 cyclonev 19 cyclonev_components 0 22 GFL[QAd@dAZF:`jjOGn9>2
 Z4 DPx12 altera_lnsim 23 altera_lnsim_components 0 22 3dzZ?YU_4FC5UU0cTXRET1
@@ -20,7 +20,7 @@ Z7 DPx4 ieee 12 vital_timing 0 22 J>EBealN09f8GzldA[z2>3
 Z8 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
 Z9 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
 Z10 DPx6 altera 28 altera_primitives_components 0 22 VSD=32;3391kSOd?PDZYj3
-!i122 0
+!i122 38
 R0
 Z11 8Aula15.vho
 Z12 FAula15.vho
@@ -30,14 +30,14 @@ VGSaH0o1XoJViddSk9gGR<0
 !s100 VoJ:2zfjBaeL7n8UnNPCa0
 Z13 OV;C;2020.1;71
 32
-Z14 !s110 1636057449
+!s110 1636090689
 !i10b 1
-Z15 !s108 1636057449.000000
-Z16 !s90 -work|work|Aula15.vho|
-Z17 !s107 Aula15.vho|
+Z14 !s108 1636090689.000000
+Z15 !s90 -work|work|Aula15.vho|
+Z16 !s107 Aula15.vho|
 !i113 1
-Z18 o-work work
-Z19 tExplicit 1 CvgOpt 0
+Z17 o-work work
+Z18 tExplicit 1 CvgOpt 0
 Astructure
 R2
 R3
@@ -49,59 +49,59 @@ R8
 R9
 R10
 DEx4 work 6 aula15 0 22 GSaH0o1XoJViddSk9gGR<0
-!i122 0
-l7052
-L53 68091
-VVV4I[aVbH;=Sg0:Y:b3aF1
-!s100 ^@RYZiNXL0JSW97AEFdG82
+!i122 38
+l7140
+L53 68942
+VSRlYU6kM9l:EnjaQ6>j9X1
+!s100 2IcD[Z;JI;nda[fJQDgXk3
 R13
 32
-R14
+!s110 1636090690
 !i10b 1
+R14
 R15
 R16
-R17
 !i113 1
+R17
 R18
-R19
 Eaula15_vhd_vec_tst
-Z20 w1636057447
+Z19 w1636090687
 R8
 R9
-!i122 1
+!i122 39
 R0
-Z21 8Waveform.vwf.vht
-Z22 FWaveform.vwf.vht
+Z20 8Waveform.vwf.vht
+Z21 FWaveform.vwf.vht
 l0
 L32 1
 Vh_Phm1dF<BmHhB]:Q@zh>1
 !s100 ;nNbY[4Ie9[LFm^^e?V4D3
 R13
 32
-Z23 !s110 1636057451
+Z22 !s110 1636090691
 !i10b 1
-Z24 !s108 1636057450.000000
-Z25 !s90 -work|work|Waveform.vwf.vht|
-!s107 Waveform.vwf.vht|
+Z23 !s108 1636090691.000000
+Z24 !s90 -work|work|Waveform.vwf.vht|
+Z25 !s107 Waveform.vwf.vht|
 !i113 1
+R17
 R18
-R19
 Aaula15_arch
 R8
 R9
-DEx4 work 18 aula15_vhd_vec_tst 0 22 h_Phm1dF<BmHhB]:Q@zh>1
-!i122 1
+Z26 DEx4 work 18 aula15_vhd_vec_tst 0 22 h_Phm1dF<BmHhB]:Q@zh>1
+!i122 39
 l59
-L34 65
-VbARkf027]5RBMVC0KZoE60
-!s100 a4HG[WJPTdzlJCb;RFId32
+Z27 L34 85
+Z28 VSc4Q^hHLeX00L@Hg_0_7c0
+Z29 !s100 3MFPAY?lO;fRJ`=?57R4^2
 R13
 32
-R23
+R22
 !i10b 1
+R23
 R24
 R25
-Z26 !s107 Waveform.vwf.vht|
 !i113 1
+R17
 R18
-R19

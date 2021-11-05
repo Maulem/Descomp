@@ -6,7 +6,7 @@ entity Decoder is
   port   (
 	 OPCODE : in std_logic_vector(5 downto 0);
 	 FUNCT  : in std_logic_vector(5 downto 0);
-	 OUTPUT : out std_logic_vector(9 downto 0)
+	 OUTPUT : out std_logic_vector(10 downto 0)
   );
 end entity;
 
@@ -15,6 +15,7 @@ architecture arch_name of Decoder is
   constant SW    : std_logic_vector(5 downto 0) := "101011";
   constant BEQ   : std_logic_vector(5 downto 0) := "000100";
   constant RIN   : std_logic_vector(5 downto 0) := "000000";
+  constant J     : std_logic_vector(5 downto 0) := "000010";
   
   constant SOM   : std_logic_vector(5 downto 0) := "100000";
   constant SUB   : std_logic_vector(5 downto 0) := "100010";
@@ -31,6 +32,7 @@ architecture arch_name of Decoder is
   alias ula_mux  : std_logic is OUTPUT(7);
   alias rd_wr    : std_logic is OUTPUT(8);
   alias mux_addr : std_logic is OUTPUT(9);
+  alias mux_jump : std_logic is OUTPUT(10);
   
 begin
    ram_we  <= '1' when (OPCODE = SW) else '0';
@@ -46,7 +48,7 @@ begin
    ula_mux <= '1' when (OPCODE = LW or OPCODE = SW) else '0';
    rd_wr   <= '0' when (OPCODE = SW or OPCODE = BEQ) else '1';
    mux_addr<= '1' when (OPCODE = RIN) else '0';
-
+	mux_jump<= '1' when (OPCODE = J) else '0';
 	
 	
 	

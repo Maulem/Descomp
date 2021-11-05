@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Aula15
-Thu Nov 04 17:22:15 2021
+Fri Nov 05 02:37:24 2021
 Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 
 
@@ -15,25 +15,29 @@ Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
   7. Analysis & Synthesis Resource Utilization by Entity
   8. Registers Removed During Synthesis
   9. General Register Statistics
- 10. Parameter Settings for User Entity Instance: Top-level Entity: |Aula15
- 11. Parameter Settings for User Entity Instance: somadorGenerico:SOMC
- 12. Parameter Settings for User Entity Instance: registradorGenerico:PC
- 13. Parameter Settings for User Entity Instance: bancoRegistradores:BRG
- 14. Parameter Settings for User Entity Instance: ULA:ULA
- 15. Parameter Settings for User Entity Instance: ROM:ROM
- 16. Parameter Settings for User Entity Instance: muxGenerico2x1:MUXP
- 17. Parameter Settings for User Entity Instance: somadorGenerico:SOMX
- 18. Parameter Settings for User Entity Instance: deslocadorSinalGenerico:DESL
- 19. Parameter Settings for User Entity Instance: estensorSinalGenerico:SIGE
- 20. Parameter Settings for User Entity Instance: RAMMIPS:RAM
- 21. Parameter Settings for User Entity Instance: muxGenerico2x1:MUXR
- 22. Parameter Settings for User Entity Instance: muxGenerico2x1:MUXU
- 23. Parameter Settings for User Entity Instance: muxGenerico2x1:MUXM
- 24. Port Connectivity Checks: "registradorGenerico:PC"
- 25. Port Connectivity Checks: "somadorGenerico:SOMC"
- 26. Post-Synthesis Netlist Statistics for Top Partition
- 27. Elapsed Time Per Partition
- 28. Analysis & Synthesis Messages
+ 10. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 11. Parameter Settings for User Entity Instance: Top-level Entity: |Aula15
+ 12. Parameter Settings for User Entity Instance: somadorGenerico:SOMC
+ 13. Parameter Settings for User Entity Instance: registradorGenerico:PC
+ 14. Parameter Settings for User Entity Instance: bancoRegistradores:BRG
+ 15. Parameter Settings for User Entity Instance: ULA:ULA
+ 16. Parameter Settings for User Entity Instance: ROM:ROM
+ 17. Parameter Settings for User Entity Instance: muxGenerico2x1:MUXP
+ 18. Parameter Settings for User Entity Instance: somadorGenerico:SOMX
+ 19. Parameter Settings for User Entity Instance: deslocadorSinalGenerico:DESL
+ 20. Parameter Settings for User Entity Instance: estensorSinalGenerico:SIGE
+ 21. Parameter Settings for User Entity Instance: RAMMIPS:RAM
+ 22. Parameter Settings for User Entity Instance: muxGenerico2x1:MUXR
+ 23. Parameter Settings for User Entity Instance: muxGenerico2x1:MUXU
+ 24. Parameter Settings for User Entity Instance: muxGenerico2x1:MUXM
+ 25. Parameter Settings for User Entity Instance: muxGenerico2x1:MUXJ
+ 26. Parameter Settings for User Entity Instance: deslocadorSinalGenerico:DESJ
+ 27. Port Connectivity Checks: "deslocadorSinalGenerico:DESJ"
+ 28. Port Connectivity Checks: "registradorGenerico:PC"
+ 29. Port Connectivity Checks: "somadorGenerico:SOMC"
+ 30. Post-Synthesis Netlist Statistics for Top Partition
+ 31. Elapsed Time Per Partition
+ 32. Analysis & Synthesis Messages
 
 
 
@@ -60,7 +64,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Thu Nov 04 17:22:15 2021       ;
+; Analysis & Synthesis Status     ; Successful - Fri Nov 05 02:37:24 2021       ;
 ; Quartus Prime Version           ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
 ; Revision Name                   ; Aula15                                      ;
 ; Top-level Entity Name           ; Aula15                                      ;
@@ -214,14 +218,14 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------+----------------+
 ; Resource                                    ; Usage          ;
 +---------------------------------------------+----------------+
-; Estimate of Logic utilization (ALMs needed) ; 1613           ;
+; Estimate of Logic utilization (ALMs needed) ; 1621           ;
 ;                                             ;                ;
-; Combinational ALUT usage for logic          ; 1188           ;
+; Combinational ALUT usage for logic          ; 1231           ;
 ;     -- 7 input functions                    ; 0              ;
-;     -- 6 input functions                    ; 879            ;
+;     -- 6 input functions                    ; 914            ;
 ;     -- 5 input functions                    ; 39             ;
-;     -- 4 input functions                    ; 12             ;
-;     -- <=3 input functions                  ; 258            ;
+;     -- 4 input functions                    ; 51             ;
+;     -- <=3 input functions                  ; 227            ;
 ;                                             ;                ;
 ; Dedicated logic registers                   ; 2270           ;
 ;                                             ;                ;
@@ -231,8 +235,8 @@ https://fpgasoftware.intel.com/eula.
 ;                                             ;                ;
 ; Maximum fan-out node                        ; CLOCK_50~input ;
 ; Maximum fan-out                             ; 2270           ;
-; Total fan-out                               ; 13815          ;
-; Average fan-out                             ; 3.57           ;
+; Total fan-out                               ; 13982          ;
+; Average fan-out                             ; 3.58           ;
 +---------------------------------------------+----------------+
 
 
@@ -241,12 +245,13 @@ https://fpgasoftware.intel.com/eula.
 +-----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+--------------------------------+---------------------+--------------+
 ; Compilation Hierarchy Node  ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name            ; Entity Name         ; Library Name ;
 +-----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+--------------------------------+---------------------+--------------+
-; |Aula15                     ; 1188 (8)            ; 2270 (0)                  ; 0                 ; 0          ; 205  ; 0            ; |Aula15                        ; Aula15              ; work         ;
-;    |Decoder:DEC|            ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Aula15|Decoder:DEC            ; Decoder             ; work         ;
+; |Aula15                     ; 1231 (14)           ; 2270 (0)                  ; 0                 ; 0          ; 205  ; 0            ; |Aula15                        ; Aula15              ; work         ;
+;    |Decoder:DEC|            ; 9 (9)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Aula15|Decoder:DEC            ; Decoder             ; work         ;
 ;    |RAMMIPS:RAM|            ; 803 (803)           ; 2048 (2048)               ; 0                 ; 0          ; 0    ; 0            ; |Aula15|RAMMIPS:RAM            ; RAMMIPS             ; work         ;
-;    |ROM:ROM|                ; 12 (12)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Aula15|ROM:ROM                ; ROM                 ; work         ;
+;    |ROM:ROM|                ; 14 (14)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Aula15|ROM:ROM                ; ROM                 ; work         ;
 ;    |ULA:ULA|                ; 36 (36)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Aula15|ULA:ULA                ; ULA                 ; work         ;
-;    |bancoRegistradores:BRG| ; 202 (202)           ; 192 (192)                 ; 0                 ; 0          ; 0    ; 0            ; |Aula15|bancoRegistradores:BRG ; bancoRegistradores  ; work         ;
+;    |bancoRegistradores:BRG| ; 201 (201)           ; 192 (192)                 ; 0                 ; 0          ; 0    ; 0            ; |Aula15|bancoRegistradores:BRG ; bancoRegistradores  ; work         ;
+;    |muxGenerico2x1:MUXJ|    ; 30 (30)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Aula15|muxGenerico2x1:MUXJ    ; muxGenerico2x1      ; work         ;
 ;    |muxGenerico2x1:MUXM|    ; 32 (32)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Aula15|muxGenerico2x1:MUXM    ; muxGenerico2x1      ; work         ;
 ;    |muxGenerico2x1:MUXU|    ; 32 (32)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Aula15|muxGenerico2x1:MUXU    ; muxGenerico2x1      ; work         ;
 ;    |registradorGenerico:PC| ; 0 (0)               ; 30 (30)                   ; 0                 ; 0          ; 0    ; 0            ; |Aula15|registradorGenerico:PC ; registradorGenerico ; work         ;
@@ -1105,13 +1110,23 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
 ; Total registers                              ; 2270  ;
-; Number of registers using Synchronous Clear  ; 0     ;
-; Number of registers using Synchronous Load   ; 222   ;
+; Number of registers using Synchronous Clear  ; 16    ;
+; Number of registers using Synchronous Load   ; 192   ;
 ; Number of registers using Asynchronous Clear ; 0     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
 ; Number of registers using Clock Enable       ; 2240  ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                        ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output              ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------+
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |Aula15|registradorGenerico:PC|DOUT[27] ;
+; 3:1                ; 10 bits   ; 20 LEs        ; 20 LEs               ; 0 LEs                  ; Yes        ; |Aula15|registradorGenerico:PC|DOUT[26] ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------+
 
 
 +------------------------------------------------------------------------+
@@ -1263,6 +1278,36 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
++------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: muxGenerico2x1:MUXJ ;
++----------------+-------+-----------------------------------------+
+; Parameter Name ; Value ; Type                                    ;
++----------------+-------+-----------------------------------------+
+; larguradados   ; 32    ; Signed Integer                          ;
++----------------+-------+-----------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: deslocadorSinalGenerico:DESJ ;
++----------------+-------+--------------------------------------------------+
+; Parameter Name ; Value ; Type                                             ;
++----------------+-------+--------------------------------------------------+
+; larguradados   ; 28    ; Signed Integer                                   ;
+; deslocamento   ; 2     ; Signed Integer                                   ;
++----------------+-------+--------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------+
+; Port Connectivity Checks: "deslocadorSinalGenerico:DESJ" ;
++-----------------+-------+----------+---------------------+
+; Port            ; Type  ; Severity ; Details             ;
++-----------------+-------+----------+---------------------+
+; data_in[27..26] ; Input ; Info     ; Stuck at GND        ;
++-----------------+-------+----------+---------------------+
+
+
 +----------------------------------------------------+
 ; Port Connectivity Checks: "registradorGenerico:PC" ;
 +--------+-------+----------+------------------------+
@@ -1292,25 +1337,26 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; arriav_ff             ; 2270                        ;
 ;     ENA               ; 2048                        ;
 ;     ENA SLD           ; 192                         ;
-;     SLD               ; 30                          ;
-; arriav_lcell_comb     ; 1189                        ;
+;     SCLR              ; 16                          ;
+;     plain             ; 14                          ;
+; arriav_lcell_comb     ; 1232                        ;
 ;     arith             ; 93                          ;
 ;         1 data inputs ; 56                          ;
 ;         2 data inputs ; 3                           ;
-;         4 data inputs ; 4                           ;
-;         5 data inputs ; 30                          ;
-;     normal            ; 1096                        ;
+;         4 data inputs ; 2                           ;
+;         5 data inputs ; 32                          ;
+;     normal            ; 1139                        ;
 ;         0 data inputs ; 1                           ;
 ;         1 data inputs ; 6                           ;
-;         2 data inputs ; 66                          ;
-;         3 data inputs ; 127                         ;
-;         4 data inputs ; 8                           ;
-;         5 data inputs ; 9                           ;
-;         6 data inputs ; 879                         ;
+;         2 data inputs ; 128                         ;
+;         3 data inputs ; 34                          ;
+;         4 data inputs ; 49                          ;
+;         5 data inputs ; 7                           ;
+;         6 data inputs ; 914                         ;
 ; boundary_port         ; 205                         ;
 ;                       ;                             ;
-; Max LUT depth         ; 10.50                       ;
-; Average LUT depth     ; 5.83                        ;
+; Max LUT depth         ; 11.10                       ;
+; Average LUT depth     ; 6.03                        ;
 +-----------------------+-----------------------------+
 
 
@@ -1329,7 +1375,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
-    Info: Processing started: Thu Nov 04 17:22:06 2021
+    Info: Processing started: Fri Nov 05 02:37:16 2021
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Aula15 -c Aula15
 Info (20030): Parallel compilation is enabled and will use 6 of the 6 processors detected
 Info (12021): Found 2 design units, including 1 entities, in source file ula.vhd
@@ -1366,20 +1412,21 @@ Info (12021): Found 2 design units, including 1 entities, in source file aula15.
     Info (12022): Found design unit 1: Aula15-mips File: D:/INSPER-FILES/Facul/6S/Descomp/Quartus Projects 2/Aula 15/Aula15.vhd Line: 28
     Info (12023): Found entity 1: Aula15 File: D:/INSPER-FILES/Facul/6S/Descomp/Quartus Projects 2/Aula 15/Aula15.vhd Line: 5
 Info (12127): Elaborating entity "Aula15" for the top level hierarchy
-Info (12128): Elaborating entity "somadorGenerico" for hierarchy "somadorGenerico:SOMC" File: D:/INSPER-FILES/Facul/6S/Descomp/Quartus Projects 2/Aula 15/Aula15.vhd Line: 59
-Info (12128): Elaborating entity "registradorGenerico" for hierarchy "registradorGenerico:PC" File: D:/INSPER-FILES/Facul/6S/Descomp/Quartus Projects 2/Aula 15/Aula15.vhd Line: 66
-Info (12128): Elaborating entity "bancoRegistradores" for hierarchy "bancoRegistradores:BRG" File: D:/INSPER-FILES/Facul/6S/Descomp/Quartus Projects 2/Aula 15/Aula15.vhd Line: 75
-Info (12128): Elaborating entity "ULA" for hierarchy "ULA:ULA" File: D:/INSPER-FILES/Facul/6S/Descomp/Quartus Projects 2/Aula 15/Aula15.vhd Line: 87
-Info (12128): Elaborating entity "ROM" for hierarchy "ROM:ROM" File: D:/INSPER-FILES/Facul/6S/Descomp/Quartus Projects 2/Aula 15/Aula15.vhd Line: 95
-Info (12128): Elaborating entity "muxGenerico2x1" for hierarchy "muxGenerico2x1:MUXP" File: D:/INSPER-FILES/Facul/6S/Descomp/Quartus Projects 2/Aula 15/Aula15.vhd Line: 101
-Info (12128): Elaborating entity "deslocadorSinalGenerico" for hierarchy "deslocadorSinalGenerico:DESL" File: D:/INSPER-FILES/Facul/6S/Descomp/Quartus Projects 2/Aula 15/Aula15.vhd Line: 115
-Info (12128): Elaborating entity "estensorSinalGenerico" for hierarchy "estensorSinalGenerico:SIGE" File: D:/INSPER-FILES/Facul/6S/Descomp/Quartus Projects 2/Aula 15/Aula15.vhd Line: 120
-Info (12128): Elaborating entity "Decoder" for hierarchy "Decoder:DEC" File: D:/INSPER-FILES/Facul/6S/Descomp/Quartus Projects 2/Aula 15/Aula15.vhd Line: 125
-Info (12128): Elaborating entity "RAMMIPS" for hierarchy "RAMMIPS:RAM" File: D:/INSPER-FILES/Facul/6S/Descomp/Quartus Projects 2/Aula 15/Aula15.vhd Line: 131
-Info (12128): Elaborating entity "muxGenerico2x1" for hierarchy "muxGenerico2x1:MUXR" File: D:/INSPER-FILES/Facul/6S/Descomp/Quartus Projects 2/Aula 15/Aula15.vhd Line: 140
+Info (12128): Elaborating entity "somadorGenerico" for hierarchy "somadorGenerico:SOMC" File: D:/INSPER-FILES/Facul/6S/Descomp/Quartus Projects 2/Aula 15/Aula15.vhd Line: 62
+Info (12128): Elaborating entity "registradorGenerico" for hierarchy "registradorGenerico:PC" File: D:/INSPER-FILES/Facul/6S/Descomp/Quartus Projects 2/Aula 15/Aula15.vhd Line: 69
+Info (12128): Elaborating entity "bancoRegistradores" for hierarchy "bancoRegistradores:BRG" File: D:/INSPER-FILES/Facul/6S/Descomp/Quartus Projects 2/Aula 15/Aula15.vhd Line: 78
+Info (12128): Elaborating entity "ULA" for hierarchy "ULA:ULA" File: D:/INSPER-FILES/Facul/6S/Descomp/Quartus Projects 2/Aula 15/Aula15.vhd Line: 90
+Info (12128): Elaborating entity "ROM" for hierarchy "ROM:ROM" File: D:/INSPER-FILES/Facul/6S/Descomp/Quartus Projects 2/Aula 15/Aula15.vhd Line: 99
+Info (12128): Elaborating entity "muxGenerico2x1" for hierarchy "muxGenerico2x1:MUXP" File: D:/INSPER-FILES/Facul/6S/Descomp/Quartus Projects 2/Aula 15/Aula15.vhd Line: 106
+Info (12128): Elaborating entity "deslocadorSinalGenerico" for hierarchy "deslocadorSinalGenerico:DESL" File: D:/INSPER-FILES/Facul/6S/Descomp/Quartus Projects 2/Aula 15/Aula15.vhd Line: 121
+Info (12128): Elaborating entity "estensorSinalGenerico" for hierarchy "estensorSinalGenerico:SIGE" File: D:/INSPER-FILES/Facul/6S/Descomp/Quartus Projects 2/Aula 15/Aula15.vhd Line: 127
+Info (12128): Elaborating entity "Decoder" for hierarchy "Decoder:DEC" File: D:/INSPER-FILES/Facul/6S/Descomp/Quartus Projects 2/Aula 15/Aula15.vhd Line: 133
+Info (12128): Elaborating entity "RAMMIPS" for hierarchy "RAMMIPS:RAM" File: D:/INSPER-FILES/Facul/6S/Descomp/Quartus Projects 2/Aula 15/Aula15.vhd Line: 140
+Info (12128): Elaborating entity "muxGenerico2x1" for hierarchy "muxGenerico2x1:MUXR" File: D:/INSPER-FILES/Facul/6S/Descomp/Quartus Projects 2/Aula 15/Aula15.vhd Line: 150
+Info (12128): Elaborating entity "deslocadorSinalGenerico" for hierarchy "deslocadorSinalGenerico:DESJ" File: D:/INSPER-FILES/Facul/6S/Descomp/Quartus Projects 2/Aula 15/Aula15.vhd Line: 182
 Info (276014): Found 3 instances of uninferred RAM logic
     Info (276007): RAM logic "RAMMIPS:RAM|memRAM" is uninferred due to asynchronous read logic File: D:/INSPER-FILES/Facul/6S/Descomp/Quartus Projects 2/Aula 15/RAMMIPS.vhd Line: 22
-    Info (276004): RAM logic "ROM:ROM|memROM" is uninferred due to inappropriate RAM size File: D:/INSPER-FILES/Facul/6S/Descomp/Quartus Projects 2/Aula 15/ROM.vhd Line: 68
+    Info (276004): RAM logic "ROM:ROM|memROM" is uninferred due to inappropriate RAM size File: D:/INSPER-FILES/Facul/6S/Descomp/Quartus Projects 2/Aula 15/ROM.vhd Line: 70
     Info (276007): RAM logic "bancoRegistradores:BRG|registrador" is uninferred due to asynchronous read logic File: D:/INSPER-FILES/Facul/6S/Descomp/Quartus Projects 2/Aula 15/bancoRegistradores.vhd Line: 50
 Warning (13046): Tri-state node(s) do not directly drive top-level pin(s)
     Warning (13049): Converted tri-state buffer "RAMMIPS:RAM|Dado_out[12]" feeding internal logic into a wire File: D:/INSPER-FILES/Facul/6S/Descomp/Quartus Projects 2/Aula 15/RAMMIPS.vhd Line: 13
@@ -1425,14 +1472,14 @@ Info (286030): Timing-Driven Synthesis is running
 Info (17049): 768 registers lost all their fanouts during netlist optimizations.
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 3631 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 3674 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 1 input pins
     Info (21059): Implemented 204 output pins
-    Info (21061): Implemented 3426 logic cells
+    Info (21061): Implemented 3469 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 40 warnings
-    Info: Peak virtual memory: 4878 megabytes
-    Info: Processing ended: Thu Nov 04 17:22:15 2021
-    Info: Elapsed time: 00:00:09
+    Info: Peak virtual memory: 4871 megabytes
+    Info: Processing ended: Fri Nov 05 02:37:24 2021
+    Info: Elapsed time: 00:00:08
     Info: Total CPU time (on all processors): 00:00:16
 
 

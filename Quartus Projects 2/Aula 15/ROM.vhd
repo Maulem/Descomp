@@ -21,6 +21,7 @@ architecture assincrona OF ROM IS
   constant SW    : std_logic_vector(5 downto 0) := "101011";
   constant BEQ   : std_logic_vector(5 downto 0) := "000100";
   constant RIN   : std_logic_vector(5 downto 0) := "000000";
+  constant J     : std_logic_vector(5 downto 0) := "000010";
   
   --FUNCT
   constant SOM   : std_logic_vector(5 downto 0) := "100000";
@@ -43,6 +44,7 @@ architecture assincrona OF ROM IS
   constant SHAMT : std_logic_vector(4 downto 0) := "00000";
   constant IM1   : std_logic_vector(15 downto 0) := "0000000000000001";
   constant IM9   : std_logic_vector(15 downto 0) := "0000000000000010";
+  constant ADDR  : std_logic_vector(25 downto 0) := "00000000000000000000000000";
 
   
   function initMemory
@@ -58,10 +60,10 @@ architecture assincrona OF ROM IS
 		  tmp(3) := BEQ & T1 & T1 & IM1;
 		  tmp(4) := 32x"00";
         tmp(5) := LW  & T3 & T0 & IM1;
-		  
+		  tmp(6) := J   & ADDR;
        
-        tmp(6) := 32x"00";
         tmp(7) := 32x"00";
+        tmp(8) := 32x"00";
         return tmp;
     end initMemory;
 
