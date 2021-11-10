@@ -7,7 +7,7 @@ Note: if both ModelSim-Altera and ModelSim executables are available, ModelSim-A
 
 **** Generating the ModelSim Testbench ****
 
-quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off ULA -c ULA --vector_source="D:/INSPER-FILES/Facul/6S/Descomp/Quartus Projects 2/Aula 16/Waveform.vwf" --testbench_file="D:/INSPER-FILES/Facul/6S/Descomp/Quartus Projects 2/Aula 16/simulation/qsim/Waveform.vwf.vht"
+quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off Aula16 -c Aula16 --vector_source="D:/INSPER-FILES/Facul/6S/Descomp/Quartus Projects 2/Aula 16/Waveform.vwf" --testbench_file="D:/INSPER-FILES/Facul/6S/Descomp/Quartus Projects 2/Aula 16/simulation/qsim/Waveform.vwf.vht"
 
 Info: *******************************************************************
 Info: Running Quartus Prime EDA Netlist Writer
@@ -26,17 +26,17 @@ Info: Running Quartus Prime EDA Netlist Writer
     Info: Intel and sold by Intel or its authorized distributors.  Please
     Info: refer to the applicable agreement for further details, at
     Info: https://fpgasoftware.intel.com/eula.
-    Info: Processing started: Tue Nov 09 21:19:51 2021
-Info: Command: quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off ULA -c ULA --vector_source="D:/INSPER-FILES/Facul/6S/Descomp/Quartus Projects 2/Aula 16/Waveform.vwf" --testbench_file="D:/INSPER-FILES/Facul/6S/Descomp/Quartus Projects 2/Aula 16/simulation/qsim/Waveform.vwf.vht"
-Info (119006): Selected device 5CGXFC7C7F23C8 for design "ULA"
+    Info: Processing started: Tue Nov 09 23:07:13 2021
+Info: Command: quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off Aula16 -c Aula16 --vector_source="D:/INSPER-FILES/Facul/6S/Descomp/Quartus Projects 2/Aula 16/Waveform.vwf" --testbench_file="D:/INSPER-FILES/Facul/6S/Descomp/Quartus Projects 2/Aula 16/simulation/qsim/Waveform.vwf.vht"
+Info (119006): Selected device 5CGXFC7C7F23C8 for design "Aula16"
 
-urce file when writing test bench files
+ in vector source file when writing test bench files
 
 Completed successfully. 
 
 **** Generating the functional simulation netlist ****
 
-quartus_eda --write_settings_files=off --simulation --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory="D:/INSPER-FILES/Facul/6S/Descomp/Quartus Projects 2/Aula 16/simulation/qsim/" ULA -c ULA
+quartus_eda --write_settings_files=off --simulation --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory="D:/INSPER-FILES/Facul/6S/Descomp/Quartus Projects 2/Aula 16/simulation/qsim/" Aula16 -c Aula16
 
 Info: *******************************************************************
 Info: Running Quartus Prime EDA Netlist Writer
@@ -55,84 +55,89 @@ Info: Running Quartus Prime EDA Netlist Writer
     Info: Intel and sold by Intel or its authorized distributors.  Please
     Info: refer to the applicable agreement for further details, at
     Info: https://fpgasoftware.intel.com/eula.
-    Info: Processing started: Tue Nov 09 21:19:51 2021
-Info: Command: quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory="D:/INSPER-FILES/Facul/6S/Descomp/Quartus Projects 2/Aula 16/simulation/qsim/" ULA -c ULA
-Info (119006): Selected device 5CGXFC7C7F23C8 for design "ULA"
-Info (204019): Generated file ULA.vho in folder "D:/INSPER-FILES/Facul/6S/Descomp/Quartus Projects 2/Aula 16/simulation/qsim//" for EDA simulation tool
+    Info: Processing started: Tue Nov 09 23:07:14 2021
+Info: Command: quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory="D:/INSPER-FILES/Facul/6S/Descomp/Quartus Projects 2/Aula 16/simulation/qsim/" Aula16 -c Aula16
+Info (119006): Selected device 5CGXFC7C7F23C8 for design "Aula16"
+Info (204019): Generated file Aula16.vho in folder "D:/INSPER-FILES/Facul/6S/Descomp/Quartus Projects 2/Aula 16/simulation/qsim//" for EDA simulation tool
 Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 4724 megabytes
-    Info: Processing ended: Tue Nov 09 21:19:52 2021
-    Info: Elapsed time: 00:00:01
+    Info: Peak virtual memory: 4735 megabytes
+    Info: Processing ended: Tue Nov 09 23:07:14 2021
+    Info: Elapsed time: 00:00:00
     Info: Total CPU time (on all processors): 00:00:01
 
 Completed successfully. 
 
 **** Generating the ModelSim .do script ****
 
-D:/INSPER-FILES/Facul/6S/Descomp/Quartus Projects 2/Aula 16/simulation/qsim/ULA.do generated.
+D:/INSPER-FILES/Facul/6S/Descomp/Quartus Projects 2/Aula 16/simulation/qsim/Aula16.do generated.
 
 Completed successfully. 
 
 **** Running the ModelSim simulation ****
 
-c:/intelfpga_lite/20.1/modelsim_ase/win32aloem//vsim -c -do ULA.do
+c:/intelfpga_lite/20.1/modelsim_ase/win32aloem//vsim -c -do Aula16.do
 
 Reading pref.tcl
 
 # 2020.1
 
-# do ULA.do
-
+# do Aula16.do
 # ** Warning: (vlib-34) Library already exists at "work".
+
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 21:19:53 on Nov 09,2021
-# vcom -work work ULA.vho 
+# Start time: 23:07:15 on Nov 09,2021
+# vcom -work work Aula16.vho 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
-# -- Loading package altera_lnsim_components
 # -- Loading package VITAL_Timing
 # -- Loading package VITAL_Primitives
+# -- Loading package dffeas_pack
+# -- Loading package altera_primitives_components
+# -- Loading package altera_lnsim_components
 # -- Loading package cyclonev_atom_pack
 # -- Loading package cyclonev_components
-# -- Compiling entity ULA
-# -- Compiling architecture structure of ULA
+# -- Compiling entity Aula16
+# -- Compiling architecture structure of Aula16
 
-# End time: 21:19:53 on Nov 09,2021, Elapsed time: 0:00:00
+# End time: 23:07:17 on Nov 09,2021, Elapsed time: 0:00:02
 # Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 21:19:53 on Nov 09,2021
-# vcom -work work Waveform.vwf.vht 
 
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 23:07:17 on Nov 09,2021
+# vcom -work work Waveform.vwf.vht 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
-# -- Compiling entity ULA_vhd_vec_tst
-# -- Compiling architecture ULA_arch of ULA_vhd_vec_tst
-# End time: 21:19:53 on Nov 09,2021, Elapsed time: 0:00:00
+# -- Compiling entity Aula16_vhd_vec_tst
+# -- Compiling architecture Aula16_arch of Aula16_vhd_vec_tst
+# End time: 23:07:17 on Nov 09,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 
-# vsim -c -t 1ps -L cyclonev -L altera -L altera_mf -L 220model -L sgate -L altera_lnsim work.ULA_vhd_vec_tst 
-# Start time: 21:19:53 on Nov 09,2021
+# vsim -c -t 1ps -L cyclonev -L altera -L altera_mf -L 220model -L sgate -L altera_lnsim work.Aula16_vhd_vec_tst 
+# Start time: 23:07:17 on Nov 09,2021
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
-# Loading work.ula_vhd_vec_tst(ula_arch)
-# Loading altera_lnsim.altera_lnsim_components
+# Loading work.aula16_vhd_vec_tst(aula16_arch)
 # Loading ieee.vital_timing(body)
 # Loading ieee.vital_primitives(body)
+# Loading altera.dffeas_pack
+# Loading altera.altera_primitives_components
+# Loading altera_lnsim.altera_lnsim_components
 # Loading cyclonev.cyclonev_atom_pack(body)
 # Loading cyclonev.cyclonev_components
-# Loading work.ula(structure)
+# Loading work.aula16(structure)
 # Loading ieee.std_logic_arith(body)
 # Loading cyclonev.cyclonev_io_obuf(arch)
 # Loading cyclonev.cyclonev_io_ibuf(arch)
 # Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)
-# ** Warning: Design size of 34954 statements exceeds ModelSim-Intel FPGA Starter Edition recommended capacity.
+# Loading altera.dffeas(vital_dffeas)
+# ** Warning: Design size of 671999 statements exceeds ModelSim-Intel FPGA Starter Edition recommended capacity.
 # Expect performance to be adversely affected.
-# after#32
+# after#34
 
-# End time: 21:19:53 on Nov 09,2021, Elapsed time: 0:00:00
+# End time: 23:07:21 on Nov 09,2021, Elapsed time: 0:00:04
 # Errors: 0, Warnings: 1
 
 Completed successfully. 
@@ -141,11 +146,11 @@ Completed successfully.
 
 Reading D:/INSPER-FILES/Facul/6S/Descomp/Quartus Projects 2/Aula 16/Waveform.vwf...
 
-Reading D:/INSPER-FILES/Facul/6S/Descomp/Quartus Projects 2/Aula 16/simulation/qsim/ULA.msim.vcd...
+Reading D:/INSPER-FILES/Facul/6S/Descomp/Quartus Projects 2/Aula 16/simulation/qsim/Aula16.msim.vcd...
 
 Processing channel transitions... 
 
-Writing the resulting VWF to D:/INSPER-FILES/Facul/6S/Descomp/Quartus Projects 2/Aula 16/simulation/qsim/ULA_20211109211954.sim.vwf
+Writing the resulting VWF to D:/INSPER-FILES/Facul/6S/Descomp/Quartus Projects 2/Aula 16/simulation/qsim/Aula16_20211109230721.sim.vwf
 
 Finished VCD to VWF conversion.
 
