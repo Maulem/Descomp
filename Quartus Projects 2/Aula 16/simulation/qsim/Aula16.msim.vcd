@@ -3,7 +3,7 @@ $comment
 		vcd file Aula16.msim.vcd -direction
 $end
 $date
-	Tue Nov 09 23:07:18 2021
+	Wed Nov 10 11:17:56 2021
 $end
 $version
 	ModelSim Version 2020.1
@@ -4389,342 +4389,342 @@ $var wire 1 ON \DEC|OUTPUT\ [3] $end
 $var wire 1 PN \DEC|OUTPUT\ [2] $end
 $var wire 1 QN \DEC|OUTPUT\ [1] $end
 $var wire 1 RN \DEC|OUTPUT\ [0] $end
-$var wire 1 SN \BRG|ALT_INV_registrador~1070_combout\ $end
-$var wire 1 TN \BRG|ALT_INV_registrador~1066_combout\ $end
-$var wire 1 UN \BRG|ALT_INV_registrador~1062_combout\ $end
-$var wire 1 VN \PC|ALT_INV_DOUT\ [31] $end
-$var wire 1 WN \PC|ALT_INV_DOUT\ [30] $end
-$var wire 1 XN \PC|ALT_INV_DOUT\ [29] $end
-$var wire 1 YN \PC|ALT_INV_DOUT\ [28] $end
-$var wire 1 ZN \PC|ALT_INV_DOUT\ [27] $end
-$var wire 1 [N \PC|ALT_INV_DOUT\ [26] $end
-$var wire 1 \N \PC|ALT_INV_DOUT\ [25] $end
-$var wire 1 ]N \PC|ALT_INV_DOUT\ [24] $end
-$var wire 1 ^N \PC|ALT_INV_DOUT\ [23] $end
-$var wire 1 _N \PC|ALT_INV_DOUT\ [22] $end
-$var wire 1 `N \PC|ALT_INV_DOUT\ [21] $end
-$var wire 1 aN \PC|ALT_INV_DOUT\ [20] $end
-$var wire 1 bN \PC|ALT_INV_DOUT\ [19] $end
-$var wire 1 cN \PC|ALT_INV_DOUT\ [18] $end
-$var wire 1 dN \PC|ALT_INV_DOUT\ [17] $end
-$var wire 1 eN \PC|ALT_INV_DOUT\ [16] $end
-$var wire 1 fN \PC|ALT_INV_DOUT\ [15] $end
-$var wire 1 gN \PC|ALT_INV_DOUT\ [14] $end
-$var wire 1 hN \PC|ALT_INV_DOUT\ [13] $end
-$var wire 1 iN \PC|ALT_INV_DOUT\ [12] $end
-$var wire 1 jN \PC|ALT_INV_DOUT\ [11] $end
-$var wire 1 kN \PC|ALT_INV_DOUT\ [10] $end
-$var wire 1 lN \PC|ALT_INV_DOUT\ [9] $end
-$var wire 1 mN \PC|ALT_INV_DOUT\ [8] $end
-$var wire 1 nN \PC|ALT_INV_DOUT\ [7] $end
-$var wire 1 oN \PC|ALT_INV_DOUT\ [6] $end
-$var wire 1 pN \PC|ALT_INV_DOUT\ [5] $end
-$var wire 1 qN \PC|ALT_INV_DOUT\ [4] $end
-$var wire 1 rN \PC|ALT_INV_DOUT\ [3] $end
-$var wire 1 sN \PC|ALT_INV_DOUT\ [2] $end
-$var wire 1 tN \BRG|ALT_INV_registrador~1430_combout\ $end
-$var wire 1 uN \BRG|ALT_INV_registrador~1426_combout\ $end
-$var wire 1 vN \BRG|ALT_INV_registrador~1422_combout\ $end
-$var wire 1 wN \BRG|ALT_INV_registrador~1418_combout\ $end
-$var wire 1 xN \BRG|ALT_INV_registrador~1414_combout\ $end
-$var wire 1 yN \BRG|ALT_INV_registrador~1410_combout\ $end
-$var wire 1 zN \BRG|ALT_INV_registrador~1406_combout\ $end
-$var wire 1 {N \BRG|ALT_INV_registrador~1402_combout\ $end
-$var wire 1 |N \BRG|ALT_INV_registrador~1398_combout\ $end
-$var wire 1 }N \BRG|ALT_INV_registrador~1394_combout\ $end
-$var wire 1 ~N \BRG|ALT_INV_registrador~1390_combout\ $end
-$var wire 1 !O \BRG|ALT_INV_registrador~1386_combout\ $end
-$var wire 1 "O \BRG|ALT_INV_registrador~1382_combout\ $end
-$var wire 1 #O \BRG|ALT_INV_registrador~1378_combout\ $end
-$var wire 1 $O \BRG|ALT_INV_registrador~1374_combout\ $end
-$var wire 1 %O \BRG|ALT_INV_registrador~1370_combout\ $end
-$var wire 1 &O \BRG|ALT_INV_registrador~1366_combout\ $end
-$var wire 1 'O \BRG|ALT_INV_registrador~1362_combout\ $end
-$var wire 1 (O \BRG|ALT_INV_registrador~1358_combout\ $end
-$var wire 1 )O \BRG|ALT_INV_registrador~1354_combout\ $end
-$var wire 1 *O \BRG|ALT_INV_registrador~1350_combout\ $end
-$var wire 1 +O \BRG|ALT_INV_registrador~1346_combout\ $end
-$var wire 1 ,O \BRG|ALT_INV_registrador~1342_combout\ $end
-$var wire 1 -O \BRG|ALT_INV_registrador~1338_combout\ $end
-$var wire 1 .O \BRG|ALT_INV_registrador~1334_combout\ $end
-$var wire 1 /O \BRG|ALT_INV_registrador~1330_combout\ $end
-$var wire 1 0O \BRG|ALT_INV_registrador~1326_combout\ $end
-$var wire 1 1O \BRG|ALT_INV_registrador~1322_combout\ $end
-$var wire 1 2O \BRG|ALT_INV_registrador~1318_combout\ $end
-$var wire 1 3O \SOMX|ALT_INV_Add0~21_sumout\ $end
-$var wire 1 4O \SOMC|ALT_INV_Add0~21_sumout\ $end
-$var wire 1 5O \SOMX|ALT_INV_Add0~17_sumout\ $end
-$var wire 1 6O \SOMC|ALT_INV_Add0~17_sumout\ $end
-$var wire 1 7O \SOMX|ALT_INV_Add0~13_sumout\ $end
-$var wire 1 8O \SOMC|ALT_INV_Add0~13_sumout\ $end
-$var wire 1 9O \SOMX|ALT_INV_Add0~9_sumout\ $end
-$var wire 1 :O \SOMC|ALT_INV_Add0~9_sumout\ $end
-$var wire 1 ;O \SOMX|ALT_INV_Add0~5_sumout\ $end
-$var wire 1 <O \SOMC|ALT_INV_Add0~5_sumout\ $end
-$var wire 1 =O \SOMX|ALT_INV_Add0~1_sumout\ $end
-$var wire 1 >O \SOMC|ALT_INV_Add0~1_sumout\ $end
-$var wire 1 ?O \BRG|ALT_INV_registrador~1314_combout\ $end
-$var wire 1 @O \BRG|ALT_INV_registrador~1310_combout\ $end
-$var wire 1 AO \BRG|ALT_INV_registrador~1306_combout\ $end
-$var wire 1 BO \BRG|ALT_INV_registrador~1302_combout\ $end
-$var wire 1 CO \BRG|ALT_INV_registrador~1298_combout\ $end
-$var wire 1 DO \BRG|ALT_INV_registrador~1294_combout\ $end
-$var wire 1 EO \BRG|ALT_INV_registrador~1290_combout\ $end
-$var wire 1 FO \BRG|ALT_INV_registrador~1286_combout\ $end
-$var wire 1 GO \BRG|ALT_INV_registrador~1282_combout\ $end
-$var wire 1 HO \BRG|ALT_INV_registrador~1278_combout\ $end
-$var wire 1 IO \BRG|ALT_INV_registrador~1274_combout\ $end
-$var wire 1 JO \BRG|ALT_INV_registrador~1270_combout\ $end
-$var wire 1 KO \BRG|ALT_INV_registrador~1266_combout\ $end
-$var wire 1 LO \BRG|ALT_INV_registrador~1262_combout\ $end
-$var wire 1 MO \BRG|ALT_INV_registrador~1258_combout\ $end
-$var wire 1 NO \BRG|ALT_INV_registrador~1254_combout\ $end
-$var wire 1 OO \BRG|ALT_INV_registrador~1250_combout\ $end
-$var wire 1 PO \BRG|ALT_INV_registrador~1246_combout\ $end
-$var wire 1 QO \BRG|ALT_INV_registrador~1242_combout\ $end
-$var wire 1 RO \BRG|ALT_INV_registrador~1238_combout\ $end
-$var wire 1 SO \BRG|ALT_INV_registrador~1234_combout\ $end
-$var wire 1 TO \BRG|ALT_INV_registrador~1230_combout\ $end
-$var wire 1 UO \BRG|ALT_INV_registrador~1226_combout\ $end
-$var wire 1 VO \BRG|ALT_INV_registrador~1222_combout\ $end
-$var wire 1 WO \BRG|ALT_INV_registrador~1218_combout\ $end
-$var wire 1 XO \BRG|ALT_INV_registrador~1214_combout\ $end
-$var wire 1 YO \BRG|ALT_INV_registrador~1210_combout\ $end
-$var wire 1 ZO \BRG|ALT_INV_registrador~1206_combout\ $end
-$var wire 1 [O \BRG|ALT_INV_registrador~1202_combout\ $end
-$var wire 1 \O \BRG|ALT_INV_registrador~1198_combout\ $end
-$var wire 1 ]O \BRG|ALT_INV_registrador~1194_combout\ $end
-$var wire 1 ^O \BRG|ALT_INV_registrador~1190_combout\ $end
-$var wire 1 _O \BRG|ALT_INV_registrador~1186_combout\ $end
-$var wire 1 `O \BRG|ALT_INV_registrador~1182_combout\ $end
-$var wire 1 aO \BRG|ALT_INV_registrador~1178_combout\ $end
-$var wire 1 bO \BRG|ALT_INV_registrador~1174_combout\ $end
-$var wire 1 cO \BRG|ALT_INV_registrador~1170_combout\ $end
-$var wire 1 dO \BRG|ALT_INV_registrador~1166_combout\ $end
-$var wire 1 eO \BRG|ALT_INV_registrador~1162_combout\ $end
-$var wire 1 fO \BRG|ALT_INV_registrador~1158_combout\ $end
-$var wire 1 gO \BRG|ALT_INV_registrador~1154_combout\ $end
-$var wire 1 hO \BRG|ALT_INV_registrador~1150_combout\ $end
-$var wire 1 iO \BRG|ALT_INV_registrador~1146_combout\ $end
-$var wire 1 jO \BRG|ALT_INV_registrador~1142_combout\ $end
-$var wire 1 kO \BRG|ALT_INV_registrador~1138_combout\ $end
-$var wire 1 lO \BRG|ALT_INV_registrador~1134_combout\ $end
-$var wire 1 mO \BRG|ALT_INV_registrador~1130_combout\ $end
-$var wire 1 nO \BRG|ALT_INV_registrador~1126_combout\ $end
-$var wire 1 oO \BRG|ALT_INV_registrador~1122_combout\ $end
-$var wire 1 pO \BRG|ALT_INV_registrador~1118_combout\ $end
-$var wire 1 qO \BRG|ALT_INV_registrador~1114_combout\ $end
-$var wire 1 rO \BRG|ALT_INV_registrador~1110_combout\ $end
-$var wire 1 sO \BRG|ALT_INV_registrador~1106_combout\ $end
-$var wire 1 tO \BRG|ALT_INV_registrador~1102_combout\ $end
-$var wire 1 uO \BRG|ALT_INV_registrador~1098_combout\ $end
-$var wire 1 vO \BRG|ALT_INV_registrador~1094_combout\ $end
-$var wire 1 wO \BRG|ALT_INV_registrador~1090_combout\ $end
-$var wire 1 xO \BRG|ALT_INV_registrador~1086_combout\ $end
-$var wire 1 yO \BRG|ALT_INV_registrador~1082_combout\ $end
-$var wire 1 zO \BRG|ALT_INV_registrador~1078_combout\ $end
-$var wire 1 {O \BRG|ALT_INV_registrador~1074_combout\ $end
-$var wire 1 |O \SOMX|ALT_INV_Add0~113_sumout\ $end
-$var wire 1 }O \SOMC|ALT_INV_Add0~113_sumout\ $end
-$var wire 1 ~O \SOMX|ALT_INV_Add0~109_sumout\ $end
-$var wire 1 !P \SOMC|ALT_INV_Add0~109_sumout\ $end
-$var wire 1 "P \SOMX|ALT_INV_Add0~105_sumout\ $end
-$var wire 1 #P \SOMC|ALT_INV_Add0~105_sumout\ $end
-$var wire 1 $P \SOMX|ALT_INV_Add0~101_sumout\ $end
-$var wire 1 %P \SOMC|ALT_INV_Add0~101_sumout\ $end
-$var wire 1 &P \SOMX|ALT_INV_Add0~97_sumout\ $end
-$var wire 1 'P \SOMC|ALT_INV_Add0~97_sumout\ $end
-$var wire 1 (P \SOMX|ALT_INV_Add0~93_sumout\ $end
-$var wire 1 )P \SOMC|ALT_INV_Add0~93_sumout\ $end
-$var wire 1 *P \SOMX|ALT_INV_Add0~89_sumout\ $end
-$var wire 1 +P \SOMC|ALT_INV_Add0~89_sumout\ $end
-$var wire 1 ,P \SOMX|ALT_INV_Add0~85_sumout\ $end
-$var wire 1 -P \SOMC|ALT_INV_Add0~85_sumout\ $end
-$var wire 1 .P \SOMX|ALT_INV_Add0~81_sumout\ $end
-$var wire 1 /P \SOMC|ALT_INV_Add0~81_sumout\ $end
-$var wire 1 0P \SOMX|ALT_INV_Add0~77_sumout\ $end
-$var wire 1 1P \SOMC|ALT_INV_Add0~77_sumout\ $end
-$var wire 1 2P \SOMX|ALT_INV_Add0~73_sumout\ $end
-$var wire 1 3P \SOMC|ALT_INV_Add0~73_sumout\ $end
-$var wire 1 4P \SOMX|ALT_INV_Add0~69_sumout\ $end
-$var wire 1 5P \SOMC|ALT_INV_Add0~69_sumout\ $end
-$var wire 1 6P \SOMX|ALT_INV_Add0~65_sumout\ $end
-$var wire 1 7P \SOMC|ALT_INV_Add0~65_sumout\ $end
-$var wire 1 8P \SOMX|ALT_INV_Add0~61_sumout\ $end
-$var wire 1 9P \SOMC|ALT_INV_Add0~61_sumout\ $end
-$var wire 1 :P \SOMX|ALT_INV_Add0~57_sumout\ $end
-$var wire 1 ;P \SOMC|ALT_INV_Add0~57_sumout\ $end
-$var wire 1 <P \SOMX|ALT_INV_Add0~53_sumout\ $end
-$var wire 1 =P \SOMC|ALT_INV_Add0~53_sumout\ $end
-$var wire 1 >P \SOMX|ALT_INV_Add0~49_sumout\ $end
-$var wire 1 ?P \SOMC|ALT_INV_Add0~49_sumout\ $end
-$var wire 1 @P \SOMX|ALT_INV_Add0~45_sumout\ $end
-$var wire 1 AP \SOMC|ALT_INV_Add0~45_sumout\ $end
-$var wire 1 BP \SOMX|ALT_INV_Add0~41_sumout\ $end
-$var wire 1 CP \SOMC|ALT_INV_Add0~41_sumout\ $end
-$var wire 1 DP \SOMX|ALT_INV_Add0~37_sumout\ $end
-$var wire 1 EP \SOMC|ALT_INV_Add0~37_sumout\ $end
-$var wire 1 FP \SOMX|ALT_INV_Add0~33_sumout\ $end
-$var wire 1 GP \SOMC|ALT_INV_Add0~33_sumout\ $end
-$var wire 1 HP \SOMX|ALT_INV_Add0~29_sumout\ $end
-$var wire 1 IP \SOMC|ALT_INV_Add0~29_sumout\ $end
-$var wire 1 JP \SOMX|ALT_INV_Add0~25_sumout\ $end
-$var wire 1 KP \SOMC|ALT_INV_Add0~25_sumout\ $end
-$var wire 1 LP \BRG|ALT_INV_registrador~1570_combout\ $end
-$var wire 1 MP \BRG|ALT_INV_registrador~1566_combout\ $end
-$var wire 1 NP \BRG|ALT_INV_registrador~1562_combout\ $end
-$var wire 1 OP \BRG|ALT_INV_registrador~1558_combout\ $end
-$var wire 1 PP \BRG|ALT_INV_registrador~1554_combout\ $end
-$var wire 1 QP \BRG|ALT_INV_registrador~1550_combout\ $end
-$var wire 1 RP \BRG|ALT_INV_registrador~1546_combout\ $end
-$var wire 1 SP \BRG|ALT_INV_registrador~1542_combout\ $end
-$var wire 1 TP \BRG|ALT_INV_registrador~1538_combout\ $end
-$var wire 1 UP \BRG|ALT_INV_registrador~1534_combout\ $end
-$var wire 1 VP \BRG|ALT_INV_registrador~1530_combout\ $end
-$var wire 1 WP \BRG|ALT_INV_registrador~1526_combout\ $end
-$var wire 1 XP \BRG|ALT_INV_registrador~1522_combout\ $end
-$var wire 1 YP \BRG|ALT_INV_registrador~1518_combout\ $end
-$var wire 1 ZP \BRG|ALT_INV_registrador~1514_combout\ $end
-$var wire 1 [P \BRG|ALT_INV_registrador~1510_combout\ $end
-$var wire 1 \P \BRG|ALT_INV_registrador~1506_combout\ $end
-$var wire 1 ]P \BRG|ALT_INV_registrador~1502_combout\ $end
-$var wire 1 ^P \BRG|ALT_INV_registrador~1498_combout\ $end
-$var wire 1 _P \BRG|ALT_INV_registrador~1494_combout\ $end
-$var wire 1 `P \BRG|ALT_INV_registrador~1490_combout\ $end
-$var wire 1 aP \BRG|ALT_INV_registrador~1486_combout\ $end
-$var wire 1 bP \BRG|ALT_INV_registrador~1482_combout\ $end
-$var wire 1 cP \BRG|ALT_INV_registrador~1478_combout\ $end
-$var wire 1 dP \BRG|ALT_INV_registrador~1474_combout\ $end
-$var wire 1 eP \BRG|ALT_INV_registrador~1470_combout\ $end
-$var wire 1 fP \BRG|ALT_INV_registrador~1466_combout\ $end
-$var wire 1 gP \BRG|ALT_INV_registrador~1462_combout\ $end
-$var wire 1 hP \BRG|ALT_INV_registrador~1458_combout\ $end
-$var wire 1 iP \BRG|ALT_INV_registrador~1454_combout\ $end
-$var wire 1 jP \BRG|ALT_INV_registrador~1450_combout\ $end
-$var wire 1 kP \BRG|ALT_INV_registrador~1446_combout\ $end
-$var wire 1 lP \BRG|ALT_INV_registrador~1442_combout\ $end
-$var wire 1 mP \BRG|ALT_INV_registrador~1438_combout\ $end
-$var wire 1 nP \BRG|ALT_INV_registrador~1434_combout\ $end
-$var wire 1 oP \ULA|ULA4|MuxB|ALT_INV_saida~0_combout\ $end
-$var wire 1 pP \BRG|ALT_INV_saidaA[4]~26_combout\ $end
-$var wire 1 qP \ULA|ULA5|MuxB|ALT_INV_saida~0_combout\ $end
-$var wire 1 rP \ULA|ULA6|som|ALT_INV_cOut~0_combout\ $end
-$var wire 1 sP \BRG|ALT_INV_saidaA[5]~25_combout\ $end
-$var wire 1 tP \MUXU|ALT_INV_saida_MUX[5]~17_combout\ $end
-$var wire 1 uP \BRG|ALT_INV_saidaA[6]~24_combout\ $end
-$var wire 1 vP \ULA|ULA7|MuxB|ALT_INV_saida~0_combout\ $end
-$var wire 1 wP \BRG|ALT_INV_saidaA[7]~23_combout\ $end
-$var wire 1 xP \ULA|ULA8|MuxB|ALT_INV_saida~0_combout\ $end
-$var wire 1 yP \BRG|ALT_INV_saidaA[8]~22_combout\ $end
-$var wire 1 zP \ULA|ULA9|MuxB|ALT_INV_saida~0_combout\ $end
-$var wire 1 {P \BRG|ALT_INV_saidaA[9]~21_combout\ $end
-$var wire 1 |P \ULA|ULA10|MuxB|ALT_INV_saida~0_combout\ $end
-$var wire 1 }P \ULA|ULA11|som|ALT_INV_cOut~0_combout\ $end
-$var wire 1 ~P \BRG|ALT_INV_saidaA[11]~20_combout\ $end
-$var wire 1 !Q \ULA|ULA12|MuxB|ALT_INV_saida~0_combout\ $end
-$var wire 1 "Q \BRG|ALT_INV_saidaA[12]~19_combout\ $end
-$var wire 1 #Q \ULA|ULA13|MuxB|ALT_INV_saida~0_combout\ $end
-$var wire 1 $Q \BRG|ALT_INV_saidaA[13]~18_combout\ $end
-$var wire 1 %Q \ULA|ULA14|MuxB|ALT_INV_saida~0_combout\ $end
-$var wire 1 &Q \BRG|ALT_INV_saidaB[13]~18_combout\ $end
-$var wire 1 'Q \BRG|ALT_INV_saidaA[14]~17_combout\ $end
-$var wire 1 (Q \ULA|ULA15|MuxB|ALT_INV_saida~0_combout\ $end
-$var wire 1 )Q \BRG|ALT_INV_saidaB[14]~17_combout\ $end
-$var wire 1 *Q \ULA|ULA16|som|ALT_INV_cOut~0_combout\ $end
-$var wire 1 +Q \BRG|ALT_INV_saidaA[15]~16_combout\ $end
-$var wire 1 ,Q \MUXU|ALT_INV_saida_MUX[15]~16_combout\ $end
-$var wire 1 -Q \BRG|ALT_INV_saidaB[15]~16_combout\ $end
-$var wire 1 .Q \BRG|ALT_INV_saidaA[16]~15_combout\ $end
-$var wire 1 /Q \ULA|ULA17|MuxB|ALT_INV_saida~0_combout\ $end
-$var wire 1 0Q \MUXU|ALT_INV_saida_MUX[16]~15_combout\ $end
-$var wire 1 1Q \BRG|ALT_INV_saidaB[16]~15_combout\ $end
-$var wire 1 2Q \BRG|ALT_INV_saidaA[17]~14_combout\ $end
-$var wire 1 3Q \ULA|ULA18|MuxB|ALT_INV_saida~0_combout\ $end
-$var wire 1 4Q \MUXU|ALT_INV_saida_MUX[17]~14_combout\ $end
-$var wire 1 5Q \BRG|ALT_INV_saidaB[17]~14_combout\ $end
-$var wire 1 6Q \BRG|ALT_INV_saidaA[18]~13_combout\ $end
-$var wire 1 7Q \ULA|ULA19|MuxB|ALT_INV_saida~0_combout\ $end
-$var wire 1 8Q \MUXU|ALT_INV_saida_MUX[18]~13_combout\ $end
-$var wire 1 9Q \BRG|ALT_INV_saidaB[18]~13_combout\ $end
-$var wire 1 :Q \BRG|ALT_INV_saidaA[19]~12_combout\ $end
-$var wire 1 ;Q \ULA|ULA20|MuxB|ALT_INV_saida~0_combout\ $end
-$var wire 1 <Q \MUXU|ALT_INV_saida_MUX[19]~12_combout\ $end
-$var wire 1 =Q \BRG|ALT_INV_saidaB[19]~12_combout\ $end
-$var wire 1 >Q \ULA|ULA21|som|ALT_INV_cOut~0_combout\ $end
-$var wire 1 ?Q \BRG|ALT_INV_saidaA[20]~11_combout\ $end
-$var wire 1 @Q \ULA|ULA21|MuxB|ALT_INV_saida~0_combout\ $end
-$var wire 1 AQ \MUXU|ALT_INV_saida_MUX[20]~11_combout\ $end
-$var wire 1 BQ \BRG|ALT_INV_saidaB[20]~11_combout\ $end
-$var wire 1 CQ \BRG|ALT_INV_saidaA[21]~10_combout\ $end
-$var wire 1 DQ \ULA|ULA22|MuxB|ALT_INV_saida~0_combout\ $end
-$var wire 1 EQ \MUXU|ALT_INV_saida_MUX[21]~10_combout\ $end
-$var wire 1 FQ \BRG|ALT_INV_saidaB[21]~10_combout\ $end
-$var wire 1 GQ \BRG|ALT_INV_saidaA[22]~9_combout\ $end
-$var wire 1 HQ \ULA|ULA23|MuxB|ALT_INV_saida~0_combout\ $end
-$var wire 1 IQ \MUXU|ALT_INV_saida_MUX[22]~9_combout\ $end
-$var wire 1 JQ \BRG|ALT_INV_saidaB[22]~9_combout\ $end
-$var wire 1 KQ \BRG|ALT_INV_saidaA[23]~8_combout\ $end
-$var wire 1 LQ \ULA|ULA24|MuxB|ALT_INV_saida~0_combout\ $end
-$var wire 1 MQ \MUXU|ALT_INV_saida_MUX[23]~8_combout\ $end
-$var wire 1 NQ \BRG|ALT_INV_saidaB[23]~8_combout\ $end
-$var wire 1 OQ \BRG|ALT_INV_saidaA[24]~7_combout\ $end
-$var wire 1 PQ \ULA|ULA25|MuxB|ALT_INV_saida~0_combout\ $end
-$var wire 1 QQ \MUXU|ALT_INV_saida_MUX[24]~7_combout\ $end
-$var wire 1 RQ \BRG|ALT_INV_saidaB[24]~7_combout\ $end
-$var wire 1 SQ \ULA|ULA26|som|ALT_INV_cOut~0_combout\ $end
-$var wire 1 TQ \BRG|ALT_INV_saidaA[25]~6_combout\ $end
-$var wire 1 UQ \ULA|ULA26|MuxB|ALT_INV_saida~0_combout\ $end
-$var wire 1 VQ \MUXU|ALT_INV_saida_MUX[25]~6_combout\ $end
-$var wire 1 WQ \BRG|ALT_INV_saidaB[25]~6_combout\ $end
-$var wire 1 XQ \BRG|ALT_INV_saidaA[26]~5_combout\ $end
-$var wire 1 YQ \ULA|ULA27|MuxB|ALT_INV_saida~0_combout\ $end
-$var wire 1 ZQ \MUXU|ALT_INV_saida_MUX[26]~5_combout\ $end
-$var wire 1 [Q \BRG|ALT_INV_saidaB[26]~5_combout\ $end
-$var wire 1 \Q \BRG|ALT_INV_saidaA[27]~4_combout\ $end
-$var wire 1 ]Q \ULA|ULA28|MuxB|ALT_INV_saida~0_combout\ $end
-$var wire 1 ^Q \MUXU|ALT_INV_saida_MUX[27]~4_combout\ $end
-$var wire 1 _Q \BRG|ALT_INV_saidaB[27]~4_combout\ $end
-$var wire 1 `Q \BRG|ALT_INV_saidaA[28]~3_combout\ $end
-$var wire 1 aQ \ULA|ULA29|MuxB|ALT_INV_saida~0_combout\ $end
-$var wire 1 bQ \MUXU|ALT_INV_saida_MUX[28]~3_combout\ $end
-$var wire 1 cQ \BRG|ALT_INV_saidaB[28]~3_combout\ $end
-$var wire 1 dQ \BRG|ALT_INV_saidaA[29]~2_combout\ $end
-$var wire 1 eQ \ULA|ULA30|MuxB|ALT_INV_saida~0_combout\ $end
-$var wire 1 fQ \MUXU|ALT_INV_saida_MUX[29]~2_combout\ $end
-$var wire 1 gQ \BRG|ALT_INV_saidaB[29]~2_combout\ $end
-$var wire 1 hQ \ULA|ULA31|som|ALT_INV_cOut~0_combout\ $end
-$var wire 1 iQ \BRG|ALT_INV_saidaA[30]~1_combout\ $end
-$var wire 1 jQ \ULA|ULA31|MuxB|ALT_INV_saida~0_combout\ $end
-$var wire 1 kQ \MUXU|ALT_INV_saida_MUX[30]~1_combout\ $end
-$var wire 1 lQ \BRG|ALT_INV_saidaB[30]~1_combout\ $end
-$var wire 1 mQ \BRG|ALT_INV_saidaA[31]~0_combout\ $end
-$var wire 1 nQ \ULA|ULA32|MuxB|ALT_INV_saida~0_combout\ $end
-$var wire 1 oQ \DEC|ALT_INV_OUTPUT[6]~0_combout\ $end
-$var wire 1 pQ \MUXU|ALT_INV_saida_MUX[31]~0_combout\ $end
-$var wire 1 qQ \BRG|ALT_INV_saidaB[31]~0_combout\ $end
-$var wire 1 rQ \BRG|ALT_INV_Equal0~0_combout\ $end
-$var wire 1 sQ \DEC|ALT_INV_OUTPUT\ [7] $end
-$var wire 1 tQ \DEC|ALT_INV_Equal8~0_combout\ $end
-$var wire 1 uQ \ROM|ALT_INV_memROM~14_combout\ $end
-$var wire 1 vQ \ROM|ALT_INV_memROM~13_combout\ $end
-$var wire 1 wQ \ROM|ALT_INV_memROM~12_combout\ $end
-$var wire 1 xQ \ROM|ALT_INV_memROM~11_combout\ $end
-$var wire 1 yQ \ROM|ALT_INV_memROM~10_combout\ $end
-$var wire 1 zQ \ROM|ALT_INV_memROM~9_combout\ $end
-$var wire 1 {Q \ROM|ALT_INV_memROM~8_combout\ $end
-$var wire 1 |Q \ROM|ALT_INV_memROM~7_combout\ $end
-$var wire 1 }Q \ROM|ALT_INV_memROM~6_combout\ $end
-$var wire 1 ~Q \ROM|ALT_INV_memROM~5_combout\ $end
-$var wire 1 !R \ROM|ALT_INV_memROM~4_combout\ $end
-$var wire 1 "R \ROM|ALT_INV_memROM~3_combout\ $end
-$var wire 1 #R \ROM|ALT_INV_memROM~2_combout\ $end
-$var wire 1 $R \ROM|ALT_INV_memROM~1_combout\ $end
-$var wire 1 %R \ROM|ALT_INV_memROM~0_combout\ $end
-$var wire 1 &R \ULA|ULA6|som|ALT_INV_saida~0_combout\ $end
-$var wire 1 'R \ULA|ULA2|MuxS|ALT_INV_saida~0_combout\ $end
-$var wire 1 (R \ULA|ULA12|MuxS|ALT_INV_saida~0_combout\ $end
-$var wire 1 )R \SOMX|ALT_INV_Add0~117_sumout\ $end
-$var wire 1 *R \SOMC|ALT_INV_Add0~117_sumout\ $end
+$var wire 1 SN \ULA|ULA4|MuxB|ALT_INV_saida~0_combout\ $end
+$var wire 1 TN \BRG|ALT_INV_saidaA[4]~26_combout\ $end
+$var wire 1 UN \ULA|ULA5|MuxB|ALT_INV_saida~0_combout\ $end
+$var wire 1 VN \ULA|ULA6|som|ALT_INV_cOut~0_combout\ $end
+$var wire 1 WN \BRG|ALT_INV_saidaA[5]~25_combout\ $end
+$var wire 1 XN \MUXU|ALT_INV_saida_MUX[5]~17_combout\ $end
+$var wire 1 YN \BRG|ALT_INV_saidaA[6]~24_combout\ $end
+$var wire 1 ZN \ULA|ULA7|MuxB|ALT_INV_saida~0_combout\ $end
+$var wire 1 [N \BRG|ALT_INV_saidaA[7]~23_combout\ $end
+$var wire 1 \N \ULA|ULA8|MuxB|ALT_INV_saida~0_combout\ $end
+$var wire 1 ]N \BRG|ALT_INV_saidaA[8]~22_combout\ $end
+$var wire 1 ^N \ULA|ULA9|MuxB|ALT_INV_saida~0_combout\ $end
+$var wire 1 _N \BRG|ALT_INV_saidaA[9]~21_combout\ $end
+$var wire 1 `N \ULA|ULA10|MuxB|ALT_INV_saida~0_combout\ $end
+$var wire 1 aN \ULA|ULA11|som|ALT_INV_cOut~0_combout\ $end
+$var wire 1 bN \BRG|ALT_INV_saidaA[11]~20_combout\ $end
+$var wire 1 cN \ULA|ULA12|MuxB|ALT_INV_saida~0_combout\ $end
+$var wire 1 dN \BRG|ALT_INV_saidaA[12]~19_combout\ $end
+$var wire 1 eN \ULA|ULA13|MuxB|ALT_INV_saida~0_combout\ $end
+$var wire 1 fN \BRG|ALT_INV_saidaA[13]~18_combout\ $end
+$var wire 1 gN \ULA|ULA14|MuxB|ALT_INV_saida~0_combout\ $end
+$var wire 1 hN \BRG|ALT_INV_saidaB[13]~18_combout\ $end
+$var wire 1 iN \BRG|ALT_INV_saidaA[14]~17_combout\ $end
+$var wire 1 jN \ULA|ULA15|MuxB|ALT_INV_saida~0_combout\ $end
+$var wire 1 kN \BRG|ALT_INV_saidaB[14]~17_combout\ $end
+$var wire 1 lN \ULA|ULA16|som|ALT_INV_cOut~0_combout\ $end
+$var wire 1 mN \BRG|ALT_INV_saidaA[15]~16_combout\ $end
+$var wire 1 nN \MUXU|ALT_INV_saida_MUX[15]~16_combout\ $end
+$var wire 1 oN \BRG|ALT_INV_saidaB[15]~16_combout\ $end
+$var wire 1 pN \BRG|ALT_INV_saidaA[16]~15_combout\ $end
+$var wire 1 qN \ULA|ULA17|MuxB|ALT_INV_saida~0_combout\ $end
+$var wire 1 rN \MUXU|ALT_INV_saida_MUX[16]~15_combout\ $end
+$var wire 1 sN \BRG|ALT_INV_saidaB[16]~15_combout\ $end
+$var wire 1 tN \BRG|ALT_INV_saidaA[17]~14_combout\ $end
+$var wire 1 uN \ULA|ULA18|MuxB|ALT_INV_saida~0_combout\ $end
+$var wire 1 vN \MUXU|ALT_INV_saida_MUX[17]~14_combout\ $end
+$var wire 1 wN \BRG|ALT_INV_saidaB[17]~14_combout\ $end
+$var wire 1 xN \BRG|ALT_INV_saidaA[18]~13_combout\ $end
+$var wire 1 yN \ULA|ULA19|MuxB|ALT_INV_saida~0_combout\ $end
+$var wire 1 zN \MUXU|ALT_INV_saida_MUX[18]~13_combout\ $end
+$var wire 1 {N \BRG|ALT_INV_saidaB[18]~13_combout\ $end
+$var wire 1 |N \BRG|ALT_INV_saidaA[19]~12_combout\ $end
+$var wire 1 }N \ULA|ULA20|MuxB|ALT_INV_saida~0_combout\ $end
+$var wire 1 ~N \MUXU|ALT_INV_saida_MUX[19]~12_combout\ $end
+$var wire 1 !O \BRG|ALT_INV_saidaB[19]~12_combout\ $end
+$var wire 1 "O \ULA|ULA21|som|ALT_INV_cOut~0_combout\ $end
+$var wire 1 #O \BRG|ALT_INV_saidaA[20]~11_combout\ $end
+$var wire 1 $O \ULA|ULA21|MuxB|ALT_INV_saida~0_combout\ $end
+$var wire 1 %O \MUXU|ALT_INV_saida_MUX[20]~11_combout\ $end
+$var wire 1 &O \BRG|ALT_INV_saidaB[20]~11_combout\ $end
+$var wire 1 'O \BRG|ALT_INV_saidaA[21]~10_combout\ $end
+$var wire 1 (O \ULA|ULA22|MuxB|ALT_INV_saida~0_combout\ $end
+$var wire 1 )O \MUXU|ALT_INV_saida_MUX[21]~10_combout\ $end
+$var wire 1 *O \BRG|ALT_INV_saidaB[21]~10_combout\ $end
+$var wire 1 +O \BRG|ALT_INV_saidaA[22]~9_combout\ $end
+$var wire 1 ,O \ULA|ULA23|MuxB|ALT_INV_saida~0_combout\ $end
+$var wire 1 -O \MUXU|ALT_INV_saida_MUX[22]~9_combout\ $end
+$var wire 1 .O \BRG|ALT_INV_saidaB[22]~9_combout\ $end
+$var wire 1 /O \BRG|ALT_INV_saidaA[23]~8_combout\ $end
+$var wire 1 0O \ULA|ULA24|MuxB|ALT_INV_saida~0_combout\ $end
+$var wire 1 1O \MUXU|ALT_INV_saida_MUX[23]~8_combout\ $end
+$var wire 1 2O \BRG|ALT_INV_saidaB[23]~8_combout\ $end
+$var wire 1 3O \BRG|ALT_INV_saidaA[24]~7_combout\ $end
+$var wire 1 4O \ULA|ULA25|MuxB|ALT_INV_saida~0_combout\ $end
+$var wire 1 5O \MUXU|ALT_INV_saida_MUX[24]~7_combout\ $end
+$var wire 1 6O \BRG|ALT_INV_saidaB[24]~7_combout\ $end
+$var wire 1 7O \ULA|ULA26|som|ALT_INV_cOut~0_combout\ $end
+$var wire 1 8O \BRG|ALT_INV_saidaA[25]~6_combout\ $end
+$var wire 1 9O \ULA|ULA26|MuxB|ALT_INV_saida~0_combout\ $end
+$var wire 1 :O \MUXU|ALT_INV_saida_MUX[25]~6_combout\ $end
+$var wire 1 ;O \BRG|ALT_INV_saidaB[25]~6_combout\ $end
+$var wire 1 <O \BRG|ALT_INV_saidaA[26]~5_combout\ $end
+$var wire 1 =O \ULA|ULA27|MuxB|ALT_INV_saida~0_combout\ $end
+$var wire 1 >O \MUXU|ALT_INV_saida_MUX[26]~5_combout\ $end
+$var wire 1 ?O \BRG|ALT_INV_saidaB[26]~5_combout\ $end
+$var wire 1 @O \BRG|ALT_INV_saidaA[27]~4_combout\ $end
+$var wire 1 AO \ULA|ULA28|MuxB|ALT_INV_saida~0_combout\ $end
+$var wire 1 BO \MUXU|ALT_INV_saida_MUX[27]~4_combout\ $end
+$var wire 1 CO \BRG|ALT_INV_saidaB[27]~4_combout\ $end
+$var wire 1 DO \BRG|ALT_INV_saidaA[28]~3_combout\ $end
+$var wire 1 EO \ULA|ULA29|MuxB|ALT_INV_saida~0_combout\ $end
+$var wire 1 FO \MUXU|ALT_INV_saida_MUX[28]~3_combout\ $end
+$var wire 1 GO \BRG|ALT_INV_saidaB[28]~3_combout\ $end
+$var wire 1 HO \BRG|ALT_INV_saidaA[29]~2_combout\ $end
+$var wire 1 IO \ULA|ULA30|MuxB|ALT_INV_saida~0_combout\ $end
+$var wire 1 JO \MUXU|ALT_INV_saida_MUX[29]~2_combout\ $end
+$var wire 1 KO \BRG|ALT_INV_saidaB[29]~2_combout\ $end
+$var wire 1 LO \ULA|ULA31|som|ALT_INV_cOut~0_combout\ $end
+$var wire 1 MO \BRG|ALT_INV_saidaA[30]~1_combout\ $end
+$var wire 1 NO \ULA|ULA31|MuxB|ALT_INV_saida~0_combout\ $end
+$var wire 1 OO \MUXU|ALT_INV_saida_MUX[30]~1_combout\ $end
+$var wire 1 PO \BRG|ALT_INV_saidaB[30]~1_combout\ $end
+$var wire 1 QO \BRG|ALT_INV_saidaA[31]~0_combout\ $end
+$var wire 1 RO \ULA|ULA32|MuxB|ALT_INV_saida~0_combout\ $end
+$var wire 1 SO \DEC|ALT_INV_OUTPUT[6]~0_combout\ $end
+$var wire 1 TO \MUXU|ALT_INV_saida_MUX[31]~0_combout\ $end
+$var wire 1 UO \BRG|ALT_INV_saidaB[31]~0_combout\ $end
+$var wire 1 VO \BRG|ALT_INV_Equal0~0_combout\ $end
+$var wire 1 WO \DEC|ALT_INV_OUTPUT\ [7] $end
+$var wire 1 XO \DEC|ALT_INV_Equal8~0_combout\ $end
+$var wire 1 YO \ROM|ALT_INV_memROM~14_combout\ $end
+$var wire 1 ZO \ROM|ALT_INV_memROM~13_combout\ $end
+$var wire 1 [O \ROM|ALT_INV_memROM~12_combout\ $end
+$var wire 1 \O \ROM|ALT_INV_memROM~11_combout\ $end
+$var wire 1 ]O \ROM|ALT_INV_memROM~10_combout\ $end
+$var wire 1 ^O \ROM|ALT_INV_memROM~9_combout\ $end
+$var wire 1 _O \ROM|ALT_INV_memROM~8_combout\ $end
+$var wire 1 `O \ROM|ALT_INV_memROM~7_combout\ $end
+$var wire 1 aO \ROM|ALT_INV_memROM~6_combout\ $end
+$var wire 1 bO \ROM|ALT_INV_memROM~5_combout\ $end
+$var wire 1 cO \ROM|ALT_INV_memROM~4_combout\ $end
+$var wire 1 dO \ROM|ALT_INV_memROM~3_combout\ $end
+$var wire 1 eO \ROM|ALT_INV_memROM~2_combout\ $end
+$var wire 1 fO \ROM|ALT_INV_memROM~1_combout\ $end
+$var wire 1 gO \PC|ALT_INV_DOUT\ [31] $end
+$var wire 1 hO \PC|ALT_INV_DOUT\ [30] $end
+$var wire 1 iO \PC|ALT_INV_DOUT\ [29] $end
+$var wire 1 jO \PC|ALT_INV_DOUT\ [28] $end
+$var wire 1 kO \PC|ALT_INV_DOUT\ [27] $end
+$var wire 1 lO \PC|ALT_INV_DOUT\ [26] $end
+$var wire 1 mO \PC|ALT_INV_DOUT\ [25] $end
+$var wire 1 nO \PC|ALT_INV_DOUT\ [24] $end
+$var wire 1 oO \PC|ALT_INV_DOUT\ [23] $end
+$var wire 1 pO \PC|ALT_INV_DOUT\ [22] $end
+$var wire 1 qO \PC|ALT_INV_DOUT\ [21] $end
+$var wire 1 rO \PC|ALT_INV_DOUT\ [20] $end
+$var wire 1 sO \PC|ALT_INV_DOUT\ [19] $end
+$var wire 1 tO \PC|ALT_INV_DOUT\ [18] $end
+$var wire 1 uO \PC|ALT_INV_DOUT\ [17] $end
+$var wire 1 vO \PC|ALT_INV_DOUT\ [16] $end
+$var wire 1 wO \PC|ALT_INV_DOUT\ [15] $end
+$var wire 1 xO \PC|ALT_INV_DOUT\ [14] $end
+$var wire 1 yO \PC|ALT_INV_DOUT\ [13] $end
+$var wire 1 zO \PC|ALT_INV_DOUT\ [12] $end
+$var wire 1 {O \PC|ALT_INV_DOUT\ [11] $end
+$var wire 1 |O \PC|ALT_INV_DOUT\ [10] $end
+$var wire 1 }O \PC|ALT_INV_DOUT\ [9] $end
+$var wire 1 ~O \PC|ALT_INV_DOUT\ [8] $end
+$var wire 1 !P \PC|ALT_INV_DOUT\ [7] $end
+$var wire 1 "P \PC|ALT_INV_DOUT\ [6] $end
+$var wire 1 #P \PC|ALT_INV_DOUT\ [5] $end
+$var wire 1 $P \PC|ALT_INV_DOUT\ [4] $end
+$var wire 1 %P \PC|ALT_INV_DOUT\ [3] $end
+$var wire 1 &P \PC|ALT_INV_DOUT\ [2] $end
+$var wire 1 'P \ROM|ALT_INV_memROM~0_combout\ $end
+$var wire 1 (P \ULA|ULA6|som|ALT_INV_saida~0_combout\ $end
+$var wire 1 )P \ULA|ULA2|MuxS|ALT_INV_saida~0_combout\ $end
+$var wire 1 *P \ULA|ULA12|MuxS|ALT_INV_saida~0_combout\ $end
+$var wire 1 +P \SOMX|ALT_INV_Add0~117_sumout\ $end
+$var wire 1 ,P \SOMC|ALT_INV_Add0~117_sumout\ $end
+$var wire 1 -P \BRG|ALT_INV_registrador~1070_combout\ $end
+$var wire 1 .P \BRG|ALT_INV_registrador~1066_combout\ $end
+$var wire 1 /P \BRG|ALT_INV_registrador~1062_combout\ $end
+$var wire 1 0P \BRG|ALT_INV_registrador~1430_combout\ $end
+$var wire 1 1P \BRG|ALT_INV_registrador~1426_combout\ $end
+$var wire 1 2P \BRG|ALT_INV_registrador~1422_combout\ $end
+$var wire 1 3P \BRG|ALT_INV_registrador~1418_combout\ $end
+$var wire 1 4P \BRG|ALT_INV_registrador~1414_combout\ $end
+$var wire 1 5P \BRG|ALT_INV_registrador~1410_combout\ $end
+$var wire 1 6P \BRG|ALT_INV_registrador~1406_combout\ $end
+$var wire 1 7P \BRG|ALT_INV_registrador~1402_combout\ $end
+$var wire 1 8P \BRG|ALT_INV_registrador~1398_combout\ $end
+$var wire 1 9P \BRG|ALT_INV_registrador~1394_combout\ $end
+$var wire 1 :P \BRG|ALT_INV_registrador~1390_combout\ $end
+$var wire 1 ;P \BRG|ALT_INV_registrador~1386_combout\ $end
+$var wire 1 <P \BRG|ALT_INV_registrador~1382_combout\ $end
+$var wire 1 =P \BRG|ALT_INV_registrador~1378_combout\ $end
+$var wire 1 >P \BRG|ALT_INV_registrador~1374_combout\ $end
+$var wire 1 ?P \BRG|ALT_INV_registrador~1370_combout\ $end
+$var wire 1 @P \BRG|ALT_INV_registrador~1366_combout\ $end
+$var wire 1 AP \BRG|ALT_INV_registrador~1362_combout\ $end
+$var wire 1 BP \BRG|ALT_INV_registrador~1358_combout\ $end
+$var wire 1 CP \BRG|ALT_INV_registrador~1354_combout\ $end
+$var wire 1 DP \BRG|ALT_INV_registrador~1350_combout\ $end
+$var wire 1 EP \BRG|ALT_INV_registrador~1346_combout\ $end
+$var wire 1 FP \BRG|ALT_INV_registrador~1342_combout\ $end
+$var wire 1 GP \BRG|ALT_INV_registrador~1338_combout\ $end
+$var wire 1 HP \BRG|ALT_INV_registrador~1334_combout\ $end
+$var wire 1 IP \BRG|ALT_INV_registrador~1330_combout\ $end
+$var wire 1 JP \BRG|ALT_INV_registrador~1326_combout\ $end
+$var wire 1 KP \BRG|ALT_INV_registrador~1322_combout\ $end
+$var wire 1 LP \BRG|ALT_INV_registrador~1318_combout\ $end
+$var wire 1 MP \SOMX|ALT_INV_Add0~21_sumout\ $end
+$var wire 1 NP \SOMC|ALT_INV_Add0~21_sumout\ $end
+$var wire 1 OP \SOMX|ALT_INV_Add0~17_sumout\ $end
+$var wire 1 PP \SOMC|ALT_INV_Add0~17_sumout\ $end
+$var wire 1 QP \SOMX|ALT_INV_Add0~13_sumout\ $end
+$var wire 1 RP \SOMC|ALT_INV_Add0~13_sumout\ $end
+$var wire 1 SP \SOMX|ALT_INV_Add0~9_sumout\ $end
+$var wire 1 TP \SOMC|ALT_INV_Add0~9_sumout\ $end
+$var wire 1 UP \SOMX|ALT_INV_Add0~5_sumout\ $end
+$var wire 1 VP \SOMC|ALT_INV_Add0~5_sumout\ $end
+$var wire 1 WP \SOMX|ALT_INV_Add0~1_sumout\ $end
+$var wire 1 XP \SOMC|ALT_INV_Add0~1_sumout\ $end
+$var wire 1 YP \BRG|ALT_INV_registrador~1314_combout\ $end
+$var wire 1 ZP \BRG|ALT_INV_registrador~1310_combout\ $end
+$var wire 1 [P \BRG|ALT_INV_registrador~1306_combout\ $end
+$var wire 1 \P \BRG|ALT_INV_registrador~1302_combout\ $end
+$var wire 1 ]P \BRG|ALT_INV_registrador~1298_combout\ $end
+$var wire 1 ^P \BRG|ALT_INV_registrador~1294_combout\ $end
+$var wire 1 _P \BRG|ALT_INV_registrador~1290_combout\ $end
+$var wire 1 `P \BRG|ALT_INV_registrador~1286_combout\ $end
+$var wire 1 aP \BRG|ALT_INV_registrador~1282_combout\ $end
+$var wire 1 bP \BRG|ALT_INV_registrador~1278_combout\ $end
+$var wire 1 cP \BRG|ALT_INV_registrador~1274_combout\ $end
+$var wire 1 dP \BRG|ALT_INV_registrador~1270_combout\ $end
+$var wire 1 eP \BRG|ALT_INV_registrador~1266_combout\ $end
+$var wire 1 fP \BRG|ALT_INV_registrador~1262_combout\ $end
+$var wire 1 gP \BRG|ALT_INV_registrador~1258_combout\ $end
+$var wire 1 hP \BRG|ALT_INV_registrador~1254_combout\ $end
+$var wire 1 iP \BRG|ALT_INV_registrador~1250_combout\ $end
+$var wire 1 jP \BRG|ALT_INV_registrador~1246_combout\ $end
+$var wire 1 kP \BRG|ALT_INV_registrador~1242_combout\ $end
+$var wire 1 lP \BRG|ALT_INV_registrador~1238_combout\ $end
+$var wire 1 mP \BRG|ALT_INV_registrador~1234_combout\ $end
+$var wire 1 nP \BRG|ALT_INV_registrador~1230_combout\ $end
+$var wire 1 oP \BRG|ALT_INV_registrador~1226_combout\ $end
+$var wire 1 pP \BRG|ALT_INV_registrador~1222_combout\ $end
+$var wire 1 qP \BRG|ALT_INV_registrador~1218_combout\ $end
+$var wire 1 rP \BRG|ALT_INV_registrador~1214_combout\ $end
+$var wire 1 sP \BRG|ALT_INV_registrador~1210_combout\ $end
+$var wire 1 tP \BRG|ALT_INV_registrador~1206_combout\ $end
+$var wire 1 uP \BRG|ALT_INV_registrador~1202_combout\ $end
+$var wire 1 vP \BRG|ALT_INV_registrador~1198_combout\ $end
+$var wire 1 wP \BRG|ALT_INV_registrador~1194_combout\ $end
+$var wire 1 xP \BRG|ALT_INV_registrador~1190_combout\ $end
+$var wire 1 yP \BRG|ALT_INV_registrador~1186_combout\ $end
+$var wire 1 zP \BRG|ALT_INV_registrador~1182_combout\ $end
+$var wire 1 {P \BRG|ALT_INV_registrador~1178_combout\ $end
+$var wire 1 |P \BRG|ALT_INV_registrador~1174_combout\ $end
+$var wire 1 }P \BRG|ALT_INV_registrador~1170_combout\ $end
+$var wire 1 ~P \BRG|ALT_INV_registrador~1166_combout\ $end
+$var wire 1 !Q \BRG|ALT_INV_registrador~1162_combout\ $end
+$var wire 1 "Q \BRG|ALT_INV_registrador~1158_combout\ $end
+$var wire 1 #Q \BRG|ALT_INV_registrador~1154_combout\ $end
+$var wire 1 $Q \BRG|ALT_INV_registrador~1150_combout\ $end
+$var wire 1 %Q \BRG|ALT_INV_registrador~1146_combout\ $end
+$var wire 1 &Q \BRG|ALT_INV_registrador~1142_combout\ $end
+$var wire 1 'Q \BRG|ALT_INV_registrador~1138_combout\ $end
+$var wire 1 (Q \BRG|ALT_INV_registrador~1134_combout\ $end
+$var wire 1 )Q \BRG|ALT_INV_registrador~1130_combout\ $end
+$var wire 1 *Q \BRG|ALT_INV_registrador~1126_combout\ $end
+$var wire 1 +Q \BRG|ALT_INV_registrador~1122_combout\ $end
+$var wire 1 ,Q \BRG|ALT_INV_registrador~1118_combout\ $end
+$var wire 1 -Q \BRG|ALT_INV_registrador~1114_combout\ $end
+$var wire 1 .Q \BRG|ALT_INV_registrador~1110_combout\ $end
+$var wire 1 /Q \BRG|ALT_INV_registrador~1106_combout\ $end
+$var wire 1 0Q \BRG|ALT_INV_registrador~1102_combout\ $end
+$var wire 1 1Q \BRG|ALT_INV_registrador~1098_combout\ $end
+$var wire 1 2Q \BRG|ALT_INV_registrador~1094_combout\ $end
+$var wire 1 3Q \BRG|ALT_INV_registrador~1090_combout\ $end
+$var wire 1 4Q \BRG|ALT_INV_registrador~1086_combout\ $end
+$var wire 1 5Q \BRG|ALT_INV_registrador~1082_combout\ $end
+$var wire 1 6Q \BRG|ALT_INV_registrador~1078_combout\ $end
+$var wire 1 7Q \BRG|ALT_INV_registrador~1074_combout\ $end
+$var wire 1 8Q \SOMX|ALT_INV_Add0~113_sumout\ $end
+$var wire 1 9Q \SOMC|ALT_INV_Add0~113_sumout\ $end
+$var wire 1 :Q \SOMX|ALT_INV_Add0~109_sumout\ $end
+$var wire 1 ;Q \SOMC|ALT_INV_Add0~109_sumout\ $end
+$var wire 1 <Q \SOMX|ALT_INV_Add0~105_sumout\ $end
+$var wire 1 =Q \SOMC|ALT_INV_Add0~105_sumout\ $end
+$var wire 1 >Q \SOMX|ALT_INV_Add0~101_sumout\ $end
+$var wire 1 ?Q \SOMC|ALT_INV_Add0~101_sumout\ $end
+$var wire 1 @Q \SOMX|ALT_INV_Add0~97_sumout\ $end
+$var wire 1 AQ \SOMC|ALT_INV_Add0~97_sumout\ $end
+$var wire 1 BQ \SOMX|ALT_INV_Add0~93_sumout\ $end
+$var wire 1 CQ \SOMC|ALT_INV_Add0~93_sumout\ $end
+$var wire 1 DQ \SOMX|ALT_INV_Add0~89_sumout\ $end
+$var wire 1 EQ \SOMC|ALT_INV_Add0~89_sumout\ $end
+$var wire 1 FQ \SOMX|ALT_INV_Add0~85_sumout\ $end
+$var wire 1 GQ \SOMC|ALT_INV_Add0~85_sumout\ $end
+$var wire 1 HQ \SOMX|ALT_INV_Add0~81_sumout\ $end
+$var wire 1 IQ \SOMC|ALT_INV_Add0~81_sumout\ $end
+$var wire 1 JQ \SOMX|ALT_INV_Add0~77_sumout\ $end
+$var wire 1 KQ \SOMC|ALT_INV_Add0~77_sumout\ $end
+$var wire 1 LQ \SOMX|ALT_INV_Add0~73_sumout\ $end
+$var wire 1 MQ \SOMC|ALT_INV_Add0~73_sumout\ $end
+$var wire 1 NQ \SOMX|ALT_INV_Add0~69_sumout\ $end
+$var wire 1 OQ \SOMC|ALT_INV_Add0~69_sumout\ $end
+$var wire 1 PQ \SOMX|ALT_INV_Add0~65_sumout\ $end
+$var wire 1 QQ \SOMC|ALT_INV_Add0~65_sumout\ $end
+$var wire 1 RQ \SOMX|ALT_INV_Add0~61_sumout\ $end
+$var wire 1 SQ \SOMC|ALT_INV_Add0~61_sumout\ $end
+$var wire 1 TQ \SOMX|ALT_INV_Add0~57_sumout\ $end
+$var wire 1 UQ \SOMC|ALT_INV_Add0~57_sumout\ $end
+$var wire 1 VQ \SOMX|ALT_INV_Add0~53_sumout\ $end
+$var wire 1 WQ \SOMC|ALT_INV_Add0~53_sumout\ $end
+$var wire 1 XQ \SOMX|ALT_INV_Add0~49_sumout\ $end
+$var wire 1 YQ \SOMC|ALT_INV_Add0~49_sumout\ $end
+$var wire 1 ZQ \SOMX|ALT_INV_Add0~45_sumout\ $end
+$var wire 1 [Q \SOMC|ALT_INV_Add0~45_sumout\ $end
+$var wire 1 \Q \SOMX|ALT_INV_Add0~41_sumout\ $end
+$var wire 1 ]Q \SOMC|ALT_INV_Add0~41_sumout\ $end
+$var wire 1 ^Q \SOMX|ALT_INV_Add0~37_sumout\ $end
+$var wire 1 _Q \SOMC|ALT_INV_Add0~37_sumout\ $end
+$var wire 1 `Q \SOMX|ALT_INV_Add0~33_sumout\ $end
+$var wire 1 aQ \SOMC|ALT_INV_Add0~33_sumout\ $end
+$var wire 1 bQ \SOMX|ALT_INV_Add0~29_sumout\ $end
+$var wire 1 cQ \SOMC|ALT_INV_Add0~29_sumout\ $end
+$var wire 1 dQ \SOMX|ALT_INV_Add0~25_sumout\ $end
+$var wire 1 eQ \SOMC|ALT_INV_Add0~25_sumout\ $end
+$var wire 1 fQ \BRG|ALT_INV_registrador~1570_combout\ $end
+$var wire 1 gQ \BRG|ALT_INV_registrador~1566_combout\ $end
+$var wire 1 hQ \BRG|ALT_INV_registrador~1562_combout\ $end
+$var wire 1 iQ \BRG|ALT_INV_registrador~1558_combout\ $end
+$var wire 1 jQ \BRG|ALT_INV_registrador~1554_combout\ $end
+$var wire 1 kQ \BRG|ALT_INV_registrador~1550_combout\ $end
+$var wire 1 lQ \BRG|ALT_INV_registrador~1546_combout\ $end
+$var wire 1 mQ \BRG|ALT_INV_registrador~1542_combout\ $end
+$var wire 1 nQ \BRG|ALT_INV_registrador~1538_combout\ $end
+$var wire 1 oQ \BRG|ALT_INV_registrador~1534_combout\ $end
+$var wire 1 pQ \BRG|ALT_INV_registrador~1530_combout\ $end
+$var wire 1 qQ \BRG|ALT_INV_registrador~1526_combout\ $end
+$var wire 1 rQ \BRG|ALT_INV_registrador~1522_combout\ $end
+$var wire 1 sQ \BRG|ALT_INV_registrador~1518_combout\ $end
+$var wire 1 tQ \BRG|ALT_INV_registrador~1514_combout\ $end
+$var wire 1 uQ \BRG|ALT_INV_registrador~1510_combout\ $end
+$var wire 1 vQ \BRG|ALT_INV_registrador~1506_combout\ $end
+$var wire 1 wQ \BRG|ALT_INV_registrador~1502_combout\ $end
+$var wire 1 xQ \BRG|ALT_INV_registrador~1498_combout\ $end
+$var wire 1 yQ \BRG|ALT_INV_registrador~1494_combout\ $end
+$var wire 1 zQ \BRG|ALT_INV_registrador~1490_combout\ $end
+$var wire 1 {Q \BRG|ALT_INV_registrador~1486_combout\ $end
+$var wire 1 |Q \BRG|ALT_INV_registrador~1482_combout\ $end
+$var wire 1 }Q \BRG|ALT_INV_registrador~1478_combout\ $end
+$var wire 1 ~Q \BRG|ALT_INV_registrador~1474_combout\ $end
+$var wire 1 !R \BRG|ALT_INV_registrador~1470_combout\ $end
+$var wire 1 "R \BRG|ALT_INV_registrador~1466_combout\ $end
+$var wire 1 #R \BRG|ALT_INV_registrador~1462_combout\ $end
+$var wire 1 $R \BRG|ALT_INV_registrador~1458_combout\ $end
+$var wire 1 %R \BRG|ALT_INV_registrador~1454_combout\ $end
+$var wire 1 &R \BRG|ALT_INV_registrador~1450_combout\ $end
+$var wire 1 'R \BRG|ALT_INV_registrador~1446_combout\ $end
+$var wire 1 (R \BRG|ALT_INV_registrador~1442_combout\ $end
+$var wire 1 )R \BRG|ALT_INV_registrador~1438_combout\ $end
+$var wire 1 *R \BRG|ALT_INV_registrador~1434_combout\ $end
 $var wire 1 +R \MUXU|ALT_INV_saida_MUX[7]~22_combout\ $end
 $var wire 1 ,R \ULA|ULA7|MuxS|ALT_INV_saida~1_combout\ $end
 $var wire 1 -R \ULA|ULA7|MuxS|ALT_INV_saida~0_combout\ $end
@@ -8379,37 +8379,37 @@ xON
 xPN
 xQN
 xRN
-1VN
-1WN
-1XN
-1YN
-1ZN
-1[N
-1\N
-1]N
-1^N
-1_N
-1`N
-1aN
-1bN
-1cN
-1dN
-1eN
-1fN
-1gN
-1hN
-1iN
-1jN
-1kN
-1lN
-1mN
-1nN
-1oN
-1pN
-1qN
-1rN
-1sN
-1sQ
+1WO
+1gO
+1hO
+1iO
+1jO
+1kO
+1lO
+1mO
+1nO
+1oO
+1pO
+1qO
+1rO
+1sO
+1tO
+1uO
+1vO
+1wO
+1xO
+1yO
+1zO
+1{O
+1|O
+1}O
+1~O
+1!P
+1"P
+1#P
+1$P
+1%P
+1&P
 02"
 13"
 x4"
@@ -12332,41 +12332,71 @@ x4"
 0%N
 0&N
 0'N
-1SN
+0SN
 1TN
 1UN
-0tN
-0uN
-0vN
-0wN
-0xN
-0yN
-0zN
-0{N
-0|N
-0}N
-0~N
-0!O
-0"O
-0#O
-0$O
-0%O
-0&O
-0'O
-0(O
-0)O
-0*O
-0+O
-0,O
-0-O
-0.O
-0/O
-00O
-01O
-02O
+1VN
+1WN
+1XN
+1YN
+1ZN
+1[N
+1\N
+1]N
+1^N
+1_N
+1`N
+1aN
+1bN
+1cN
+1dN
+1eN
+1fN
+1gN
+1hN
+1iN
+1jN
+1kN
+1lN
+1mN
+1nN
+1oN
+1pN
+1qN
+1rN
+1sN
+1tN
+1uN
+1vN
+1wN
+1xN
+1yN
+1zN
+1{N
+1|N
+1}N
+1~N
+1!O
+1"O
+1#O
+1$O
+1%O
+1&O
+1'O
+1(O
+1)O
+1*O
+1+O
+1,O
+1-O
+1.O
+1/O
+10O
+11O
+12O
 13O
 14O
-05O
+15O
 16O
 17O
 18O
@@ -12374,16 +12404,16 @@ x4"
 1:O
 1;O
 1<O
-0=O
-0>O
+1=O
+1>O
 1?O
 1@O
-0AO
-0BO
+1AO
+1BO
 1CO
 1DO
-0EO
-0FO
+1EO
+1FO
 1GO
 1HO
 1IO
@@ -12400,8 +12430,7 @@ x4"
 1TO
 1UO
 1VO
-1WO
-1XO
+0XO
 1YO
 1ZO
 1[O
@@ -12415,37 +12444,7 @@ x4"
 1cO
 1dO
 1eO
-1fO
-1gO
-1hO
-1iO
-1jO
-1kO
-1lO
-1mO
-1nO
-1oO
-1pO
-1qO
-1rO
-1sO
-1tO
-1uO
-1vO
-1wO
-1xO
-1yO
-1zO
-1{O
-1|O
-1}O
-1~O
-1!P
-1"P
-1#P
-1$P
-1%P
-1&P
+0fO
 1'P
 1(P
 1)P
@@ -12455,70 +12454,70 @@ x4"
 1-P
 1.P
 1/P
-10P
-11P
-12P
-13P
-14P
-15P
-16P
-17P
-18P
-19P
+00P
+01P
+02P
+03P
+04P
+05P
+06P
+07P
+08P
+09P
 0:P
-1;P
-1<P
-1=P
-1>P
-1?P
-1@P
-1AP
-1BP
-1CP
-1DP
-1EP
-1FP
-1GP
-1HP
-1IP
-1JP
-1KP
+0;P
+0<P
+0=P
+0>P
+0?P
+0@P
+0AP
+0BP
+0CP
+0DP
+0EP
+0FP
+0GP
+0HP
+0IP
+0JP
+0KP
 0LP
-0MP
-0NP
+1MP
+1NP
 0OP
-0PP
-0QP
-0RP
-0SP
-0TP
-0UP
-0VP
+1PP
+1QP
+1RP
+1SP
+1TP
+1UP
+1VP
 0WP
 0XP
-0YP
-0ZP
+1YP
+1ZP
 0[P
 0\P
-0]P
-0^P
+1]P
+1^P
 0_P
 0`P
-0aP
-0bP
-0cP
-0dP
-0eP
-0fP
-0gP
-0hP
-0iP
-0jP
-0kP
-0lP
-0mP
-0nP
-0oP
+1aP
+1bP
+1cP
+1dP
+1eP
+1fP
+1gP
+1hP
+1iP
+1jP
+1kP
+1lP
+1mP
+1nP
+1oP
 1pP
 1qP
 1rP
@@ -12585,7 +12584,7 @@ x4"
 1QQ
 1RQ
 1SQ
-1TQ
+0TQ
 1UQ
 1VQ
 1WQ
@@ -12603,40 +12602,41 @@ x4"
 1cQ
 1dQ
 1eQ
-1fQ
-1gQ
-1hQ
-1iQ
-1jQ
-1kQ
-1lQ
-1mQ
-1nQ
-1oQ
-1pQ
-1qQ
-1rQ
+0fQ
+0gQ
+0hQ
+0iQ
+0jQ
+0kQ
+0lQ
+0mQ
+0nQ
+0oQ
+0pQ
+0qQ
+0rQ
+0sQ
 0tQ
-1uQ
-1vQ
-1wQ
-1xQ
-1yQ
-1zQ
-1{Q
-1|Q
-1}Q
-1~Q
-1!R
-1"R
-1#R
+0uQ
+0vQ
+0wQ
+0xQ
+0yQ
+0zQ
+0{Q
+0|Q
+0}Q
+0~Q
+0!R
+0"R
+0#R
 0$R
-1%R
-1&R
-1'R
-1(R
-1)R
-1*R
+0%R
+0&R
+0'R
+0(R
+0)R
+0*R
 1+R
 1,R
 1-R
@@ -15848,7 +15848,7 @@ $end
 1R(
 1k(
 1EN
-0sN
+0&P
 0rp
 0zp
 0yI
@@ -15859,13 +15859,13 @@ $end
 0|&
 1wI
 1GL
-0oQ
-0zQ
+0SO
+0^O
 1rq
 0mo
 1sq
-0yQ
-1>O
+0]O
+1XP
 1|%
 1^&
 0_L
@@ -15983,122 +15983,122 @@ $end
 13K
 1<L
 1HL
-0<O
+0VP
 1)$
-0aQ
-0nQ
-0jQ
-0YQ
-0eQ
-0]Q
-0UQ
-0PQ
-0LQ
+0EO
+0RO
+0NO
+0=O
+0IO
+0AO
+09O
+04O
+00O
 0Zh
-0HQ
-0DQ
-0@Q
+0,O
+0(O
+0$O
 0%f
-0;Q
-07Q
+0}N
+0yN
 0Tb
-03Q
+0uN
 0Lc
-0/Q
+0qN
 0>S
 0|_
-0(Q
-0%Q
+0jN
+0gN
 0/_
-0#Q
+0eN
 0G]
-0!Q
+0cN
 0AS
 0Z\
-0|P
-0zP
+0`N
+0^N
 00Y
-0xP
+0\N
 0kT
-0vP
+0ZN
 1(S
 0&S
 0oR
 0.R
-0&R
+0(P
 1HS
 0FS
 0JS
-1oP
-0qP
-0;O
-11O
-1/O
-1-O
-1+O
-1)O
-1'O
-1%O
-1{N
-1wN
-1nP
-1uN
-1lP
-1hP
-1`P
-1XP
-1NP
+1SN
+0UN
+0UP
+1KP
+1IP
+1GP
+1EP
+1CP
+1AP
+1?P
+17P
+13P
+1*R
+11P
+1(R
+1$R
+1zQ
+1rQ
+1hQ
+1fQ
+1jQ
+1lQ
+1nQ
+1pQ
+1tQ
+1vQ
+1xQ
+1|Q
+1~Q
+1"R
+1&R
+15P
+19P
+1;P
+1=P
 1LP
-1PP
-1RP
-1TP
-1VP
-1ZP
+1JP
+1BP
+1HP
+1FP
+1DP
+1@P
+1>P
+1<P
+1:P
+18P
+16P
+14P
+12P
+10P
+1)R
+1'R
+1%R
+1#R
+1!R
+1}Q
+1{Q
+1yQ
+1wQ
+1uQ
+1sQ
+0^P
+1kQ
+1mQ
+1oQ
+1qQ
 1\P
-1^P
-1bP
-1dP
-1fP
-1jP
-1yN
-1}N
-1!O
-1#O
-12O
-10O
-1(O
-1.O
-1,O
-1*O
-1&O
-1$O
-1"O
-1~N
-1|N
-1zN
-1xN
-1vN
-1tN
-1mP
-1kP
-1iP
-1gP
-1eP
-1cP
-1aP
-1_P
-1]P
-1[P
-1YP
-0DO
-1QP
-1SP
-1UP
+1iQ
+1gQ
 1WP
-1BO
-1OP
-1MP
-1=O
 1k
 1S$
 0DL
@@ -16158,7 +16158,7 @@ $end
 1CL
 1XH
 0(J
-1;O
+1UP
 1F"
 0>+
 16K
@@ -16181,7 +16181,7 @@ $end
 1~s
 0fa
 1!t
-0(R
+0*P
 0vZ
 1bp
 0*r
@@ -16189,19 +16189,19 @@ $end
 0GW
 0,R
 1DS
-0'R
+0)P
 0ns
-1AO
-0CO
-1EO
-0GO
+1[P
+0]P
+1_P
+0aP
 0*S
 1JS
-1DO
+1^P
 0HS
 1hT
-0BO
-0@O
+0\P
+0ZP
 1os
 1F
 1S&
@@ -16218,8 +16218,8 @@ $end
 1?&
 1A&
 0EL
-09O
-1'R
+0SP
+1)P
 1o(
 01+
 1JL
@@ -16307,7 +16307,7 @@ $end
 1GS
 0IS
 1KS
-0pP
+0TN
 0(S
 0DS
 1*S
@@ -16352,7 +16352,7 @@ $end
 0[%
 0;%
 1pS
-0'R
+0)P
 0=&
 1LL
 1A0
@@ -16478,7 +16478,7 @@ $end
 1:%
 1Z%
 0pS
-1'R
+1)P
 00"
 0Y$
 1=&
@@ -16627,7 +16627,7 @@ $end
 18,
 1?S
 1H]
-1(R
+1*P
 1Z\
 1uZ
 11r
@@ -16952,8 +16952,8 @@ $end
 1,+
 1DN
 0EN
-1sN
-0rN
+1&P
+0%P
 0jp
 1rp
 0vp
@@ -16981,32 +16981,32 @@ $end
 1`(
 0l(
 1/+
-0%R
-1oQ
-0sQ
-0|Q
-1zQ
-0{Q
+0'P
+1SO
+0WO
+0`O
+1^O
+0_O
 0rq
 0ko
 1mo
-0"R
-1yQ
-0}Q
-0>O
-0vQ
-0uQ
+0dO
+1]O
+0aO
+0XP
+0ZO
+0YO
 1cs
-1<O
+1VP
 0|%
 1}%
 1^&
 0_&
 1vI
-0?O
-1CO
-0EO
-1GO
+0YP
+1]P
+0_P
+1aP
 0FL
 0YL
 02M
@@ -17096,8 +17096,8 @@ $end
 0HL
 1m&
 1cL
-0:O
-0<O
+0TP
+0VP
 0)$
 1($
 0T(
@@ -17106,91 +17106,91 @@ $end
 10+
 1KL
 0vI
-0#R
+0eO
 0hp
-1aQ
-1nQ
-1jQ
-1YQ
-1eQ
-1]Q
-1UQ
-1PQ
-1LQ
+1EO
+1RO
+1NO
+1=O
+1IO
+1AO
+19O
+14O
+10O
 0Zh
-1HQ
-1DQ
-1@Q
+1,O
+1(O
+1$O
 0%f
-1;Q
-17Q
+1}N
+1yN
 0Tb
-13Q
+1uN
 0Lc
-1/Q
+1qN
 1>S
 0|_
-1(Q
-1%Q
+1jN
+1gN
 0/_
-1#Q
+1eN
 0G]
-1!Q
+1cN
 1AS
 0Z\
-1|P
-1zP
+1`N
+1^N
 00Y
-1xP
+1\N
 0kT
-1vP
+1ZN
 0(S
 1&S
 0oR
 1.R
-1&R
+1(P
 1JS
-1qP
+1UN
 1'S
 1hT
-01O
-0/O
-0-O
-0+O
-0)O
-0'O
-0%O
-0{N
-0wN
-0nP
-0uN
-0lP
-0hP
-0`P
-0XP
-0NP
-0LP
-0PP
-0RP
-0TP
-0VP
-0ZP
-0\P
-0^P
-0bP
-0dP
-0fP
-0jP
-0yN
-0}N
-0!O
-0#O
-0AO
-1BO
-0!R
-1tQ
-1:P
-15O
+0KP
+0IP
+0GP
+0EP
+0CP
+0AP
+0?P
+07P
+03P
+0*R
+01P
+0(R
+0$R
+0zQ
+0rQ
+0hQ
+0fQ
+0jQ
+0lQ
+0nQ
+0pQ
+0tQ
+0vQ
+0xQ
+0|Q
+0~Q
+0"R
+0&R
+05P
+09P
+0;P
+0=P
+0[P
+1\P
+0cO
+1XO
+1TQ
+1OP
 0k
 1j
 1R$
@@ -17199,12 +17199,12 @@ $end
 1FL
 17K
 1{I
-1:O
+1TP
 00S
 0ES
 1IS
 0KS
-1pP
+1TN
 0W$
 0ZL
 03M
@@ -17313,7 +17313,7 @@ $end
 06^
 0?S
 0H]
-0(R
+0*P
 1@S
 1[\
 0BS
@@ -17327,9 +17327,9 @@ $end
 0rR
 1pR
 0&S
-1AO
-1?O
-0CO
+1[P
+1YP
+0]P
 0GS
 1iT
 1ks
@@ -17357,7 +17357,7 @@ $end
 0;%
 1M$
 1ss
-0'R
+0)P
 1(S
 1&S
 0B
@@ -17440,7 +17440,7 @@ $end
 16^
 1/_
 1G]
-1(R
+1*P
 1Z\
 10Y
 1kT
@@ -17456,7 +17456,7 @@ $end
 1ES
 0IS
 1)S
-1'R
+1)P
 1)#
 0'#
 1&#
@@ -17676,7 +17676,7 @@ $end
 1y(
 1Y.
 1EN
-0sN
+0&P
 0LU
 0+S
 1z(
@@ -17691,15 +17691,15 @@ $end
 0KN
 1GL
 0bL
-1%R
-0oQ
-1sQ
+1'P
+0SO
+1WO
 1ko
-1"R
+1dO
 0sq
-1}Q
-0~Q
-1>O
+1aO
+0bO
+1XP
 0HU
 0%S
 1|%
@@ -17792,92 +17792,92 @@ $end
 1HL
 0m&
 0cL
-1<O
+1VP
 1)$
 1vI
-1#R
+1eO
 1hp
-0aQ
-0nQ
-0jQ
-0YQ
-0eQ
-0]Q
-0UQ
-0PQ
-0LQ
+0EO
+0RO
+0NO
+0=O
+0IO
+0AO
+09O
+04O
+00O
 0Zh
-0HQ
-0DQ
-0@Q
+0,O
+0(O
+0$O
 0%f
-0;Q
-07Q
+0}N
+0yN
 0Tb
-03Q
+0uN
 0Lc
-0/Q
+0qN
 0>S
 0|_
-0(Q
-0%Q
+0jN
+0gN
 0/_
-0#Q
+0eN
 0G]
-0!Q
+0cN
 0AS
 0Z\
-0|P
-0zP
+0`N
+0^N
 00Y
-0xP
+0\N
 0kT
-0vP
+0ZN
 1(S
 1&S
 0oR
 0.R
-0&R
+0(P
 0HS
 0JS
-0qP
+0UN
 0'S
-0AO
-1CO
-1!R
-02O
-00O
-0(O
-0.O
-0,O
-0*O
-0&O
-0$O
-0"O
-0~N
-0|N
-0zN
-0xN
-0vN
-0tN
-0mP
-0kP
-0iP
-0gP
-0eP
-0cP
-0aP
-0_P
-0]P
 0[P
-0YP
-0QP
-0SP
-0UP
+1]P
+1cO
+0LP
+0JP
+0BP
+0HP
+0FP
+0DP
+0@P
+0>P
+0<P
+0:P
+08P
+06P
+04P
+02P
+00P
+0)R
+0'R
+0%R
+0#R
+0!R
+0}Q
+0{Q
+0yQ
+0wQ
+0uQ
+0sQ
+0kQ
+0mQ
+0oQ
+0qQ
+0iQ
+0gQ
 0WP
-0OP
-0MP
-0=O
 0GU
 0nR
 1k
@@ -17885,7 +17885,7 @@ $end
 1N$
 0FL
 0{I
-0:O
+0TP
 1`L
 0-+
 1;,
@@ -17947,7 +17947,7 @@ $end
 1~s
 0fa
 1!t
-0(R
+0*P
 0vZ
 03r
 1dp
@@ -17962,8 +17962,8 @@ $end
 0&S
 0GS
 1IS
-0BO
-1@O
+0\P
+1ZP
 0os
 1K
 0J
@@ -17984,7 +17984,7 @@ $end
 1A&
 1=%
 0M$
-0'R
+0)P
 0o(
 11+
 0JL
@@ -18054,7 +18054,7 @@ $end
 0qR
 1yo
 1)S
-1'R
+1)P
 0(S
 1HS
 0hT
@@ -18115,7 +18115,7 @@ $end
 1lT
 1,R
 1(S
-0'R
+0)P
 1ss
 1J$
 1."
@@ -18144,7 +18144,7 @@ $end
 1;%
 0:%
 0Z%
-1'R
+1)P
 10"
 0ML
 0G1
@@ -18228,7 +18228,7 @@ $end
 1mI
 1?S
 1H]
-1(R
+1*P
 1Z\
 1uZ
 15r
@@ -18418,8 +18418,8 @@ $end
 1\&
 1CN
 0DN
-1rN
-0qN
+1%P
+0$P
 0vI
 1`&
 1^&
@@ -18431,15 +18431,15 @@ $end
 1KN
 0GL
 1bL
-0%R
-1oQ
-0sQ
+0'P
+1SO
+0WO
 0ko
-0"R
+0dO
 1sq
-1~Q
-0<O
-1:O
+1bO
+0VP
+1TP
 0}%
 1~%
 1vI
@@ -18533,105 +18533,105 @@ $end
 0<L
 0HL
 1cL
-08O
-0:O
+0RP
+0TP
 0($
 1'$
 0a&
-0#R
-1aQ
-1nQ
-1jQ
-1YQ
-1eQ
-1]Q
-1UQ
-1PQ
-1LQ
+0eO
+1EO
+1RO
+1NO
+1=O
+1IO
+1AO
+19O
+14O
+10O
 0Zh
-1HQ
-1DQ
-1@Q
+1,O
+1(O
+1$O
 0%f
-1;Q
-17Q
+1}N
+1yN
 0Tb
-13Q
+1uN
 0Lc
-1/Q
+1qN
 1>S
 0|_
-1(Q
-1%Q
+1jN
+1gN
 0/_
-1#Q
+1eN
 0G]
-1!Q
+1cN
 1AS
 0Z\
-1|P
-1zP
+1`N
+1^N
 00Y
-1xP
+1\N
 0kT
-1vP
+1ZN
 0(S
 0&S
 0oR
 1.R
-1&R
+1(P
 1FS
 1JS
-1qP
+1UN
 01S
 1'S
 1hT
-1AO
-0CO
-0!R
-12O
-10O
-1(O
-1.O
-1,O
-1*O
-1&O
-1$O
-1"O
-1~N
-1|N
-1zN
-1xN
-1vN
-1tN
-1mP
-1kP
-1iP
-1gP
-1eP
-1cP
-1aP
-1_P
-1]P
 1[P
-1YP
-1QP
-1SP
-1UP
-1WP
-1OP
-1MP
+0]P
+0cO
+1LP
+1JP
+1BP
+1HP
+1FP
+1DP
+1@P
+1>P
+1<P
+1:P
+18P
+16P
+14P
+12P
+10P
+1)R
+1'R
+1%R
+1#R
+1!R
+1}Q
+1{Q
+1yQ
+1wQ
+1uQ
+1sQ
+1kQ
+1mQ
+1oQ
+1qQ
+1iQ
+1gQ
 1yo
 0bs
-0tQ
-0;O
-19O
+0XO
+0UP
+1SP
 0j
 1i
 0N$
 16K
 1}I
-18O
+1RP
 07K
 1EL
 1"'
@@ -18715,11 +18715,11 @@ $end
 1(J
 0AL
 0d&
-07O
-09O
+0QP
+0SP
 0?"
 0}I
-1tQ
+1XO
 14S
 0ys
 0dm
@@ -18762,7 +18762,7 @@ $end
 1vo
 0?S
 0H]
-0(R
+0*P
 1@S
 1wo
 1[\
@@ -18780,14 +18780,14 @@ $end
 1CS
 0)S
 0DS
-0'R
+0)P
 0rR
 1pR
 1&S
 1GS
 0IS
-1BO
-0@O
+1\P
+0ZP
 0ns
 0K
 1L$
@@ -18811,7 +18811,7 @@ $end
 1M$
 17K
 1~I
-17O
+1QP
 1o(
 0?+
 0>+
@@ -18906,7 +18906,7 @@ $end
 16^
 1/_
 1G]
-1(R
+1*P
 1Z\
 10Y
 1kT
@@ -18919,7 +18919,7 @@ $end
 0qR
 1oR
 1%S
-1'R
+1)P
 1M
 1L
 1H
@@ -19192,8 +19192,8 @@ $end
 1\&
 1DN
 0EN
-1sN
-0rN
+1&P
+0%P
 0^&
 1_&
 1yI
@@ -19210,20 +19210,20 @@ $end
 1"J
 0KN
 0bL
-1%R
-1sQ
-0rQ
-1|Q
-0zQ
-0xQ
-1{Q
+1'P
+1WO
+0VO
+1`O
+0^O
+0\O
+1_O
 1rq
 1ko
 1ds
-0wQ
-0yQ
-0>O
-1<O
+0[O
+0]O
+0XP
+1VP
 0|%
 1}%
 1^&
@@ -19306,83 +19306,83 @@ $end
 1i&
 0JL
 0cL
-1:O
-0<O
+1TP
+0VP
 0)$
 1($
 1a&
 1vI
 0`&
-1#R
+1eO
 11S
 02S
-0TN
-11O
-0{O
-1/O
-0yO
-1-O
-0wO
-1+O
-0uO
-1)O
-0sO
-1'O
-0qO
-1%O
-0iO
-1{N
-0eO
-1wN
-0aO
-1nP
-0cO
-1uN
-0_O
-1lP
-0[O
-1hP
-0SO
+0.P
+1KP
+07Q
+1IP
+05Q
+1GP
+03Q
+1EP
+01Q
+1CP
+0/Q
+1AP
+0-Q
+1?P
+0%Q
+17P
+0!Q
+13P
+0{P
+1*R
+0}P
+11P
+0yP
+1(R
+0uP
+1$R
+0mP
+1zQ
 1`P
-1FO
-0KO
-1XP
-0AO
-1NP
-0?O
-1LP
-1@O
-1IS
-1PP
-1KS
-1RP
-0GO
-1TP
-0IO
-1VP
-0MO
+0eP
+1rQ
+0[P
+1hQ
+0YP
+1fQ
 1ZP
-0OO
-1\P
-0QO
-1^P
-0UO
-1bP
-0WO
-1dP
-0YO
-1fP
-0]O
-1jP
-0gO
-1yN
-0kO
-1}N
-0mO
-1!O
-0oO
-1#O
-07O
+1IS
+1jQ
+1KS
+1lQ
+0aP
+1nQ
+0cP
+1pQ
+0gP
+1tQ
+0iP
+1vQ
+0kP
+1xQ
+0oP
+1|Q
+0qP
+1~Q
+0sP
+1"R
+0wP
+1&R
+0#Q
+15P
+0'Q
+19P
+0)Q
+1;P
+0+Q
+1=P
+0QP
 0k
 1j
 0R$
@@ -19393,8 +19393,8 @@ $end
 1FL
 06K
 07K
-0:O
-08O
+0TP
+0RP
 1~I
 0$'
 0.'
@@ -19439,8 +19439,8 @@ $end
 0LL
 1^L
 0a&
-19O
-1;O
+1SP
+1UP
 0G"
 1D"
 1F"
@@ -19449,7 +19449,7 @@ $end
 1!J
 17K
 1|I
-18O
+1RP
 0zo
 1ss
 1vs
@@ -19460,38 +19460,38 @@ $end
 1!t
 1(S
 1&S
-1TN
-1{O
-1yO
-1wO
-1uO
-1sO
-1qO
-1iO
-1eO
-1aO
-1cO
-1_O
-1[O
-1SO
-1KO
-1AO
-1?O
-1CO
-1EO
-1GO
-1IO
-1MO
-1OO
-1QO
-1UO
-1WO
-1YO
-1]O
-1gO
-1kO
-1mO
-1oO
+1.P
+17Q
+15Q
+13Q
+11Q
+1/Q
+1-Q
+1%Q
+1!Q
+1{P
+1}P
+1yP
+1uP
+1mP
+1eP
+1[P
+1YP
+1]P
+1_P
+1aP
+1cP
+1gP
+1iP
+1kP
+1oP
+1qP
+1sP
+1wP
+1#Q
+1'Q
+1)Q
+1+Q
 0ms
 0G
 1F
@@ -19504,7 +19504,7 @@ $end
 0{$
 0]%
 0EL
-17O
+1QP
 0w(
 0z(
 0^.
@@ -19524,7 +19524,7 @@ $end
 0'#
 0&#
 0f#
-03O
+0MP
 1os
 0ns
 1qs
@@ -19598,8 +19598,8 @@ $end
 1\&
 1BN
 0CN
-1qN
-0pN
+1$P
+0#P
 1a&
 0vI
 1g&
@@ -19611,17 +19611,17 @@ $end
 0"J
 1GL
 0WL
-1vQ
-0oQ
-1rQ
-1uQ
+1ZO
+0SO
+1VO
+1YO
 0ko
-1"R
+1dO
 0ds
 0sq
 0cs
-1:O
-08O
+1TP
+0RP
 0~%
 1!&
 1}I
@@ -19712,88 +19712,88 @@ $end
 12M
 0'$
 1&$
-0:P
-05O
-0aQ
-0nQ
-0jQ
-0YQ
-0eQ
-0]Q
-0UQ
-0PQ
-0LQ
-0HQ
-0DQ
-0@Q
-0;Q
-07Q
-03Q
-0/Q
+0TQ
+0OP
+0EO
+0RO
+0NO
+0=O
+0IO
+0AO
+09O
+04O
+00O
+0,O
+0(O
+0$O
+0}N
+0yN
+0uN
+0qN
 0>S
-0(Q
-0%Q
-0#Q
-0!Q
+0jN
+0gN
+0eN
+0cN
 0AS
-0|P
-0zP
-0xP
-0vP
+0`N
+0^N
+0\N
+0ZN
 0.R
-0&R
+0(P
 0HS
 0FS
 0JS
-0oP
-0qP
+0SN
+0UN
 0es
 0hs
-02O
-00O
-0(O
-0.O
-0,O
-0*O
-0&O
-0$O
-0"O
-0~N
-0|N
-0zN
-0xN
-0vN
-0tN
-0mP
-0kP
-0iP
-0gP
-0eP
-0cP
-0aP
-0_P
-0]P
+0LP
+0JP
+0BP
+0HP
+0FP
+0DP
+0@P
+0>P
+0<P
+0:P
+08P
+06P
+04P
+02P
+00P
+0)R
+0'R
+0%R
+0#R
+0!R
+0}Q
+0{Q
+0yQ
+0wQ
+0uQ
+0sQ
+0kQ
+0`P
+0mQ
+0oQ
+0qQ
+0iQ
 0[P
 0YP
-0QP
-0FO
-0SP
-0UP
-0WP
-0OP
-0AO
-0?O
-0@O
-0MP
-0EO
+0ZP
+0gQ
+0_P
 0ks
 0ls
 0fs
-1!R
+1cO
 0js
 03S
-09O
-07O
+0SP
+0QP
 0i
 1h
 0}I
@@ -19837,7 +19837,7 @@ $end
 1LL
 1XH
 0(J
-17O
+1QP
 1ys
 0}k
 0ss
@@ -19858,17 +19858,17 @@ $end
 1DS
 0rR
 0'S
-1oP
-0BO
+1SN
+0\P
 0GS
 00S
 0ES
 01S
 1FS
-1@O
+1ZP
 0KS
 1zo
-0tQ
+0XO
 1B"
 0M$
 1B
@@ -20031,7 +20031,7 @@ $end
 0_(
 0,+
 1EN
-0sN
+0&P
 1jp
 1vp
 0yI
@@ -20044,7 +20044,7 @@ $end
 1ko
 0mo
 1sq
-1>O
+1XP
 1|%
 0^&
 1_&
@@ -20119,84 +20119,84 @@ $end
 1aI
 11J
 1=L
-1<O
+1VP
 1)$
 1vI
-01O
-0/O
-0-O
-0+O
-0)O
-0'O
-0%O
-0{N
-0wN
-0nP
-0uN
-0lP
-0hP
-0`P
-0XP
-0NP
-0LP
-0PP
-0RP
-0TP
-0VP
-0ZP
-0\P
-0^P
-0bP
-0dP
-0fP
-0jP
-0yN
-0}N
-0!O
-0#O
-1AO
-1?O
-1EO
-12O
-10O
-1(O
-1.O
-1,O
-1*O
-1&O
-1$O
-1"O
-1~N
-1|N
-1zN
-1xN
-1vN
-1tN
-1mP
-1kP
-1iP
-1gP
-1eP
-1cP
-1aP
-1_P
-1]P
+0KP
+0IP
+0GP
+0EP
+0CP
+0AP
+0?P
+07P
+03P
+0*R
+01P
+0(R
+0$R
+0zQ
+0rQ
+0hQ
+0fQ
+0jQ
+0lQ
+0nQ
+0pQ
+0tQ
+0vQ
+0xQ
+0|Q
+0~Q
+0"R
+0&R
+05P
+09P
+0;P
+0=P
 1[P
 1YP
-0DO
-1QP
-1SP
-1UP
+1_P
+1LP
+1JP
+1BP
+1HP
+1FP
+1DP
+1@P
+1>P
+1<P
+1:P
+18P
+16P
+14P
+12P
+10P
+1)R
+1'R
+1%R
+1#R
+1!R
+1}Q
+1{Q
+1yQ
+1wQ
+1uQ
+1sQ
+0^P
+1kQ
+1mQ
+1oQ
+1qQ
+1\P
+1iQ
+1gQ
 1WP
-1BO
-1OP
-1MP
-1=O
 1k
 1DL
 0{I
 0FL
-0:O
+0TP
 0`L
 1-+
 1;,
@@ -20212,20 +20212,20 @@ $end
 0=+
 1`(
 1<+
-0;O
+0UP
 17K
-0AO
-0EO
+0[P
+0_P
 1GS
 10S
 1KS
 0*S
 1JS
-1DO
+1^P
 0HS
 1hT
-0BO
-0@O
+0\P
+0ZP
 1os
 1EL
 1o(
@@ -20368,9 +20368,9 @@ $end
 1CN
 0DN
 0EN
-1sN
-1rN
-0qN
+1&P
+1%P
+0$P
 0jp
 0vI
 1`&
@@ -20390,21 +20390,21 @@ $end
 0wI
 1"J
 0GL
-1oQ
-0rQ
-1zQ
-1xQ
+1SO
+0VO
+1^O
+1\O
 1rq
 1mo
 1ds
-1wQ
-1yQ
-0>O
-0vQ
-0uQ
+1[O
+1]O
+0XP
+0ZO
+0YO
 1cs
-0<O
-1:O
+0VP
+1TP
 0|%
 0}%
 1~%
@@ -20528,121 +20528,121 @@ $end
 03K
 0<L
 0HL
-18O
-0:O
-1<O
+1RP
+0TP
+1VP
 0)$
 0($
 1'$
 1QL
 1a&
 0PL
-1aQ
-1nQ
-1jQ
-1YQ
-1eQ
-1]Q
-1UQ
-1PQ
-1LQ
-1HQ
-1DQ
-1@Q
-1;Q
-17Q
-13Q
-1/Q
-1>S
-1(Q
-1%Q
-1#Q
-1!Q
-1AS
-1|P
-1zP
-1xP
-1vP
-1.R
-1&R
-1JS
-1qP
-11S
-0TN
-11O
-0{O
-1/O
-0yO
-1-O
-0wO
-1+O
-0uO
-1)O
-0sO
-1'O
-0qO
-1%O
-0iO
-1{N
-0eO
-1wN
-0aO
-1nP
-0cO
-1uN
-0_O
-1lP
-0[O
-1hP
-0SO
-1`P
-1'S
-1FO
-0KO
-1XP
-1BO
-1GS
-1NP
-1hT
-0?O
-1LP
-1@O
-0CO
-1PP
-1KS
-1RP
-0GO
-1TP
-0IO
-1VP
-0MO
-1ZP
-0OO
-1\P
-0QO
-1^P
-0UO
-1bP
-0WO
-1dP
-0YO
-1fP
-0]O
-1jP
-0gO
-1yN
-0kO
-1}N
-0mO
-1!O
-0oO
-1#O
-07O
-13S
-0=O
-1:P
-15O
+1EO
+1RO
+1NO
+1=O
+1IO
+1AO
 19O
+14O
+10O
+1,O
+1(O
+1$O
+1}N
+1yN
+1uN
+1qN
+1>S
+1jN
+1gN
+1eN
+1cN
+1AS
+1`N
+1^N
+1\N
+1ZN
+1.R
+1(P
+1JS
+1UN
+11S
+0.P
+1KP
+07Q
+1IP
+05Q
+1GP
+03Q
+1EP
+01Q
+1CP
+0/Q
+1AP
+0-Q
+1?P
+0%Q
+17P
+0!Q
+13P
+0{P
+1*R
+0}P
+11P
+0yP
+1(R
+0uP
+1$R
+0mP
+1zQ
+1'S
+1`P
+0eP
+1rQ
+1\P
+1GS
+1hQ
+1hT
+0YP
+1fQ
+1ZP
+0]P
+1jQ
+1KS
+1lQ
+0aP
+1nQ
+0cP
+1pQ
+0gP
+1tQ
+0iP
+1vQ
+0kP
+1xQ
+0oP
+1|Q
+0qP
+1~Q
+0sP
+1"R
+0wP
+1&R
+0#Q
+15P
+0'Q
+19P
+0)Q
+1;P
+0+Q
+1=P
+0QP
+13S
+0WP
+1TQ
+1OP
+1SP
 0k
 0j
 1i
@@ -20655,8 +20655,8 @@ $end
 0}I
 0!J
 0SL
-08O
-04O
+0RP
+0NP
 0W$
 0ZL
 03M
@@ -20714,17 +20714,17 @@ $end
 0XH
 1(J
 0QL
-13O
-17O
-09O
-1;O
+1MP
+1QP
+0SP
+1UP
 0D"
 0F"
 1SL
 1TL
 1}I
 1!J
-14O
+1NP
 0ys
 1}k
 1ss
@@ -20744,38 +20744,38 @@ $end
 1fa
 1vZ
 1rR
-1TN
-1{O
-1yO
-1wO
-1uO
-1sO
-1qO
-1iO
-1eO
-1aO
-1cO
-1_O
-1[O
-1SO
-1KO
-1AO
-1?O
-1CO
-1EO
-1GO
-1IO
-1MO
-1OO
-1QO
-1UO
-1WO
-1YO
-1]O
-1gO
-1kO
-1mO
-1oO
+1.P
+17Q
+15Q
+13Q
+11Q
+1/Q
+1-Q
+1%Q
+1!Q
+1{P
+1}P
+1yP
+1uP
+1mP
+1eP
+1[P
+1YP
+1]P
+1_P
+1aP
+1cP
+1gP
+1iP
+1kP
+1oP
+1qP
+1sP
+1wP
+1#Q
+1'Q
+1)Q
+1+Q
 0ms
 0os
 1ks
@@ -20793,8 +20793,8 @@ $end
 0]%
 0EL
 0~I
-07O
-03O
+0QP
+0MP
 0B
 09D
 0ML
@@ -20811,7 +20811,7 @@ $end
 0&#
 0f#
 1~I
-13O
+1MP
 1qs
 1Ji
 0o!
@@ -20843,22 +20843,22 @@ $end
 1;"
 1\&
 1EN
-0sN
+0&P
 0yI
 1]&
-1>O
+1XP
 1|%
 1^&
 0_L
 0aL
-0<O
+0VP
 1)$
-1=O
+1WP
 1k
 1DL
 1FL
 0`L
-0;O
+0UP
 1os
 1EL
 0ns

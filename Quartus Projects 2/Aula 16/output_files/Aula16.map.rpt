@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Aula16
-Tue Nov 09 23:06:34 2021
+Wed Nov 10 11:30:28 2021
 Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 
 
@@ -94,7 +94,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Tue Nov 09 23:06:33 2021       ;
+; Analysis & Synthesis Status     ; Successful - Wed Nov 10 11:30:28 2021       ;
 ; Quartus Prime Version           ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
 ; Revision Name                   ; Aula16                                      ;
 ; Top-level Entity Name           ; Aula16                                      ;
@@ -119,7 +119,7 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------------------------------------------+--------------------+--------------------+
 ; Option                                                                          ; Setting            ; Default Value      ;
 +---------------------------------------------------------------------------------+--------------------+--------------------+
-; Device                                                                          ; 5CGXFC7C7F23C8     ;                    ;
+; Device                                                                          ; 5CEBA4F23C7        ;                    ;
 ; Top-level entity name                                                           ; Aula16             ; Aula16             ;
 ; Family name                                                                     ; Cyclone V          ; Cyclone V          ;
 ; Maximum processors allowed for parallel compilation                             ; All                ;                    ;
@@ -1734,7 +1734,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
-    Info: Processing started: Tue Nov 09 23:06:22 2021
+    Info: Processing started: Wed Nov 10 11:30:17 2021
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Aula16 -c Aula16
 Info (20030): Parallel compilation is enabled and will use 6 of the 6 processors detected
 Info (12021): Found 2 design units, including 1 entities, in source file ulabit_1a31.vhd
@@ -1855,9 +1855,9 @@ Info (21057): Implemented 3848 device resources after synthesis - the final reso
     Info (21059): Implemented 204 output pins
     Info (21061): Implemented 3643 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 39 warnings
-    Info: Peak virtual memory: 4874 megabytes
-    Info: Processing ended: Tue Nov 09 23:06:34 2021
-    Info: Elapsed time: 00:00:12
-    Info: Total CPU time (on all processors): 00:00:19
+    Info: Peak virtual memory: 4872 megabytes
+    Info: Processing ended: Wed Nov 10 11:30:28 2021
+    Info: Elapsed time: 00:00:11
+    Info: Total CPU time (on all processors): 00:00:20
 
 
