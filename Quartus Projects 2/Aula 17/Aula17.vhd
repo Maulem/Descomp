@@ -19,10 +19,10 @@ entity Aula17 is
     ULA_A      :  out  std_logic_vector(larguraDados-1 downto 0);
     ULA_B      :  out  std_logic_vector(larguraDados-1 downto 0);
     saida2BGR  :  out  std_logic_vector(larguraDados-1 downto 0);
-	 PC_OUT     :  out  std_logic_vector(larguraDados-1 downto 0);
+    PC_OUT     :  out  std_logic_vector(larguraDados-1 downto 0);
     ULA_out    :  out  std_logic_vector(larguraDados-1 downto 0);
-	 ulactrl_out:  out  std_logic_vector(2 downto 0);
-	 muxu_signal:  out  std_logic
+    ulactrl_out:  out  std_logic_vector(2 downto 0);
+    muxu_signal:  out  std_logic
   );
 end entity;
 
@@ -97,7 +97,7 @@ ULA: entity work.ULA
                      entradaB      => mux_ulaB,
                      saida         => ula_ramORmux,
                      seletor       => ulactrl(1 downto 0),
-							inverteB      => ulactrl(2),
+                     inverteB      => ulactrl(2),
                      flagZero      => flag_z
                   );	
 
