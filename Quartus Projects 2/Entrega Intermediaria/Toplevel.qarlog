@@ -1,0 +1,36 @@
+Quartus Prime Archive log --	D:/INSPER-FILES/Facul/6S/Descomp/Quartus Projects 2/Entrega Intermediaria/Toplevel.qarlog
+
+Archive:	D:/INSPER-FILES/Facul/6S/Descomp/Quartus Projects 2/Entrega Intermediaria/Toplevel.qar
+Date:		Fri Nov 19 17:36:45 2021
+Quartus Prime		20.1.0 Build 711 06/05/2020 SJ Lite Edition
+
+	=========== Files Selected: ===========
+D:/INSPER-FILES/Facul/6S/Descomp/Quartus Projects 2/Entrega Intermediaria/Decoder.vhd
+D:/INSPER-FILES/Facul/6S/Descomp/Quartus Projects 2/Entrega Intermediaria/DecoderFunct.vhd
+D:/INSPER-FILES/Facul/6S/Descomp/Quartus Projects 2/Entrega Intermediaria/DecoderOpcode.vhd
+D:/INSPER-FILES/Facul/6S/Descomp/Quartus Projects 2/Entrega Intermediaria/RAMMIPS.vhd
+D:/INSPER-FILES/Facul/6S/Descomp/Quartus Projects 2/Entrega Intermediaria/ROM.vhd
+D:/INSPER-FILES/Facul/6S/Descomp/Quartus Projects 2/Entrega Intermediaria/Toplevel.qpf
+D:/INSPER-FILES/Facul/6S/Descomp/Quartus Projects 2/Entrega Intermediaria/Toplevel.qsf
+D:/INSPER-FILES/Facul/6S/Descomp/Quartus Projects 2/Entrega Intermediaria/Toplevel.vhd
+D:/INSPER-FILES/Facul/6S/Descomp/Quartus Projects 2/Entrega Intermediaria/ULA.vhd
+D:/INSPER-FILES/Facul/6S/Descomp/Quartus Projects 2/Entrega Intermediaria/ULAbit32.vhd
+D:/INSPER-FILES/Facul/6S/Descomp/Quartus Projects 2/Entrega Intermediaria/ULAbit_1a31.vhd
+D:/INSPER-FILES/Facul/6S/Descomp/Quartus Projects 2/Entrega Intermediaria/Waveform.vwf
+D:/INSPER-FILES/Facul/6S/Descomp/Quartus Projects 2/Entrega Intermediaria/bancoRegistradores.vhd
+D:/INSPER-FILES/Facul/6S/Descomp/Quartus Projects 2/Entrega Intermediaria/conversorHex7Seg.vhd
+D:/INSPER-FILES/Facul/6S/Descomp/Quartus Projects 2/Entrega Intermediaria/deslocadorSinalGenerico.vhd
+D:/INSPER-FILES/Facul/6S/Descomp/Quartus Projects 2/Entrega Intermediaria/edgeDetector.vhd
+D:/INSPER-FILES/Facul/6S/Descomp/Quartus Projects 2/Entrega Intermediaria/estensorSinalGenerico.vhd
+D:/INSPER-FILES/Facul/6S/Descomp/Quartus Projects 2/Entrega Intermediaria/logic7.vhd
+D:/INSPER-FILES/Facul/6S/Descomp/Quartus Projects 2/Entrega Intermediaria/muxGenerico2x1.vhd
+D:/INSPER-FILES/Facul/6S/Descomp/Quartus Projects 2/Entrega Intermediaria/muxGenerico2x1bit.vhd
+D:/INSPER-FILES/Facul/6S/Descomp/Quartus Projects 2/Entrega Intermediaria/muxGenerico4x1bit.vhd
+D:/INSPER-FILES/Facul/6S/Descomp/Quartus Projects 2/Entrega Intermediaria/registradorGenerico.vhd
+D:/INSPER-FILES/Facul/6S/Descomp/Quartus Projects 2/Entrega Intermediaria/somadorGenerico.vhd
+D:/INSPER-FILES/Facul/6S/Descomp/Quartus Projects 2/Entrega Intermediaria/somadorGenerico1bit.vhd
+c:/intelfpga_lite/20.1/quartus/bin64/assignment_defaults.qdf
+	======= Total: 25 files to archive =======
+
+	================ Status: ===============
+All files archived successfully.
