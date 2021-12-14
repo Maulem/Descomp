@@ -1,5 +1,5 @@
 Fitter report for Toplevel
-Tue Nov 23 23:01:46 2021
+Wed Nov 24 10:15:57 2021
 Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 
 
@@ -62,7 +62,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------+
 ; Fitter Summary                                                                ;
 +---------------------------------+---------------------------------------------+
-; Fitter Status                   ; Successful - Tue Nov 23 23:01:46 2021       ;
+; Fitter Status                   ; Successful - Wed Nov 24 10:15:57 2021       ;
 ; Quartus Prime Version           ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
 ; Revision Name                   ; Toplevel                                    ;
 ; Top-level Entity Name           ; Toplevel                                    ;
@@ -158,11 +158,11 @@ https://fpgasoftware.intel.com/eula.
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   5.6%      ;
-;     Processor 3            ;   5.5%      ;
-;     Processor 4            ;   5.5%      ;
-;     Processor 5            ;   2.0%      ;
-;     Processor 6            ;   1.9%      ;
+;     Processor 2            ;   5.4%      ;
+;     Processor 3            ;   5.3%      ;
+;     Processor 4            ;   5.3%      ;
+;     Processor 5            ;   1.8%      ;
+;     Processor 6            ;   1.8%      ;
 +----------------------------+-------------+
 
 
@@ -1912,7 +1912,7 @@ Info (170195): Router estimated average interconnect usage is 4% of the availabl
 Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were skipped to reduce compilation time.
     Info (170201): Optimizations that may affect the design's routability were skipped
 Info (170194): Fitter routing operations ending: elapsed time is 00:00:34
-Info (11888): Total time spent on timing analysis during the Fitter is 10.16 seconds.
+Info (11888): Total time spent on timing analysis during the Fitter is 10.21 seconds.
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (334003): Started post-fitting delay annotation
@@ -1920,10 +1920,10 @@ Info (334004): Delay annotation completed successfully
 Info (11801): Fitter post-fit operations ending: elapsed time is 00:00:34
 Info (144001): Generated suppressed messages file D:/INSPER-FILES/Facul/6S/Descomp/Quartus Projects 2/Entrega Final/output_files/Toplevel.fit.smsg
 Info: Quartus Prime Fitter was successful. 0 errors, 2 warnings
-    Info: Peak virtual memory: 6404 megabytes
-    Info: Processing ended: Tue Nov 23 23:01:47 2021
-    Info: Elapsed time: 00:02:22
-    Info: Total CPU time (on all processors): 00:06:45
+    Info: Peak virtual memory: 6413 megabytes
+    Info: Processing ended: Wed Nov 24 10:15:58 2021
+    Info: Elapsed time: 00:02:23
+    Info: Total CPU time (on all processors): 00:06:46
 
 
 +----------------------------+
